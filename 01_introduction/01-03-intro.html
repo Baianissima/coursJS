@@ -1,0 +1,59 @@
+<!-- 01-01-introduction.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - I/03 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- il y a plusieurs moyens de placer du JS, avec la balise script , par exemple ds l etete de la page -->
+
+    <!-- JS !!!, ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
+
+    <!-- Mes script JS dans l'en-tête -->
+
+    <!-- la barre oblique opposée pour indiquer qu il s agit de guillemet sur JS : \' -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let bonjour = document.getElementById('b1');
+            onjour.addEventListener('click', coucou);
+
+            function coucou(){
+                // ici un commentaire en js
+                alert('Coucou ! C\'est encore moi !');
+                // le caractere d'échapement pour avoir l'apostrophe dans la chaîne de caractère
+            }
+        });
+    </script>
+</head>
+
+<body>
+    
+    <h1>JavaScript - I/03 introduction</h1>
+
+    <!--raccourci pour creer é boutons :  button#b$*2 -->
+
+    <button id="b1" class="bouton">Cliquer sur moi</button>
+    
+    <button id="b2" class="bouton">Ajoutez un paragraphe</button>
+
+    <p>On va pouvoir placer notre élément <code>script</code> n'importe où das notre page HTML, aussi bien dans l'élément <code>head</code> qu'au sein de l'élément <code>body</code>. On place égaleent plusieurs bout de code JS à différents</p>
+
+    <script>
+        let ajouter = document.getElementById('b2');
+            ajouter.addEventListener('click', ajout);
+
+            function ajout(){
+                let para = document.createElement('p');
+                para.textContent = 'Les feuilles mortes se ramassent à la pelle !';
+                document.body.appendChild(para);
+            }
+    </script>
+     
+</body>
+</html>

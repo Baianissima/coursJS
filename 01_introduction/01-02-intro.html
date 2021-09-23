@@ -1,0 +1,40 @@
+<!-- 01-01-introduction.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - I/02 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- il y a plusieurs moyens de placer du JS, avec la balise script , par exemple ds l etete de la page -->
+    
+    <!-- script JS dans l'en-tête de la page, parès les styles -->Ò
+
+    <!-- JS !!!, ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
+
+</head>
+
+<body>
+    <!-- On peut mettre du JS directement dans l'élément HTML, dans la balise ouvrante -->
+    <!-- Ces 2 scripts fontionnent avec l'attribut ONCLICK -->
+
+    <h1>JavaScript - I/02 introduction</h1>
+
+    <!-- le 1er script affiche une alerte avec son message -->
+    <button class="bouton" onclick="alert('Coucou papillon !')">Cliquer sur moi !</button>
+
+    <!-- le second script ajoute un element p dans la page -->
+    <button class="bouton" onclick="(function(){
+        let para = document.createElement('p');
+        para.textContent = 'Hop ! un nouveau paragraphe : c\'est drôle non ?';
+        document.body.appendChild(para); 
+    })();">
+        Ajoutez un paragraphe : allez !
+    </button>
+    
+</body>
+</html>

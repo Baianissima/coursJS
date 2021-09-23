@@ -1,0 +1,57 @@
+<!-- 01-01-introduction.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - I/01 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- il y a plusieurs moyens de placer du JS, avec la balise script , par exemple ds l etete de la page -->
+    
+    <!-- script JS dans l'en-tête de la page, parès les styles -->
+
+    <!-- Mon code JS est ici placé dans l'en-tête, dans l'élément head de mon fichier, à l'intérieur de la balise script. Ce code récupère l'heure et l'actualise toutes les secondes et nous permet de l'afficher ou de la masquer via un bouton -->
+
+    <!-- JS !!!, ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
+
+    <script>
+        window.addEventListener('load',horloge);
+
+        function horloge(){
+            let d = new Date();
+            document.getElementById('heure').innerHTML = d.toLocaleTimeString();
+            setTimeout(horloge, 1000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function(){
+                const cache = document.getElementById('bouton');
+                cache.addEventListener('click',cacheHorloge);
+                document.getElementById('tog').style.display = 'block';
+                function cacheHorloge(){
+                    let para = document.getElementById('tog');
+                    if(para.style.display == 'block'){
+                        para.style.display = 'none';
+                        }else{
+                            para.style.display = 'block';
+                    }
+                }
+            });
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>JavaScript - I/01 introduction</h1>
+
+        <!-- les éléments ont besoin d'un id pour intéragir avec mes scripts JS -->
+
+        <p id="tog">Il est actuellement <span id="heure" class="stabillo"></span></p>
+
+        <button id="bouton">Cacher : afficher l'heure</button>
+    </main>
+</body>
+</html>

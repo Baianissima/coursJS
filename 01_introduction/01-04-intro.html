@@ -1,0 +1,45 @@
+<!-- 01-04-introduction.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - I/04 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- scripts JS en externe -->
+    <script src="introduction.js" async></script>
+    <!-- async -->
+    
+</head>
+
+<body>
+    
+    <h1>JavaScript - I/04 introduction</h1>
+    <h2>2 exemples</h2>
+
+    <!-- raccourci pour creer des boutons :  button#b$*2 -->
+
+    <button id="b1" class="bouton">Cliquer sur moi</button>
+    <button id="b2" class="bouton">Ajoutez un paragraphe</button>
+
+    <hr>
+
+    <h2>la place du code et l'ordre d'exécution</h2>
+        <p>L'ordre d'exécution du code par le navigateur</p>
+        <p>Par défaut, un navigateur va lire et exécuter le code dans l’ordre de son écriture.</p>
+        <p>Lorsque le navigateur arrive à un script, il va stopper le traitement du reste du HTML jusqu’à ce que le code JavaScript soit chargé dans la page et exécuté.</p>
+        <p>Résumons ce qu’il se passe dans ce cas :</p>
+        <ol>
+            <li>Le navigateur commence à analyser (ou à traiter) le code HTML ;</li>
+            <li>Le navigateur rencontre un élément <code>script</code> ;</li>
+            <li>Le contenu JS est demandé et téléchargé (si il est en externe) puis exécuté. Durant tout ce temps l'analyseur du navigateur bloque l'affichage du HTML ce qui peut ralentir, si le script est long, l'affichage de la page ;</li>
+            <li>Dès que le JS a été exécuté, le contenu HTML est affiché</li>
+        </ol>
+        <p>Ce souci d'attente est résolu grâce au téléchargement asynchrone des données avec l'attribut <code>async</code> ou <code>defer</code> dans le cas où l'on fait appel à des fichiers externes.</p>
+     
+</body>
+</html>
