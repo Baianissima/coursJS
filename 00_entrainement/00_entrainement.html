@@ -21,9 +21,89 @@
         8- FONCTIONS
         9- SUPPLEMENTS
         */
+
+        //pour insérerr du contenu dans le html
+        document.write('<h1>01 Entrainement JavaScript</h1>');
+
+        // 1- AFFICHAGE
+        document.write('<h2 style="background: orange;width: 50%; color: #fff; text-align:center;">1- AFFICHAGE</h2>');
+
+        var maBoite // je déclare une variable avec VAR
+        maBoite = 10; //Je lui affecte une valeur, ci-dessous un nombre, un "number :"
+
+        let monAge = 12; //ici je déclare et j'affecte au même temps -LET est une variable plus moderne
+
+        var maBoite2 = 56; //le chiffre doit venir toujours à la fin de la variable, jamais devant
+        maBoite2 = 20;
+
+        console.log(maBoite);
+        console.log(maBoite2);
+        console.log(monAge);
+        //il faut toujours déclarer la console.log pour que les variables apparaissent sur la console du inspecteur;il faut commenter console/log pour les visiteurs du site, on utilise que pour notre production
+
+        document.write('<p>Dans la variable maBoite il y a la valeur suivante : '+ maBoite +' </p>')
+        // ici '+ maBoite +' sert pour rajouter la valeur de la variable dans le texte, ici c'est concatener aussi
+
+        console.log('Un message dans console.log');
+        console.info('Un autre message dans un console.info');
+        
+        // alert('Ceci est un message d\'alerte');
+        // // raccourci pour la barre oblique (caractere d'echapement) opposée sur PC : alt gr + \ (touche 8)
+
+        // confirm('Merci de confirmer, SVP.');
+
+        // prompt('Comment allez-vous ?'); 
+        // // dans un prompt une fenetre pour texte apparait
+
+        let humeur;
+        // console.log(humeur);
+        humeur = prompt('Comment on va ?');
+        // console.log(humeur);
+        document.write('<p>Votre humeur ? : '+ humeur +'</p>');
+
+
+        // Mini exo: demandez à votre visiteur le prénom de sa maman
+
+        var prenomMaman;
+
+        prenomMaman = prompt('Quel est le prénom de votre maman?');
+
+        console.log(prenomMaman);
+
+        document.write('<p>Le prénom de votre maman est : '+ prenomMaman +'</p>');
+
+
+        //portée locale ou globale de la variable
+        // humeur et prenomMaman ont des portées globales
+
+        // ici NOMBRE a une portée locale parce que IF TRUE avant la VARIABLE : je ne peux recuperer cette info en dehors de cette partie du code
+        if(true){
+            let nombre = 56;
+              // le nombre = 56;
+            //   nombre a une portee locale
+            console.info(nombre);
+        }
+
+        // Ici la portée est globale parce qu'on declare la variable avant IF TRUE
+        let nombre2;
+        if(true){
+            nombre2 = 999;
+        }
+        // Ici la variable a une portée globale
+        console.log(nombre2);
+
+        // une variable : le contenu varie
+        var noteEval = 12;
+        console.info(noteEval);
+
+        // adition d'une valeur numérique (number) avec += (ici on a dit d additionner 2 à 12 = 14 apparait dans console, mais on peut rajouter d'autres opérations avec -= (soustraction), *= (multiplication),  \= (division) )
+        noteEval += 2;
+        // noteEval = 18;
+        console.info(noteEval);
+
     </script>
 </head>
 <body>
     
 </body>
-</html>
+</html

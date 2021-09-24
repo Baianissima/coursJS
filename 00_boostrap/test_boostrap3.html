@@ -1,0 +1,76 @@
+<!-- 02_01_intro.html -->
+<!-- https://getbootstrap.com -->
+<!--On l'utilise en CDN quand on est en production, sans connexion Internet, Boostrap ne amrche pas : on doit telecahrger Boostrap et mettre en local, ds notre ordi -->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Boostrap/boostrap-5.1.1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- mes styles : c comptablie pour etre ustilsé au meme temps que le style Boostrap -->
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.css">
+
+    <title>JavaScript - II/01 introduction</title>
+  </head>
+
+  <body>
+
+  <h1></h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <main class="bg-primary">
+      <h1 class="text-center">TEST PERSO BOOSTRAP</h1>
+      <blockquote class="bg-danger">
+          <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a tempore vero aliquam reprehenderit maiores, debitis distinctio odio iure similique, voluptatibus aliquid blanditiis animi sit dicta sequi iusto necessitatibus et.</p>
+      </blockquote>
+
+
+  </main>
+
+    <!-- Optional JavaScript -->
+  
+    <!-- Boostrap Bundle with Popper -->
+    <script src="boostrap/boostrap-5.1.1-dist/js/boostrap.bundle.js"></script>
+</body>
+</html>
