@@ -10,9 +10,15 @@ main {
     background-color: #fff;
 }
 
-.stabillo {
-    background-color: rgb(207, 207, 46);
+.stabilo {
+    background-color: yellow;
 }
+
+.container {
+    background-color: #fff;
+}
+
+
 
 /* pour 02-intro */
 
@@ -28,6 +34,16 @@ main {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/* 02 03 types */
+code {
+    background-color: #fff;
+    color: red;
+    padding: 5px;
+}
+
+
+
 
 /* pour 03-intro : dans le html aussi */
 
