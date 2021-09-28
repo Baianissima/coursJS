@@ -75,3 +75,5 @@ document.getElementById('p6').innerHTML = 'Le type de la variable indefini est :
 // ACTVUTE 1 - Web Force
 let maVar = "Bonjour";
 console.log(maVar);
+
+
