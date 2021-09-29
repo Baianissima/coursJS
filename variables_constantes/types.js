@@ -72,7 +72,7 @@ document.getElementById('p5').innerHTML = 'Le type de la variable nul est : ' + 
 document.getElementById('p6').innerHTML = 'Le type de la variable indefini est : ' + typeof indefini;
 
 
-// ACTVUTE 1 - Web Force
+// ACTIVITE 1 - Web Force
 let maVar = "Bonjour";
 console.log(maVar);
 
