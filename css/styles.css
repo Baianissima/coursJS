@@ -18,10 +18,6 @@ main {
     background-color: #fff;
 }
 
-
-
-/* pour 02-intro */
-
 .bouton {
     background-color: teal;
     border: none;
@@ -35,16 +31,14 @@ main {
     cursor: pointer;
 }
 
-/* 02 03 types */
 code {
     background-color: #fff;
     color: red;
     padding: 5px;
 }
 
+h2 {
+    border-bottom: 1px solid grey;
+}
 
 
-
-/* pour 03-intro : dans le html aussi */
-
-/* pour 04-intro */

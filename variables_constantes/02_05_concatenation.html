@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  
+    <title>JavaScript - II/04 opérateurs</title>   
+    <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+<body>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - II/05 - <i class="bi bi-node-plus text-white"></i> La concaténation</h1>
+        <p class="lead">& les littéraux de gabarits</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4">
+        <section class="row mt-4">
+          <!-- <div class="col-sm-12"> ici avec cette grande div on pourrait mettre des colonnes dans une autre colonne, mais ce sera plus difficile à gérer -->
+
+          <h2>La concaténation en JS</h2>
+            <!-- sur ces 2 div on voit les col pour adapter cette page à plusieurs tailles d'écrans : small, medium, large, extra-large  -->
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xxl-12 bg-warning">
+            <p>Concaténer signifie littéralement "mettre bout à bout"</p>
+            <p>L'opérateur de concaténation est le <code>+</code> : <span class="stabilo">ATTENTION utilisé avec deux chiffres il sert à aditionner !!!</span></p>
+          </div>
+              <!-- fin col -->
+
+          <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xxl-12 bg-info">
+            <p><i class="bi bi-bootstrap"></i>Dans ces deux col nous avons les classes suivantes <code> &lt;div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xxl-12"&gt;&lt;/div></code></p>.
+          </div>
+          <!-- https://www.w3schools.com/html/html_entities.asp -->
+          <!-- fin col -->
+
+          <!-- Ici on a une div  row, pour éviter de créer une section car sinon on devrait mettre un h2 obligatoirement -->
+          <div class="row justify-content-center">
+
+            <div class="col-sm-12 col-md-11 col-lg-8">
+
+              <figure class="figure">
+                <!-- Ici on a mis en image un tableau de la grille bootstrap des tailles pour les ecrans  -->
+                <img src="img/grid_system.png" alt="grid system bootstrap" class="figure-img img-fluid rouded">
+                <figcaption class="figure-caption"><i class="bi bi-bootstrap"></i> - Le système de grille de bootstrap</figcaption>
+              
+              </figure>
+
+            </div>
+
+          </div>
+          <!-- fin col -->
+
+        </section>
+        <!-- fin rangée = row -->
+
+    <!-- fin div container -->
+    </div>
+    <!-- fin div container -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+        <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+        <!-- la solution la plus utilisée -->
+        <script src="concatenation.js"></script>
+</body>
+</html>
