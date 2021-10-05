@@ -1,0 +1,20 @@
+/* code {
+    background-color: white;
+    color: red;
+    padding: 5px;
+}
+
+h2 {
+    border-bottom: 1px;
+    text-align: center;
+} */
+
+
+em {
+    background-color: lightcyan;
+}
+
+/* tous les p pair : even = pair / odd = impair */
+td p:nth-child(even) {
+    background-color: lightcyan;
+}

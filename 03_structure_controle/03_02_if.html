@@ -1,0 +1,85 @@
+<!-- dossier 03 structures_controle : 03_01_intro.html -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - III-1 - if</title>   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+ <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4">
+        <section class="row mt-4">
+
+            <h2>Voir...</h2>
+
+            <!-- .col-sm-12.col-md-4*3>h3+p -->
+
+            <div class="col-sm-12 col-md-4">
+                <h3>1- If...</h3>
+                <p>La condition <code>if</code> est l'une des plus utilisée et est également la plus simple à apprhénder puisqu'elle va nous permettre d'éxecuter un bloc de code <em>si ET seulement si le résultat vaut <code>true</code>.</em></p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-sm-12 col-md-4 bg-light">
+                <h3>Attention ! : exceptions</h3>
+                <p>Tout test d'une condition va être évalué dans un contexte booléen, donc à <code>true</code>à l'exception des valeurs suivantes, qui vont être évaluées à <code>false</code>.</p>
+                <ul>
+                    <li>La valeur <code>0</code> (zéro)</li>
+                    <li>Le boléen <code>false</code></li>
+                    <li>Une chaîne de caractères vide</li>
+                    <li>La valeur <code>null</code></li>
+                    <li>La valeur <code>undefined</code></li>
+                    <li>La valeur <code>NaN</code> (Not a Number)</li>
+                </ul>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-sm-12 col-md-4">
+                <h3></h3>
+                <p></p>
+            </div>
+            <!-- fin col -->
+            
+        </section>
+        <!-- fin rangée -->
+    </div>
+    <!-- fin Conteneur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="if.js"></script>
+</body>
+</html>

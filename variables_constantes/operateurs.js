@@ -1,5 +1,9 @@
 //JS pour la page opérateurs
 
+// // parenthèses parenthesis ()
+// crochets brakets []
+// accolades {}
+
 // ici la barre oblique contraire : \
 // Toujours travailler avec la console ouverte (inspecteur)
 

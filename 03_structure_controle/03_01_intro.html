@@ -1,0 +1,146 @@
+<!-- dossier 03 structures_controle : 03_01_intro.html -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  
+    <title>JavaScript - Dossier 03 sctructure_controle : 03_01_intro</title>   
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - III/01 - <i class="bi bi-node-plus text-white"></i> Structures de controle...</h1>
+        <p class="lead">Il existe 2 types de sctructures de contrôles...</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4">
+        <section class="row mt-4">
+
+            <h2>Les conditions et les boucles</h2>
+
+            <p>Il existe deux types de structures de contrôle de base, que l'on retrouve dans TOUS les langages de programmation, et donc en JS</p>
+
+            <!-- div.col-sm-12*2>h3+p -->
+
+            <div class="col-sm-12 col-md-6 bg-light">
+                <h3>A- Les conditions & les boucles</h3>
+                <p>Les conditions vont nosu permettre d'éxécuter un ertain nombre d'instrutions <em> si et seulement si,</em> une certaine condition est vérifiée.</p>
+                <p>>Ex.: <cite>Si il pleut, je ne sors pas</cite></p>
+            </div>
+
+            <!-- fin col -->
+
+            <div class="col-sm-12 col-md-6">
+                <h3>B- Les boucles</h3>
+                <p>Les boucles vont nous permettre d'éxécuter un <em>bloc de condition</em> en boucle, tant qu'une condition donnée est vérifiée</em></p>
+                <p>>Ex.: <cite>Dès que j'ai fait monter les 12 éléves de ma classe dans les bus, je pars.</cite></p>
+                <!-- les boucles : ici on compte chaque unité pour éxécuter le code -->
+            </div>
+
+            <!-- fin col -->
+        </section>
+        <!-- fin rangée -->
+
+        <!-- debut nouvelle rangée -->
+        <section  class="row mt-4 justify-content-center">
+            <div class="col-10">
+                <h3>C- Opérateurs de comparaison</h3>
+                <p>Comment vérifier une condition</p>
+                <table class="table table-striped">
+                    <caption>Opérateurs de comparaison</caption>
+                    <thead>
+                        <tr>
+                            <th>Opérateur</th>
+                            <th>Définition</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>==</p>
+                                <p>===</p>
+                                <p>!=</p>
+                                <p>&lt;> (à éviter)</p>
+                            </td>
+                            <td>
+                                <p>Teste l'égalité sur les valeurs</p>
+                                <p>Teste l'égalité en terme de valeurs ET de types</p>
+                                <p>Teste la différence des valeurs</p>
+                                <p>Teste (également) la différences des valeurs</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>!==</p>
+                            </td>
+                            <td>
+                                <p>Teste la différence en valeurs OU en types</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&lt;</p>
+                                <p>&gt;</p>
+                                <p>&lt;=</p>
+                                <p>&gt;=</p>
+                            </td>
+                            <td>
+                                <p>Teste si une valeur est strictement inférieure à une autre</p>
+                                <p>Teste si une valeur est strictement supérieure à une autre</p>
+                                <p>Test si une valeur est inférieure OU égale à une autre</p>
+                                <p>Test si une valeur est supérieure OU égale à une autre</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Dans le cas où la comparaison est vérifiée, le JS renvoie le booléan <code>true</code>, dans le cas contraire, le boléen <code>false</code> est envoyé.</p>
+
+                <p>Le JS va automatiquement comparer la valeur à gauche de l'opérateur à celle de droite selon l'opérateur de comparaison.</p>
+            </div>
+            <!-- fin col -->
+        </section>
+
+        <!-- Optional JavaScript -->
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+        <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+        <!-- la solution la plus utilisée -->
+        <script src="introduction.js"></script>
+
+    </div>
+    <!-- fin Conteneur -->
+</body>
+</html>

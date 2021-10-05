@@ -26,7 +26,7 @@
         document.write('<h1>01 Entrainement JavaScript</h1>');
 
         // 1- AFFICHAGE
-        document.write('<h2 style="background: orange;width: 50%; color: #fff; text-align:center;">1- AFFICHAGE</h2>');
+        document.write('<h2 style="margin-auto; background: orange;width: auto; color: #fff; text-align:center;">1- AFFICHAGE</h2>');
 
         var maBoite // je déclare une variable avec VAR
         maBoite = 10; //Je lui affecte une valeur, ci-dessous un nombre, un "number :"
@@ -102,7 +102,7 @@
         console.info(noteEval);
 
         // 2 - TYPE DE DONNEES
-        document.write('<h2 style="background: orange; width: 50%; color: #fff; text-align: center;"> 2- TYPE DE DONNEES </h2>'); 
+        document.write('<h2 style="margin-auto; background: orange; width: auto; color: #fff; text-align: center;"> 2- TYPE DE DONNEES </h2>'); 
 
         
         var monTexte = 'Voici une phrase pour Miredi avec une \'';
@@ -118,19 +118,167 @@
 
         // MINI EXO : affichez la phrase suivante dans la page : "Voici une phrase pour Miredi avec une' est une variable qui contient un string"
 
-        var monTexte = 'Voici une phrase pour Miredi avec une \' est une variable qui contient un string';
+        var monTexte = 'Voici une phrase pour Miredi avec une \' est une variablequi contient un string';
         document.write('<p>' + monTexte + '<p>');
         console.log(typeof(monTexte));
 
+       
+        // 3- CONSTANTES
+        // ci dessous en orange : le h2 de la page
 
+        document.write('<h2 style="margin-auto; background: orange;width: auto; color: #fff;text-align: center;">3- CONSTANTES</h2>');
+
+        const neBougePas = 'Ma constante impossible à modifier !';
+        let meteo ='beau temps';
+
+        console.log(meteo);
+        meteo = 'mauvais temps';
+        console.log(meteo);
+        console.log(neBougePas);
+        // neBougePas ='coucou';
+
+        // MINI EXO : afficher avec document.write la phrase suivante avec un fond gris "La constante neBougePas contient "Ma constante impossible à modifier" !" Ici on a concatené avec ' + neBougePas + '
+
+        document.write('<p style="bacgkround: lightgrey; width: auto text-align: justify; font-family: Verdana;"> La constante neBougePas contient "' + neBougePas + '" </p>');
+
+
+        // 4 - CONCATENER
+        document.write('<h2 style="margin:auto; background: orange; width: auto; color: #fff;text-align: center;"> 4- CONCATENER</h2>');
+        
+        let firstName = 'Maria';
+        let lastName = 'Bond';
+
+        // MINI EXO : 2 variables nom, prenom et affichez "The name is X, XX X.":
+
+        document.write('<p> The name is ' + lastName + ', ' + firstName + ' ' + lastName + '.</p>');
+        // ici on met l espace apres la virgule comme ça : ', '
+        
+        // <p>The name is Bond, James Bond</p>
+
+        firstName = 'Jacques';
+        lastName = 'Chirac';
+        document.write('<p> The name is ' + lastName + ', ' + firstName + ' ' + lastName + '.</p>');
+
+        firstName = 'Vanusa';
+        lastName = 'Brasil';
+        document.write('<p> The name is ' + lastName + ', ' + firstName + ' ' + lastName + '.</p>');
+        alert('The name is ' + lastName + ', ' + firstName + ' ' + lastName + '.');
+
+
+        //   - OPERATEURS NUMERIQUES
+
+        document.write('<h2 style="margin-auto; background: orange; width: auto; color: #fff; text-align: center;">5 - OPERATEURS</h2>');
+        
+        
+        
+        // EXO : affichez : le résultat d'une addition : 15
+
+        // addition
+        let addition = 10 + 5;
+       
+        // <p> Le résultat d'une addition : 15 </p>
+
+        // document.write('<p> Le résultat d\'une addition "' + addition + '" </p>');
+
+        document.write('<p>Le résultat d\'une addition : "' + addition + '" </p>');
+
+
+
+        // multiplication
+        let multiplication = 10 * 5;
+        // EXO : affichez : le résultat d'une addition : 50
+
+        document.write('<p>Le résultat d\'une multiplication : "' + multiplication + '" </p>');
+
+
+        // <p>le résultat d'une multiplication: 50</p>
+
+
+        // soustraction
+        let soustraction = 10 - 5;
+        // EXO : affichez : le résultat d'une addition : 50
+
+        document.write('<p>Le résultat d\'une soustraction : "' + soustraction + '" </p>');
+        // <p>le résultat d'une soustraction : 5</p>
+
+
+        // division
+        let division = 10 / 5;
+        // EXO : affichez : le résultat d'une division : 2
+
+        document.write('<p>Le résultat d\'une division : "' + division + '" </p>');
+        // <p>le résultat d'une division : 5</p>
+
+        // modulo
+        // exemple pour l'utilisation du modulo ; répondre à la question suivante : j'ai 10 billes, je les partage entre 3 personnes, il m'en reste combien ?
+
+        let modulo = 10 % 3;
+        // exo affichez : le modulo de 10 % 3 est 1
+
+        document.write('<p> Le modulo de 10 % 3 est : ' + modulo + '.</p>');
+
+        //EXO
+        document.write('<h3 style="margin-auto; background: orange; width: auto; color: #fff; text-align: center;">5 - EXO 1 - Quel âge avez-vous ?</h3>');
+
+        // CONSIGNE : réaliser un prompt() demandant son âge à un utilisateur, récupérer cette donnée et l'utiliser pour afficher "vous avez XX ans"
+
+        let monAge3 = prompt('Quel est ton âge ?');
+        console.log(monAge3);
+        document.write('<p>Vous avez ' + monAge3 + ' ans </p>');
+        
+
+        // let sonAge = prompt('Quel est votre âge ?');
+        // console.log(sonAge);
+        // document.write('<p>Vous avez ' + sonAge + ' ans </p>');
+
+
+        // EXO
+        // Consigne :
+        // 1 Récuperer une valeur numérique donnée par un utilisateur
+        // 2 Envoyer ensuite une alerte() indiquant le résultat de cette valeur au carré puis au cube
+        // 3 Puis on fera un document write
+
+        let votreChiffre = prompt('Quel est votre chiffre ?');
+        console.log(votreChiffre);
+
+        console.log(votreChiffre * votreChiffre);
+        // 2 options pour le carré : ou
+        console.log(votreChiffre ** 2);
+
+        console.log(votreChiffre * votreChiffre * votreChiffre);
+        // 2 options pour le cube : ou
+        console.log(votreChiffre ** 3);
+        
+        let auCarre = votreChiffre * votreChiffre;
+        console.log(auCarre);
+
+        let auCube = votreChiffre * votreChiffre * votreChiffre;
+        console.log(auCarre, auCube);
+
+        // pour retourner à la ligne, on cole au mot ceci : \n
+        alert('Vous avez saisie le nombre : ' + votreChiffre + ' \nce chiffre au carré est égal à ' + auCarre +' \nce chiffre au cube est : ' + auCube + '.');
+
+        //code de Fatima sur le chat : document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: justify;">votre chiffre:' + votreChiffre + 'ce  chiffre au carré est égal à ' +auCarre+' ce chiffre au cube est :'+ auCube+'</p>');
+        
+        document.write('<p Vous avez saisi le chiffre : ' + votreChiffre + ' <br>ce  chiffre au carré est égal à ' + auCarre +' <br>ce chiffre au cube est égal à ' + auCube +'. </p>');
+
+        
 
      
 
 
+    
+       
+        
+        
 
+
+      
+
+
+     
     </script>
 </head>
-<body>
     
 </body>
-</html
+</html>
