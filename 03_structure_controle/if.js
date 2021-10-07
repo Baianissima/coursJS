@@ -1,5 +1,12 @@
 // js pour la page if
 
+//  barre bolique opposée \
+// == veut dire : equivaut à, égal à
+// = veut dire : contient
+// typeof : c'est NUMBER, des chiffres
+// string : c'est une chaîne de caractères, entre des quotes simples ' '
+// != veut dire : différent de
+
 // == veut dire : equivaut à, égal à
 // = veut dire : contient
 // typeof : c'est NUMBER, des chiffres
@@ -73,3 +80,30 @@ if(false) {
 // if(NaN {
 //     alert('5/ true /// vrai');
 // }
+
+
+
+// 6e
+// Au lieu de vérifier que le test est vrai, on va vérifier qu'il est faux (false) == false
+// Si c'est bien faux, le code s'éxecute
+
+if((x > 1) == false){
+    alert('6/ x qui contient ' + x + ' est supérieur à 1');
+}
+
+
+
+// Autre exemple pour test faux - le code s execute, avec x =  -5
+// let x = -5;
+// let y = 0;
+
+// if((x > 1) == false){
+//     alert('6/ x qui contient ' + x + ' est supérieur à 1');
+// }
+
+
+
+// 7e
+if(x == y) {
+    alert('7  x et y ne contiennent pas la même valeur');
+}

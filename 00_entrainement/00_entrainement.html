@@ -7,6 +7,7 @@
     <title>Java Script - Entrainement</title>
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/styles.css">
+
     <!-- script dans l'en-tête -->
     <script>
         /*
@@ -165,7 +166,7 @@
         alert('The name is ' + lastName + ', ' + firstName + ' ' + lastName + '.');
 
 
-        //   - OPERATEURS NUMERIQUES
+        //  5 - OPERATEURS NUMERIQUES
 
         document.write('<h2 style="margin-auto; background: orange; width: auto; color: #fff; text-align: center;">5 - OPERATEURS</h2>');
         
@@ -263,22 +264,83 @@
         document.write('<p Vous avez saisi le chiffre : ' + votreChiffre + ' <br>ce  chiffre au carré est égal à ' + auCarre +' <br>ce chiffre au cube est égal à ' + auCube +'. </p>');
 
         
+        // 6 CONDITIONS
 
-     
+        document.write('<h2 style="margin-auto; background: orange; width: auto; color: #fff; text-align: center;">6 - CONDITIONS</h2>');
+
+       
+
+        // MINI exo
+        // Si a est supérieur à b, j'écris " a est supérieur", SINON j'écris a n'est pas supérieur à b dans un document write
+
+        // if(TEST==vrai) {
+        //     document.write('si le test est vrai');
+        // } else(TEST==false)
+        //     document.write('si le test est faux');
+        // }
 
 
+        // let a = 2, b = 5, c = 2;
+        let a = 5, b = 5, c = 2;
+        console.log(a, b, c);
+
+    
+        if(a > b) {
+            document.write('<p> a = ' + a + ' est supérieur à b = ' + b + '</p>');
+           
+        } else {
+            document.write('<p> a = ' + a + ' n est pas supérieur à b = ' + b + '</p>');
+        }
+        // avec docuent.write on écrit le code sur le html avec la chaîne de caractères
+
+
+        
+        // MINI EXO
+        // TESTER l'égalité de a et b
+        // et montrer ce text dans un document write (en affichant les valeurs de a et b)
+
+        let egalValeur = a == b;
+    
+        // si c est vrai que a é egal a b
+        if(a == b) {
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a est égal à b.</p>');
+        
+        // si c'est faux que a n est pas egal a b
+        } else {
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a n\'est pas égale à b </p>');
+        }
+
+
+
+        // EXO tester si cette confition est remplie : a et b sont-ils égaux en valeur et en types ?
+        // contenu égal en type de données ET valeur
+        
+        if(a === b) {
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a et b sont égaux en valeur et type.</p>');
+           
+        } else {
+            document.write('<p>ELSE /Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a  est différent de b en type et/ou en valeur.</p>');
+        }
+
+
+        // let differenceValeur = x != 4;// différent de 
+
+        if(a != b) {
+            document.write('<p>Pour a qui est différent')
+        }
+
+
+
+        
     
        
         
         
 
-
-      
-
-
-     
     </script>
+
 </head>
-    
+
 </body>
+
 </html>

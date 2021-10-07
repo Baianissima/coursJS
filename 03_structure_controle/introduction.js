@@ -1,5 +1,6 @@
 // js introduction structures de contrôle
 
+//  barre bolique opposée \
 // == veut dire : equivaut à, égal à
 // = veut dire : contient
 // typeof : c'est NUMBER, des chiffres

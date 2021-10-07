@@ -25,49 +25,49 @@ dossier
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>JavaScript - III/2 - if</title>   
+    <title>JavaScript - III/3 - if, else</title>   
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container-fluid bg-info p-( text-center">
+        <h1 class="display-4">JavaScript - III/3 - if, else</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Si...sinon</p>
+    </div>
     
  <!-- =========================== -->
     <!-- Conteneur principal -->
     <!-- =========================== -->
     <div class="container p-4">
+
         <section class="row mt-4">
 
-            <h2>Voir...</h2>
+            <h2>1- If... else / si... sinon</h2>
 
             <!-- .col-sm-12.col-md-4*3>h3+p -->
 
-            <div class="col-sm-12 col-md-4">
-                <h3>1- If...</h3>
-                <p>La condition <code>if</code> est l'une des plus utilisée et est également la plus simple à apprhénder puisqu'elle va nous permettre d'éxecuter un bloc de code <em>si ET seulement si le résultat vaut <code>true</code>.</em></p>
+            <div class="col-sm-12 col-md-6">
+                <h3>Si... sinon</h3>
+                <p>La struture conditionnelle "if... else" sera plus complète car on va exécuter un bloc de code si un test renvoi <code>true</code> ou un autre dans le cas contraire./p>
             </div>
             <!-- fin col -->
 
-            <div class="col-sm-12 col-md-4 bg-light">
-                <h3>Attention ! : exceptions</h3>
-                <p>Tout test d'une condition va être évalué dans un contexte booléen, donc à <code>true</code>à l'exception des valeurs suivantes, qui vont être évaluées à <code>false</code>.</p>
-                <ul>
-                    <li>La valeur <code>0</code> (zéro)</li>
-                    <li>Le boléen <code>false</code></li>
-                    <li>Une chaîne de caractères vide</li>
-                    <li>La valeur <code>null</code></li>
-                    <li>La valeur <code>undefined</code></li>
-                    <li>La valeur <code>NaN</code> (Not a Number)</li>
-                </ul>
-            </div>
-            <!-- fin col -->
+            <div class="col-sm-12 col-md-4 bg-light border border-primary p-2">
+                <h3>Titre</h3>
+                <code class="">
+                    let x = 0.5; <br>
 
-            <div class="col-sm-12 col-md-4">
-                <h3>3- Inverser la valeur logique d'un test</h3>
-                <p>Le code placé dans le if n'est executé que si le résultat de la comparaison est <code>true</code>.</p>
-                <p>Dans certaines situations, on préfère vérifier si la comparaison est <code>false</code>: on peut vérifier que c'est faux en comparant explicitiment le résultat de la comparaison à <code>false</code>.</p>
+                    if(x > 1) { <br>
+                    // si e test est vrai <br>
+                    alert('IF  x contient ' + x + ' et cette valeur est supérieure à 1');<br>
+                    } else { <br>
+                    // sinon j'exécute celui-ci <br>
+                    alert('ELSE  x contient ' + x + ' et cette valeur est inférieure à 1');<br>
+                    } <br>
+                </code>
             </div>
             <!-- fin col -->
-            
+      
         </section>
         <!-- fin rangée -->
     </div>
@@ -81,6 +81,6 @@ dossier
 
     <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
     <!-- la solution la plus utilisée -->
-    <script src="if.js"></script>
+    <script src="ifelse.js"></script>
 </body>
 </html>
