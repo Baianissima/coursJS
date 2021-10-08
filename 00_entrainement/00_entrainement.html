@@ -280,8 +280,8 @@
         // }
 
 
-        // let a = 2, b = 5, c = 2;
-        let a = 5, b = 5, c = 2;
+        let a = 2, b = 5, c = 2;
+        // let a = 5, b = 5, c = 2;
         console.log(a, b, c);
 
     
@@ -330,12 +330,40 @@
         }
 
 
+        
+        //EXO : tester la valeur de a par rapport au chiffre 5 ; inférieur ? égal? supérieur? ou alors c'est pas un nombre, dans une condition multiple (blocs de code > document.write)
 
-        
-    
-       
-        
-        
+        if(a < 5){
+            document.write('<p> a contient une valeur '+ a +' strictement inférieur à 5.</p>');
+         }else if(a == 5){
+            document.write('<p>a contient une valeur '+ a +' est égal à 5 </p>');
+         }else if(a > 5){
+            document.write('<p> a contient une valeur strictement '+ a + 'supérieur à 5.</p>');
+         }else{
+            document.write('a qui contient : '+ a +' n\'est pas un nombre');
+         }
+
+
+
+        //  EXO : a = 2 est-il supérieur a b = 5 ET b = 5 est-il supérieur à c = 2 if...else
+
+        // console.log(a, b, c);
+
+        if (a > b && b > c) {
+            document.write('<p> Pour a qui vaut ' + a + ', b qui vaut ' + b + ' et c qui vaut  ' + c + ', a est supérieur à ' + c + '</p>');
+        } else {
+            document.write('<p> Ici on teste si a (' + a + ') est supérieur à (' + b + ') ET si (' + b + ') est supérieur à (' + c + '); mais dans ce cas au moins une des deux dconditions n\'est pas remplie</p>');
+        }
+
+        // EXO : a est supérieur à b OU b est supérieur à c
+
+        if (a > b || b > c) {
+            document.write('<p> Pour a qui vaut ; ' + a + ', b qui vaut ' + b + ' et c qui vaut  ' + c + ', a est supérieur à ' + b + ' OU '+ b + ' est supérieur à '+ c +' : ici au moins une des contitions est vraie : a > b OU b > c </p>');
+        } else {
+            document.write('<p> Pour a qui vaut ; ' + a + ', b qui vaut ' + b + ' et c qui vaut  ' + c + ' : dans ce cas aucune des conditions : a > b OU b > c ) n\'est vraie </p>');
+        }
+
+   
 
     </script>
 
