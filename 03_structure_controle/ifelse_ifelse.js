@@ -26,7 +26,6 @@
 
 
 
-
 // EXEMPLE 2 :
 
 let x = -10;
@@ -44,5 +43,5 @@ if ( x > 1) {
 } else if (x < -2 ) {
     alert('5/ x contient une valeur strictement inférieure à -2');
 } else {
-    alert('6/ la valeur de x n\a pas pu être comparée à un nombre');
+    alert('6/ la valeur de x n\'a pas pu être comparée à un nombre');
 }

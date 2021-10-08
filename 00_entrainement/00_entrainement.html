@@ -363,7 +363,78 @@
             document.write('<p> Pour a qui vaut ; ' + a + ', b qui vaut ' + b + ' et c qui vaut  ' + c + ' : dans ce cas aucune des conditions : a > b OU b > c ) n\'est vraie </p>');
         }
 
-   
+
+        // EXO : récupérer dans une variable la réponse à la question suivante :
+        // "Parmi ces couleurs, le vert, l'azur, le rouge, le rouge, le parme, quelle est votre couleur préférée ?"
+
+
+        let couleurPreferee = prompt('Parmi ces couleurs, le vert, l\'azur, le rouge, le rouge, le parme, quelle est votre couleur préférée ?');
+        console.log(couleurPreferee);
+        // console.log(typeof couleurPreferee, couleurPreferee); ICI on fait apparaitre la chaine sans les quotes simples
+
+      
+         // SUITE de l'EXO ci-dessus :
+        //  Ensuite faites une condition if... else, if... else pour afficher selon la réponse la couleur préferée de votre visiteur, en utilisant un document.write
+
+
+        // Faire avec ce bloc de code pour commencer :
+        // if ( ) {
+        //     code;
+        // } else if {
+
+        // } else {
+
+        // }
+
+       if ( couleurPreferee == 'vert') {
+            document.write('<p> Votre couleur préférée est le vert </p>');
+       } else if ( couleurPreferee == 'rouge') {
+            document.write('<p> Votre couleur préférée est le rouge </p>');
+       } else if (couleurPreferee == 'parme') {
+            document.write('<p> Votre couleur préférée est le parme </p>');
+       } else if (couleurPreferee == 'azur') {
+            document.write('<p> Votre couleur préférée est l\'azur </p>');
+       } else  {
+        document.write('<p> Ah ! Tiens, vous n\'aimez ni le vert, ni le rouge, ni le parme, votre couleur préférée est le ' + couleurPreferee + ', </p>');
+       }
+
+
+    // Version de Fatima corrigée :
+
+    //   if(couleur == 'vert'){
+    //   document.write('<p>votre couleur préférée est le vert</p>');
+    // }else if (couleur == 'azur') {
+    //     document.write('<p>votre couleur préférée est l\'azur</p>');
+    // }else if (couleur == 'rouge') {
+    //     document.write('<p>votre couleur préférée est le rouge</p>');
+    // }else if(couleur == 'parme') {
+    //     document.write('<p>votre couleur préférée est le parme</p>');
+    // }else {
+    //     document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le '+ couleur + '</p>');
+    // }
+
+
+    //    SUITE EXO : Puis la même chose avec switch pour lundi matin
+
+    // x = vert ? ou azur ? ou rouge ? ou parme ?
+
+    switch(x) {
+    case vert:
+        document.getElementById('vert').innerHTML = 'x contient vert';
+        break;
+    case azur:
+        document.getElementById('azur').innerHTML = 'x contient azur';
+        break;
+    case rouge:
+        document.getElementById('rouge').innerHTML = 'x contient rouge'; 
+        break;
+    case parme:
+        document.getElementById('parme').innerHTML = 'x contient parme'; 
+        break;
+    default:
+        document.getElementById('').innerHTML = 'x ne contient ni vert, ni azur, ni rouge, ni parme !';
+}
+// fin switch après l'accolade
 
     </script>
 

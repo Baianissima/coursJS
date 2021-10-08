@@ -1,4 +1,4 @@
-<!-- dossier 03 structures_controle : 03_04.html -->
+<!-- dossier 03 structures_controle  -->
 <!-- creer ces dossiers a la racine :
 
 dossier
@@ -25,7 +25,7 @@ dossier
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>JavaScript - III/7 - Opérateur ternaire</title>   
+    <title>JavaScript - III/8 - Switch</title>   
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -36,8 +36,8 @@ dossier
     <!-- =========================== -->
 
     <div class="container-fluid bg-info p-5 text-center">
-        <h1 class="display-4">JavaScript - III/7 - Opérateur ternaire</h1>
-        <p class="lead"><i class="bi bi-patch check"></i>Une autre façon d'écrire nos conditions...</p>
+        <h1 class="display-4">JavaScript - III/8 - Switch</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Une autre façon d'écrire un if...else... if... else...</p>
     </div>
 
  <!-- =========================== -->
@@ -48,33 +48,24 @@ dossier
 
         <section class="row mt-4">
 
-            <h2>Les structures conditionnelles ternaires</h2>
-            <p>Les ternaires sont une autre façon d'écrire nos conditions en utilisant une syntaxe basée sur l'opérateur ternaire "<code>?</code>". Mais il y aller mollo aussi, comme pour l'usage du switch.</p>
+            <h2>Switch</h2>
+            <p>Avec switch on va tester autant de "cas" que l'on souhaite ou des situations, c'est une alternative au if... else if... else</p>
             
             <!-- .col-sm-12.col-md-4*3>h3+p -->
 
             <div class="col-sm-12 col-md-6">
-                <h3>1 - Ecriture</h3>
-                <p>On peut écrire la condition sur une seule ligne</p>
-                <p>Ex.: <code>document.getElementById('p4').innerHTML = y &gt; 10 ? 'y est supérieur à 10 ' : 'y est inférieur à 10</code>';</p>
-                <p>Les ternaires se présentent sous la forme suivante : <code>test ? code à executer si true : code à exécuter sinon (else, si c'est faux)</code></p>
+                <h3>1 - Plus clair, mais... </h3>
+                <p>Cette structure est parfois plus claire qu'un "if... else" contenant des dizaines de else if. Mais il est préférable de bien comprendre les conditions en "if... else" avant de s'en servir</p>
+                <p>Attention, switch ne supporte pas les opérateurs de supériorité ou d'infériorité.</p>
             </div>
             <!-- fin col -->
 
             <div class="col-sm-12 col-md-6 bg-light">
                 <h3>2/ Exemples :</h3>
-                <p id="p1">voir ternaire.js</p>
-                <p id="p2">voir ternaire.js</p>
-                <p id="p3">voir ternaire.js
-                    <!-- let x = 15; <br>
-                    let y = -20; <br>
-                    console.log(x,y);</p> <br>
-                    document.getElementById('p2').innerHTML = x >=10 ? <br>
-                    'x est supérieur ou égal à 10' : 'x est inférieur à 10'; <br></p> -->
-                <p id="p4">voir ternaire.js <br>
-                    document.getElementById('p4').innerHTML = y > 10 ? <br>
-                    'y est supérieur à 10 ' : 'y est inférieur à 10';<br>   
-                </p>
+                    <p id="p1">voir switch.js</p>
+                    <p id="p2">voir switch.js</p>
+                    <p id="p3">voir switch.js</p>      
+                    <p id="p4">voir switch.js</p>      
             </div>
             <!-- fin col -->
  
@@ -91,6 +82,6 @@ dossier
 
     <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
     <!-- la solution la plus utilisée -->
-    <script src="ternaire.js"></script>
+    <script src="switch.js"></script>
 </body>
 </html>
