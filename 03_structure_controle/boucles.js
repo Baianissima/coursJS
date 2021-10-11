@@ -12,24 +12,28 @@
 // alert('Bom dia!');
 
 
-// Incrémantation et décrémentation
+// Incrémentation et décrémentation
 let a = 10, b = 10, c = 20, d = 20;
 console.info(a, b, c, d);
 
-document.getElementById('p1').innerHTML = '- Post-incrémenter // a contient ' + a + ', là je post-incremente de 1, a est toujours égal à '+ a++ + ' puis a est égal à ' + a +' après post-incrémentation.';
+
+// 1/ Incrémentation
+
+document.getElementById('p1').innerHTML = '- Pré-incrémenter // b contient ' + b + ', là je pré-incremente de 1,  et tout de suite b est égal à ' + ++b;
+// à la fin de la ligne ' + ++b + ', on peut enlever le + final et la quote fermante
 console.log(a);
 
-document.getElementById('p2').innerHTML = '- Pré-incrémenter // b contient ' + b + ', là je pré-incremente de 1,  et tout de suite b est égal à ' + ++b;
-// à la fin de la ligne ' + ++b + ', on peut enlever le + final et la quote fermante
+document.getElementById('p2').innerHTML = '- Post-incrémenter // a contient ' + a + ', là je post-incremente de 1, a est toujours égal à '+ a++ + ' puis a est égal à ' + a +' après post-incrémentation.';
 console.log(b);
 
-document.getElementById('p3').innerHTML = '- Post-décrémenter // c contient ' + c + ', là je post-décrémente de 1, c est toujours égal à ' + c-- + ' puis c est égal à ' + c + ' après post-décrémentation.';
+
+// 2/ Décrémentation
+
+document.getElementById('p3').innerHTML = '- Pré-décrémenter // d contient la valeur ' + d + ', là je pré-décrémente de 1, et donc d est égal à ' + --d;
 console.log(c);
 
-document.getElementById('p4').innerHTML = '- Pré-décrémenter // d contient la valeur ' + d + ', là je pré-décrémente de 1, et donc d est égal à ' + --d;
+document.getElementById('p4').innerHTML = '- Post-décrémenter // c contient ' + c + ', là je post-décrémente de 1, c est toujours égal à ' + c-- + ' puis c est égal à ' + c + ' après post-décrémentation.';
 console.log(d);
-
-
 
 
 

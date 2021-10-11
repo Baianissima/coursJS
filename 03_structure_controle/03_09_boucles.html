@@ -37,7 +37,7 @@ dossier
 
     <div class="container-fluid bg-info p-5 text-center">
         <h1 class="display-4">JavaScript - III/09 - Boucles</h1>
-        <p class="lead"><i class="bi bi-patch check"></i></p>
+        <!-- <p class="lead"><i class="bi bi-patch check"></i></p> -->
     </div>
 
  <!-- =========================== -->
@@ -65,7 +65,7 @@ dossier
                 <li>La boucle <code>for... </code> : pour...</li>
                 <li>La boucle <code>for... in</code> : pour... dans</li>
                 <li>La boucle <code>for... of</code> : pour... parmi</li>
-                <li>La boucle <code>for... await... of</code> : pour (en attente) ... parmi</li>                     
+                <li>La boucle <code>for... await... of</code> : pour (en attente)... parmi</li>                     
                </ul>
             </div>
             <!-- fin col -->
@@ -77,32 +77,26 @@ dossier
 
                 <p>Pour que notre condition devienne fausse à un moment, on pourra par exemple incrémenter ou décrementer la valeur de notre variable à chaque nouveau passage dans la boucle (ou modifier la valeur de notre variable selon un certain schéma).</p>
 
-                <h4>Les boucles vont donc être essentiellement compossées de 3 choses :</h4>
+                <h5>Les boucles vont donc être essentiellement compossées de 3 choses :</h5>
                 <!-- ul>li*3{Un} -->
                 <ul>
-                    <li>Une valeur de départ qui set à initialiser la boucle et qui servira de compteur.</li>
-                    <li>Un test ou une condition de sortie qi précise le critère de sortie de la boucle.</li>
+                    <li>Une valeur de départ qui sert à initialiser la boucle et qui servira de compteur.</li>
+                    <li>Un test ou une condition de sortie qui précise le critère de sortie de la boucle.</li>
                     <li>Un "itérateur" (ex.: le w++ de l'exo) qui va modifier la valeur de départ de la boucle à chaque passage de la boucle jusqu'à ce que la condition de sortie soit vérifiée. Pour cela on devra "incrémenter" la valeur de départ. Souvent on utilise la lettre "i" pour "itérateur".</li>
                 </ul>
             </div>
             <!-- fin col -->
-
         </section>
         <!-- fin rangée -->
 
         <!-- section 2 -->
-        <section class="row justify-content-center">
+        <section class="row mt-4 justify-content-center">
 
-            <h3>Opérateurs d'incrémantation & de décrémentation</h3>
-
-            <div class="col-10 bg-light">
-                <div class="exemples bg-danger">
-                    <p id="p1"></p>
-                    <p id="p2"></p>
-                    <p id="p3"></p>
-                    <p id="p4"></p>
-                </div>
-                <div class="col-2 bg-warning">
+            <h3>Opérateurs d'incrémentation & de décrémentation</h3>
+            <hr>
+            <div class="col-10 align-items-center bg-warning">
+                
+                <div class="col-2 bg-light">
                     <dl>
                         <dt>Incrémenter</dt>
                         <dd>Ajouter 1 à une valeur</dd>
@@ -110,51 +104,56 @@ dossier
                         <dt>Décrementer</dt>
                         <dd>Enlever 1 à une valeur</dd>
                     </dl>
-
                 </div>
-                
-         
-            </div>
-            <!-- fin col -->
 
-            <div class="col-7 bg-light">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <td>Exemple</td>
-                            <td>Résultat</td>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td><code>++x</code></td>
-                            <td>Pré-incrémentation : incrémente la valeur contenue dans la variable x, puis retourne la valeur incrémentée</td>
-                        </tr>
-                        <tr>
-                            <td><code>x++</code></td>
-                            <td>Post-incrémentation : retourne la valeur contenue dans x avant incrémentation, puis incrémente la valeur de $x</td>
-                        </tr>
-                        <tr>
-                            <td><code>--x</code></td>
-                            <td>Pré-décrémentation : décrémente la valeur contenue dans la
-                                variable x, puis retourne la valeur décrémentée</td>
-                        </tr>
-                        <tr>
-                            <td><code>x--</code></td>
-                            <td>Post-décrémentation : retourne la valeur contenue dans x avant décrémentation, puis décrémente la valeur de $x</td>
-                        </tr>
-                    </tbody>
-                </table> 
+                <div class="col-5 exemples bg-light">
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                    <p id="p3"></p>
+                    <p id="p4"></p>
+                </div>
             </div>
-            <!-- fin col -->
+
+            <div class="row col-10 bg-light">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>Exemple</td>
+                        <td>Résultat</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><code>++x</code></td>
+                        <td>Pré-incrémentation : incrémente la valeur contenue dans la variable x, puis retourne la valeur incrémentée</td>
+                    </tr>
+                    <tr>
+                        <td><code>x++</code></td>
+                        <td>Post-incrémentation : retourne la valeur contenue dans x avant incrémentation, puis incrémente la valeur de $x</td>
+                    </tr>
+                    <tr>
+                        <td><code>--x</code></td>
+                        <td>Pré-décrémentation : décrémente la valeur contenue dans la variable x, puis retourne la valeur décrémentée</td>
+                    </tr>
+                    <tr>
+                        <td><code>x--</code></td>
+                        <td>Post-décrémentation : retourne la valeur contenue dans x avant décrémentation, puis décrémente la valeur de $x</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+        <!-- fin col -->
         </section>
+            <!-- fin col -->
+
+        
         <!-- fin rangée -->
 
         <!-- section 3 -->
-        <section class="row">
+        <section class="row mt-4">
             <h3>Nos exemples</h3>
-    
+            <hr>
             <div class="col-sm-12 col-md-4">
                 <h4>While</h4>
                 <p>La boucle while, "tant que" en français, va nous permettre de répéter une série d'instructions tant qu'une condition donnée est vraie, c'est à dire tant que la onditon de sortie n est as veirifiee.</p>
@@ -172,9 +171,7 @@ dossier
             </div>
             <!-- fin col -->
 
-            <div class="col-sm-12 col-md-4">
-                
-            </div>
+            <div class="col-sm-12 col-md-4"></div> 
             <!-- fin col -->
         </section>
          <!-- fin rangée -->
