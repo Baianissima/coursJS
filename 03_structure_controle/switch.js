@@ -19,7 +19,8 @@ console.log(typeof x, x);
 
 // x = 2 ? ou 5 ? ou 10 ? ou 15 ? ou 20 ?
 
-// on va switcher, on va commiter sur la variable, il faut toujour choisir on on met le break, sinon le résultat peut être erroné
+// on va switcher, on va commiter sur la variable, il faut toujours choisir où on met le break, sinon le résultat peut être erroné
+// break sort du switch si c est vrai
 
 switch(x) {
     case 2:

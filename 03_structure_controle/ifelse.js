@@ -20,3 +20,10 @@ if(x > 1) {
     // sinon j'exécute celui-ci
     alert('ELSE  x contient ' + x + ' et cette valeur est inférieure à 1');
 }
+
+
+// s'il pleut
+//     je sors
+
+// s'il ne pleut pas
+//     je ne sors pas
