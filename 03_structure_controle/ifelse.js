@@ -9,12 +9,12 @@
 
 
 
-alert('coucou il else');
+alert('coucou, if else');
 
 let x = 0.5;
 
 if(x > 1) {
-    // si e test est vrai
+    // si le test est vrai
     alert('IF  x contient ' + x + ' et cette valeur est supérieure à 1');
 } else {
     // sinon j'exécute celui-ci

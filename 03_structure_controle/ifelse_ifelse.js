@@ -15,12 +15,11 @@
 // let x = 1;
 // console.log(x);
 
-// if (x > 1) {
+// if (x > 1) { // si c'est 
 //     alert('VRAI x contient une valeur strictement supérieure à 1');
-// } else if (x == 1) {
-//     // sinon, si c'est vrai
+// } else if (x == 1) {  // sinon si c'est vrai
 //     alert('SINON VRAI x contient une valeur égale à 1');
-// } else {
+// } else { // sinon
 //     alert('FAUX x contient une valeur strictement inférieure à 1');
 // }
 
