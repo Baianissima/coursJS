@@ -1,0 +1,87 @@
+<!-- dossier 03 structures_controle  -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - IV/01 - Fonctions</title>   
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - III/09 - Boucles</h1>
+        <!-- <p class="lead"><i class="bi bi-patch check"></i></p> -->
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+
+    <div class="container p-4">
+
+        <!-- section 1 -->
+        <section class="row mt-4">
+            <h2>1- Les fonctions prédéfinies</h2>
+            <p>Une fonction est un bloc de code nommé et réutilisable, et dont le but est d'effectuer une tâche précise ; les fonctions possèdent de nombreux atouts.</p>
+
+            <div class="col-sm-12 col-md-6 bg-light">
+                <h3>Exemples :</h3>
+                <p>Il existe des fonction "prédéfinies" telle que <code>random()</code> qui est une fonction "mathématique" qui appartient à l'objet Math, <code>replace()</code> une fonction "string" qui appartient à l'objet String :</p>
+
+                <!-- refaire ce lien, il ne marche pas :-( -->
+                <p id="p1"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Developer Mozilla sur MATH RANDOM</a></p> 
+            
+                <p>Le nom d'une fonction est suivi d'un couple de parenthèses qui contiennent les plus souvent des arguments ex. <code>replace()</code> le premier argument de replace() est la chaîne de caractères que l'on cherche et le second est celle qui va la remplacer.</p>
+
+                <p id="p2"></p>   
+            </div>
+            <!-- fin col -->
+
+            <div class="col-sm-12 col-md-6">
+
+            </div>
+            <!-- fin col -->
+
+        </section>
+        <!-- fin rangée -->      
+    </div>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="introduction.js"></script>
+</body>
+</html>
