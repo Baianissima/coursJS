@@ -442,19 +442,61 @@
 
     // 7- BOUCLES
 
-    // EXO boucle while
+    document.write('<h2 style="margin:auto; background: orange; width: auto; color: #fff;text-align: center;"> 5- LES BOUCLES</h2>');
+        
+
+// EXO boucle while
 
 var w1 = 0;
-console.log(typeof w1, w1);
+    console.log(typeof w1, w1);
 
 while (w1 <= 15) {
-    // tant que le  contenu de la variable est inférieur ou égale à 15
+// tant que le  contenu de la variable est inférieur ou égale à 15
     document.write('<p>La variable w1 = ' + w1 + ' </p>');
-    // exécute ce bloc de code
+// exécute ce bloc de code
     w1++;
-    // contenu de la variable + 1
-    // La boucle stope dès que w1 atteint JS
+// contenu de la variable + 1
+// La boucle stope dès que w1 atteint JS
 }
+
+// FOR - EXO 1
+
+// Pour une variable for1 inférieure au égale à 10 boucles et incrémentez
+
+for (let for1 = 0; for1 <= 10; for1++) {
+    console.log(for1);
+    document.write('for1 contient ' + for1 + ' à chaque tour de boucle. <br>');
+}
+
+
+// EXO une boucle for2 inférieure ou égale à 10 boucles et incrémentez
+
+// Ensuite EXO 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
+
+for (let for2 = 0; for2 <= 10; for2++) {
+     console.info('for2');
+
+    if (for2 == 10) {
+       document.write('Et la boucle se termine là ! ' + for2);
+    } else {
+        document.write('for2 contient ' + for2 + ' <br>');
+    } /* fin du else */
+} //fin du for
+
+
+
+// EXO 2 : autre maière de le faire
+
+for (let for3 = 0; for3 <= 10; for3++) {
+     console.info('for3');
+
+    if (for3 < 10) {
+       document.write('for3 contient ' + for3 + ' <br>');
+    } else {
+        document.write('Et la boucle se termine là car for3 arrive à ' + for3);
+    } /* fin du else */
+} /* fin du for */
+
 
 
 

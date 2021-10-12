@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 01_EXOS</title>
+    <!-- style en externe -->
+    <!-- <link rel="stylesheet" href="01_exos.css"> -->
+
+    <!-- Scripts JS en local -->
+    <script>
+
+        // EXO 1 - Déclaration des variables
+
+        // num qui contient le nombre 255
+        // txt qui contient la chaîne de caractères 255
+        // bin (pour binaire ou binary) qui contient la valeur booléenne vraie
+        // flt (pour float décimal ou flottant) qui contient la valeur 7,23
+
+
+        // Afficher les contenus des variables dans des consoles.log
+
+        let num = 255;
+        let txt = '255';
+        let bin = true;
+        let flt = 7.23;
+
+        console.log(num, txt, bin, flt);
+
+        // EXO 2
+
+        // A) Appliquez à num l'opérateur d'incrémentation (ce qui doit donner 256)
+
+        // Autre manière : 
+        // num = ++num;
+        // console.log(num);
+
+        num++;
+        console.log(num);
+
+
+        // B) Concatenez à la chaîne txt la chaine suivante : ' c'est ici une chaine de caracteres.
+        // et concatenation dans un document.write
+
+        document.write(txt + ' est ici une chaine de caracteres. ');
+
+
+        // C)  Inverser la valeur logique de bin
+        bin = false;
+        console.log(bin);
+
+        bin2 = true;
+        console.info(bin2);
+
+        // Une autre manière avec ! (différent de): VOIR LA PAGE OPERATEURS
+        bin2 = !bin2; /* ici on inverse la valeur de bin2 on disant qu il est DIFFERENT DE */
+        console.info(bin2);
+
+
+        // D) Ajoutez à flt la valeur contenue dans num (ici num vaut 256 + 7.23 et ça donne 263.23 dans la console)
+
+        flt = flt + num;
+        console.log(flt); 
+
+        // Une autre manière :
+        // flt += num;
+        // console.log(num, txt, bin, flt);
+
+
+
+        // Affichez tout dans des consoles.log !
+
+       
+
+
+          
+       
+        
+
+
+        
+        
+
+    </script>
+    
+</head>
+<body>
+    <!-- EXO 01_EXOS.html -->
+
+    <h1>Exercices JS - Fichier 01_exos.html</h1>
+    <p id="num1"></p>
+    <p></p>
+    
+</body>
+</html>
