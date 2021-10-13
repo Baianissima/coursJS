@@ -1,7 +1,9 @@
 /* styles pour l'intro au js */
+/* https://codepen.io/yoksel/pen/ijxKy  */
 
 body {
     background-color: rgb(203, 226, 247);
+    /* background: repeating-linear-gradient(90deg, #50afee, #83c0f1 20px, #d2e0e9 0, #d2e6e9 40px); */
 }
 
 main {
@@ -16,6 +18,12 @@ main {
 
 .container {
     background-color: #fff;
+}
+
+code {
+    background-color: #fff;
+    color: red;
+    padding: 5px;
 }
 
 .bouton {
@@ -38,7 +46,19 @@ code {
 }
 
 h2 {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    text-align: center;
 }
+
+em {
+    background-color: rgb(199, 243, 243);
+}
+
+ /* tous les p pair (even pair /// odd impair) */
+.exemples p:nth-child(even), td p:nth-child(even) {
+    background-color: rgb(109, 198, 233);
+}
+
+
 
 
