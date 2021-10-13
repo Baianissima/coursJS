@@ -29,7 +29,7 @@ dossier
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body>
+<body id="stripes">
     
      <!-- =========================== -->
     <!-- En-tête de page -->
@@ -70,7 +70,7 @@ dossier
             </div>
             <!-- fin col -->
 
-            <div class="col-sm-12 col-md-5 bg-light">
+            <div class="col-sm-12 col-md-5 bg-light exemples">
                 <p>Le fonctionnement général des boucles est toujours le même : on pose une condition qui sera généralement liée à la valeur d'une variable et on exécute le code de la boucle "en boucle" tant que la ocndition est vérifiée.</p>
 
                 <p>Pour éviter de rester bloqué à l'infini dans une boucle, vous pouvez dons déjà noter qu'il faudra que la condition donnée soit fausse à un moment donné (pour pouvoir sortir de la bouche).</p>
@@ -89,52 +89,28 @@ dossier
         </section>
         <!-- fin rangée -->
 
-        <!-- section 2 -->
-        <section class="row mt-5 justify-content-center">
-
-            <h3>Opérateurs d'incrémentation & de décrémentation</h3>
-            <hr>
-<<<<<<< Updated upstream
-            <div class="col-10 align-items-center bg-warning">
-                
-                <div class="col-2 bg-light">
-                    <dl>
-                        <dt>Incrémenter</dt>
-                        <dd>Ajouter 1 à une valeur</dd>
-    
-                        <dt>Décrementer</dt>
-                        <dd>Enlever 1 à une valeur</dd>
-                    </dl>
-                </div>
-
-                <div class="col-5 exemples bg-light">
+        <!-- section 2  -->
+        <section class="row mt-4 justify-content-center">
+            <h2>2- Opérateurs d'incrémentation & de décrémentation</h2>
+            <div class="col-10">
+                <div class="exemples">
                     <p id="p1"></p>
                     <p id="p2"></p>
                     <p id="p3"></p>
                     <p id="p4"></p>
                 </div>
-=======
-            <div class="col-3 align-items-center bg-light">
+            </div>
+            <div class="col-2 bg-warning">
                 <dl>
                     <dt>Incrémenter</dt>
                     <dd>Ajouter 1 à une valeur</dd>
 
-                    <dt>Décrementer</dt>
+                    <dt>Décrémenter</dt>
                     <dd>Enlever 1 à une valeur</dd>
                 </dl>
             </div>
-            <!-- fin col -->
->>>>>>> Stashed changes
-
-            <div class="col-5 exemples bg-light">
-                <p id="p1"></p>
-                <p id="p2"></p>
-                <p id="p3"></p>
-                <p id="p4"></p>
-            </div>
-            <!-- fin col -->
-
-            <div class="row col-10 mt-4 bg-light">
+                <!-- fin col -->
+            <div class="col-7 bg-light">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -142,7 +118,6 @@ dossier
                             <td>Résultat</td>
                         </tr>
                     </thead>
-    
                     <tbody>
                         <tr>
                             <td><code>++x</code></td>
@@ -154,24 +129,25 @@ dossier
                         </tr>
                         <tr>
                             <td><code>--x</code></td>
-                            <td>Pré-décrémentation : décrémente la valeur contenue dans la variable x, puis retourne la valeur décrémentée</td>
+                            <td>Pré-décrémentation : décrémente la valeur contenue dans la
+                                variable x, puis retourne la valeur décrémentée</td>
                         </tr>
                         <tr>
                             <td><code>x--</code></td>
                             <td>Post-décrémentation : retourne la valeur contenue dans x avant décrémentation, puis décrémente la valeur de $x</td>
                         </tr>
                     </tbody>
-                </table> 
+                </table>
             </div>
-             <!-- fin col -->
+        <!-- fin col  -->
         </section>
         <!-- fin rangée -->
 
         <!-- section 3 -->
-        <section class="row mt-5 justify-content-center">
+        <section class="row mt-4">
             <h3>Nos exemples</h3>
             <hr>
-            <div class="col-sm-12 col-md-5">
+            <div class="col-sm-12 col-md-6">
                 <h4>While</h4>
                 <p>La boucle while, "tant que" en français, va nous permettre de répéter une série d'instructions tant qu'une condition donnée est vraie, c'est à dire tant que la onditon de sortie n est as veirifiee.</p>
                 <p id="while1" class="border border-primary p-1"></p>
@@ -179,7 +155,7 @@ dossier
             </div>
             <!-- fin col -->
 
-            <div class="col-sm-12 col-md-5">
+            <div class="col-sm-12 col-md-6">
                 <h4>Do... while</h4>
                 <p>La boucle "do... while", "faire... tant que" est relativement semblable à while, la différence réside dans l'ordre dans lequel vont se faire les opérateurs. <br>
                 On effectuera un premier passage dans une boucle "do... white" même si la condition de sortie n'est pas vérifiée, donc le code sera executé au moins une fois.</p>
