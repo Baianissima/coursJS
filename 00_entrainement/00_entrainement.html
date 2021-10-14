@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script - Entrainement</title>
+
+    <!-- script vers mon JS pour faire tester les pages à cahque fois sans taper l alerte "Coucou !"" -->
+    <script src="../js/mon_js.js"></script>
+
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -480,101 +484,301 @@
        }
 
 
-    // Version de Fatima corrigée :
+        // Version de Fatima corrigée :
 
-    //   if(couleur == 'vert'){
-    //   document.write('<p>votre couleur préférée est le vert</p>');
-    // }else if (couleur == 'azur') {
-    //     document.write('<p>votre couleur préférée est l\'azur</p>');
-    // }else if (couleur == 'rouge') {
-    //     document.write('<p>votre couleur préférée est le rouge</p>');
-    // }else if(couleur == 'parme') {
-    //     document.write('<p>votre couleur préférée est le parme</p>');
-    // }else {
-    //     document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le '+ couleur + '</p>');
+        //   if(couleur == 'vert'){
+        //   document.write('<p>votre couleur préférée est le vert</p>');
+        // }else if (couleur == 'azur') {
+        //     document.write('<p>votre couleur préférée est l\'azur</p>');
+        // }else if (couleur == 'rouge') {
+        //     document.write('<p>votre couleur préférée est le rouge</p>');
+        // }else if(couleur == 'parme') {
+        //     document.write('<p>votre couleur préférée est le parme</p>');
+        // }else {
+        //     document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le '+ couleur + '</p>');
+        // }
+
+
+
+        //    SUITE EXO : Puis la même chose avec switch pour lundi matin
+
+        // x = vert ? ou azur ? ou rouge ? ou parme ?
+
+        switch (couleurPreferee) {
+        case 'vert' :
+            document.write('<p>Switch - Votre couleur préférée est le vert</p>');
+        break;
+        case 'azur' :
+            document.write('<p>Switch - Votre couleur préférée est l\'azur</p>');
+        break;
+        case 'rouge' :
+            document.write('<p>Switch - Votre couleur préférée est le rouge</p>'); 
+        break;
+        case 'parme' :
+            document.write('<p>Switch - Votre préférée est le parme</p>');
+        break;
+        default: 
+            document.write('<p>Switch - Votre préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le ' + couleurPreferee + '</p>');
+        }
+        // fin switch après l'accolade
+
+
+        // 7- BOUCLES
+
+        document.write('<h2 style="margin:auto; background: orange; width: auto; color: #fff;text-align: center;"> 5- LES BOUCLES</h2>');
+        
+
+        // EXO boucle while
+
+        var w1 = 0;
+        console.log(typeof w1, w1);
+
+        while (w1 <= 15) {
+    // tant que le  contenu de la variable est inférieur ou égale à 15
+        document.write('<p>La variable w1 = ' + w1 + ' </p>');
+    // exécute ce bloc de code
+        w1++;
+    // contenu de la variable + 1
+    // La boucle stope dès que w1 atteint JS
+    }
+
+    // FOR - EXO 1
+
+    // Pour une variable for1 inférieure au égale à 10 boucles et incrémentez
+
+    for (let for1 = 0; for1 <= 10; for1++) {
+    console.log(for1);
+    document.write('for1 contient ' + for1 + ' à chaque tour de boucle. <br>');
+    }
+
+
+    // EXO une boucle for2 inférieure ou égale à 10 boucles et incrémentez
+
+    // Ensuite EXO 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
+
+    for (let for2 = 0; for2 <= 10; for2++) {
+        console.info('for2');
+
+        if (for2 == 10) {
+        document.write('Et la boucle se termine là ! ' + for2);
+        } else {
+        document.write('for2 contient ' + for2 + ' <br>');
+        } /* fin du else */
+    } //fin du for
+
+
+
+    // EXO 2 : autre manière de le faire
+
+    for (let for3 = 0; for3 <= 10; for3++) {
+        console.info('for3');
+
+        if (for3 < 10) {
+        document.write('for3 contient ' + for3 + ' <br>');
+        } else {
+        document.write('Et la boucle se termine là car for3 arrive à ' + for3);
+        } /* fin du else */
+    } /* fin du for */
+
+    // 8- FONCTIONS PRE-DEFINIES ET UTILSATEUR
+    document.write('<h2 style="margin-auto; background: orange;width: auto; color: #fff; text-align:center;">1- AFFICHAGE</h2>');
+
+    var phrase1 = 'Vive les frites !';
+    var phrase2 = 'Silence !!! svp';
+    console.log(phrase1,phrase2);
+
+    // toUppercase() et toLowerCase();
+    console.log(phrase1.toUpperCase());
+
+    document.write('<p>Cette phrase en majuscule : ' + phrase1.toUpperCase() + ' </p>');
+    document.write('<p>Cette phrase en minuscule : ' + phrase2.toLowerCase() + ' </p>');
+
+
+    // Une fonction prédefinie TRES importante, qui renvoie le nombre de caractères esapces inclus : length 
+
+    var phrase3 = 'The name is Bond, James Bond';
+    console.log(phrase3.length);          
+
+    document.write('<p>Test : dans la phrase suivante "' + phrase3 + '" il y a ' + phrase3.length + ' caractères.</p>');
+
+    function beauTemps() {
+        return document.write('<p>Il fait beau !</p>');
+    }
+    beauTemps();
+
+    // Une fonction, appellée après pour s'afficher
+    // function coucou() {
+    //     return alert('Coucou, les amis !');
+    // }
+    // coucou();
+
+
+    // Ici la fonction a besoin d'une chaîne de caractères '' , sinon le prenom Toto ne s'affiche pas
+    function direBonjour(prenom) {
+        var message = document.write('<p>Bonjour ' + prenom + '. Comment vas-tu ?</p>');
+        return message;
+    }
+    direBonjour('Toto');
+      
+
+    //Ici une fonction pour creer une ligne hr
+    function uneLigne() {
+        return document.write('<hr>');
+    }
+    uneLigne();
+
+
+    // prompt() est une fonction
+    let prenom2 = prompt('Quel est votre prénom ?');
+    console.log(prenom2);
+
+    function direBonjour(prenom2) {
+        var message2 = document.write('<p>Bonjour, ' + prenom2 +'! Bienvenue sur notre site.</p>');
+        return message2;
+    }
+    direBonjour(prenom2);
+
+    // EXO 
+    //1 demandez "quelle est la saison ?" et "Quelle est la température extérieure ? "
+    //2  faite une fonction questionMeteo() qui renvoie les réponse à ces deux questions
+
+    let saison = prompt('Quelle est la saison ?');
+    let temperature = prompt('Quelle est la température extérieure ?');
+    console.log(saison, temperature);
+
+    function questionMeteo(saison, temperature) {
+        var message3 = document.write('<p> La saison : ' + saison + ' et il fait ' + temperature + ' °.</p>');
+        return message3;
+    }
+       
+    questionMeteo(saison, temperature);
+
+    // le printemps, l'hiver, l'été l'automne
+
+    // EXO 
+    // faites un if else avec deux types de phrases si c'est printemps = "nous sommes au printemps " si c'est l'une des 3 autres saison il faut écrire "nous sommes en "
+
+    if (saison == 'printemps') {// si la variable contient bien printemps ? est-vrai ? 
+        document.write(' <p>If else /// nous sommes au ' +  saison + '.</p>');// bloc de code si c'est vrai
+    } else {
+        document.write(' <p>If else /// nous sommes en ' +  saison + '.</p>');// sinon
+    }
+
+// SUITE exo faire une fonction meteoIfSaison() avec 2 arguments et un if else dans la fonction
+
+    function meteoIfSaison(saison, temperature) {// 2 arguments
+        //attention : let portée locale et var portée globale
+
+        if (saison == 'printemps') {
+            var message4 =  document.write('<p>MeteoIfSaison() /// Nous sommes au ' +  saison + ' et il fait ' + temperature + ' degrés.</p>');
+        } else {
+            var message4 = document.write('<p> MeteoIfSaison() /// Nous sommes en ' +  saison + ' et il fait ' + temperature + ' degrés.</p>');
+        }
+        return message4;// renvoie le contenu de la variable message4
+    } // fin fonction
+
+    meteoIfSaison(saison, temperature);// fonction appelée et les 2 paramètres
+
+
+    // //Une autre manière :
+
+    // function meteoIfArticle  (saison, temperature) {
+    //     //var article;
+    //     let article; // la var article est vide et attend une condition
+    //     if (saison == 'printemps') {
+    //         article = 'au';
+    //     } else {
+    //         article = 'en';
+    //     }
+    //     return document.write('<p>4/ MeteoIfArticle() /// Nous sommes ' + article + ' ' +  saison + ' et il fait ' + temperature + ' degrés.</p>');
+    // } // fin fonction
+
+    // meteoIfArticle(saison, temperature);
+
+
+    // EXO :
+    // Si l'utilisateur rentre autre chose que printemps, été, automne, hiver
+    // Avec un IF ELSE IF ELSE on lui renvoie "Cette saison n'existe pas"
+
+    // if (saison == 'printemps') {
+    //     document.write('Nous sommes au ' + saison + ' et la température est de ' + temperature + ' degrés.');    
+    // } else if (saison == 'été' || saison == 'automne' || saison == 'hiver') {
+    //     document.write('Nous sommes en ' + saison + ' et la température est de ' + temperature + ' degrés.');  
+    // } else {
+    //     document.write('Cette saison ' + saison + ' n existe pas !!! Sauf sur Neptune !');
     // }
 
 
+    //EXO avec la fonction meteoIfElseIf();
 
-    //    SUITE EXO : Puis la même chose avec switch pour lundi matin
+    function meteoIfElseIf(saison, temperature) {
+        if (saison == 'printemps') {
+        var message5 = document.write('Nous sommes au ' + saison + ' et la température est de ' + temperature + ' degrés.');    
+        } else if (saison == 'été' || saison == 'automne' || saison == 'hiver') {
+             var message5 = document.write('Nous sommes en ' + saison + ' et la température est de ' + temperature + ' degrés.');  
+        } else {
+            document.write('Cette saison ' + saison + ' n\'existe pas !!! Sauf sur Neptune !');
+        } // fin condition
+         return message5;
+    } // fin fonction
 
-    // x = vert ? ou azur ? ou rouge ? ou parme ?
-
-    switch (couleurPreferee) {
-    case 'vert' :
-        document.write('<p>Switch - Votre couleur préférée est le vert</p>');
-        break;
-    case 'azur' :
-        document.write('<p>Switch - Votre couleur préférée est l\'azur</p>');
-        break;
-    case 'rouge' :
-        document.write('<p>Switch - Votre couleur préférée est le rouge</p>'); 
-        break;
-    case 'parme' :
-        document.write('<p>Switch - Votre préférée est le parme</p>');
-        break;
-    default: 
-        document.write('<p>Switch - Votre préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le ' + couleurPreferee + '</p>');
-}
-// fin switch après l'accolade
-
-
-    // 7- BOUCLES
-
-    document.write('<h2 style="margin:auto; background: orange; width: auto; color: #fff;text-align: center;"> 5- LES BOUCLES</h2>');
-        
-
-// EXO boucle while
-
-var w1 = 0;
-    console.log(typeof w1, w1);
-
-while (w1 <= 15) {
-// tant que le  contenu de la variable est inférieur ou égale à 15
-    document.write('<p>La variable w1 = ' + w1 + ' </p>');
-// exécute ce bloc de code
-    w1++;
-// contenu de la variable + 1
-// La boucle stope dès que w1 atteint JS
-}
-
-// FOR - EXO 1
-
-// Pour une variable for1 inférieure au égale à 10 boucles et incrémentez
-
-for (let for1 = 0; for1 <= 10; for1++) {
-    console.log(for1);
-    document.write('for1 contient ' + for1 + ' à chaque tour de boucle. <br>');
-}
-
-
-// EXO une boucle for2 inférieure ou égale à 10 boucles et incrémentez
-
-// Ensuite EXO 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
-
-for (let for2 = 0; for2 <= 10; for2++) {
-     console.info('for2');
-
-    if (for2 == 10) {
-       document.write('Et la boucle se termine là ! ' + for2);
-    } else {
-        document.write('for2 contient ' + for2 + ' <br>');
-    } /* fin du else */
-} //fin du for
+    meteoIfElseIf(saison, temperature);
+    // Appel de la fonction
 
 
 
-// EXO 2 : autre maière de le faire
+    // Un autre EXO avec article et nouvelle variable et nouvelle fonction :
 
-for (let for3 = 0; for3 <= 10; for3++) {
-     console.info('for3');
+    function meteoFin(saison, temperature) { // debut fonction
+        var article2;
+        if(saison == 'printemps') { // debut condition
+            article2 = 'au';
+        } else if (saison == 'été' || saison == 'automne' || saison == 'hiver') {
+            article2 = 'en';
+        } else {
+            return alert('Cette saison : ' + saison + ' n\'existe pas !!!');
+        } // fin condition
+        return document.write('<p>6/ MeteoFin() /// Nous sommes ' + article2 + ' ' +  saison + ' et il fait ' + temperature + ' degrés.</p>');
+    } // fin fonction
 
-    if (for3 < 10) {
-       document.write('for3 contient ' + for3 + ' <br>');
-    } else {
-        document.write('Et la boucle se termine là car for3 arrive à ' + for3);
-    } /* fin du else */
-} /* fin du for */
+    meteoFin(saison, temperature);
+    // Appel de la fonction
+
+
+    // EXO 
+    // faire une fonction quelleEcole() 
+    // demandez à votre visiteur "Quel âge a votre enfant ?" 
+    // dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans pour rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
+    
+    let ageVotreEnfant = prompt('Quel âge a votre enfant ?');
+    console.log(age);
+    function quelleEcole(); { //debut fonction 
+        var ageVotreEnfant;
+        if (age < 6); { // debut condition
+            document.write('Votre enfant doit avoir plus de 6 ans pour rentrer à l\'école');
+        else if (age )
+    }
+
+   } // fin fonction
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
