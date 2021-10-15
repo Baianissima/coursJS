@@ -750,25 +750,24 @@
     // demandez à votre visiteur "Quel âge a votre enfant ?" 
     // dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans pour rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
     
-    let ageVotreEnfant = prompt('Quel âge a votre enfant ?');
-    console.log(age);
-    function quelleEcole(); { //debut fonction 
-        var ageVotreEnfant;
-        if (age < 6) { // debut condition
-            document.write('Votre enfant doit avoir plus de 6 ans pour rentrer à l\'école');
+    var ageEnfant = prompt('Quel âge a votre enfant ?');
+    console.log(ageEnfant);
+    function quelleEcole(ageEnfant) { //debut fonction 
+        if (ageEnfant < 6) { // debut condition
+            var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ', il doit avoir 6 ans pour rentrer à l\'école.</p>');
+        }else if (ageEnfant >= 6 && ageEnfant < 11) { // age compris entre 6 et 11
+             var ecole =  document.write('<p>Votre enfant a ' + ageEnfant + ', entre 6 et 11 ans il doit aller au primaire.</p>');
+        }else if (ageEnfant >=11 && ageEnfant < 15) {
+            var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ', entre 6 et 15 ans il doit aller au collège</p>');        }
+        else if (ageEnfant >=15 && ageEnfant < 18) {
+            var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ', entre 15 et 18 ans il doit aller au lycée</p>');
+        } else {
+            var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ', il n a plus le droit d aller à l école !</p>');
         }
-        else if (age >= 6 && age < 11) {
-            document.write('Votre enfant va en primaire');
-        }
-        else if (age >=11 && age< 15) {
-            document.write('Votre enfant va au collège');
-        }
-        else if (age >=15 && age < 18) {
-            document.write('Votre enfant doit aller au lycée');
-        }
-        return document.write('<p>.</p>');
+        return ecole;
     } // fin fonction
-    quelleEcole();
+    //on appelle la fonction après : avec les arguments entre parentheses
+    quelleEcole(ageEnfant);
 
 
     
