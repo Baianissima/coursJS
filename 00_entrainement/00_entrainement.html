@@ -754,12 +754,21 @@
     console.log(age);
     function quelleEcole(); { //debut fonction 
         var ageVotreEnfant;
-        if (age < 6); { // debut condition
+        if (age < 6) { // debut condition
             document.write('Votre enfant doit avoir plus de 6 ans pour rentrer à l\'école');
-        else if (age )
-    }
-
-   } // fin fonction
+        }
+        else if (age >= 6 && age < 11) {
+            document.write('Votre enfant va en primaire');
+        }
+        else if (age >=11 && age< 15) {
+            document.write('Votre enfant va au collège');
+        }
+        else if (age >=15 && age < 18) {
+            document.write('Votre enfant doit aller au lycée');
+        }
+        return document.write('<p>.</p>');
+    } // fin fonction
+    quelleEcole();
 
 
     
