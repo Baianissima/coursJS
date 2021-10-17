@@ -1,4 +1,9 @@
 /*
+
+https://waytolearnx.com/2018/07/difference-entre-la-boucle-while-et-do-while-2.html
+
+
+
         RESUME/SOMMAIRE DE LA PAGE ENTRAINEMENT :
 
         1- AFFICHAGE :
@@ -333,3 +338,52 @@ Finalement, on compare la valeur de let x à 4 en termes de supériorité strict
 Précédent
 Suivant
 
+///////
+
+Présentation et utilisation des opérateurs logiques
+
+Les opérateurs logiques sont des opérateurs qui vont principalement être utilisés avec des valeurs booléennes et au sein de conditions.
+
+Le JavaScript supporte trois opérateurs logiques : l’opérateur logique « ET », l’opérateur logique « OU » et l’opérateur logique « NON ».
+
+Les opérateurs logiques « ET » et « OU » vont nous permettre d’effectuer plusieurs comparaisons dans une condition. Si on utilise l’opérateur « ET », toutes les comparaisons devront être évaluées à true pour que le test global de la condition retourne true. Dans le cas où n utilise l’opérateur logique « OU », il suffira qu’une seule des comparaisons soit évaluée à true pour exécuter le code dans la condition.
+
+Finalement, l’opérateur logique « NON » va nous permettre d’inverser le résultat logique d’un test dans une condition, ce qui signifie que ce qui a été évalué à true renverra false avec l’opérateur logique « NON » et inversement pour ce qui a été évalué à false.
+
+Les opérateurs logiques vont être représentés par les symboles suivants en JavaScript qu’il faudra obligatoirement utiliser : 
+
+Opérateur (nom) 	Opérateur (symbole) 	Description
+AND (ET) 	&& 	Lorsqu’il est utilisé avec des valeurs booléennes, renvoie true si toutes les comparaisons sont évaluées à true ou false sinon
+OR (OU) 	|| 	Lorsqu’il est utilisé avec des valeurs booléennes, renvoie true si au moins l’une des comparaisons est évaluée à true ou false sinon
+NO (NON) 	! 	Renvoie false si une comparaison est évaluée à true ou renvoie true dans le cas contraire
+
+/////
+
+Les opérateurs ayant le même chiffre de précédence vont être traités selon la même priorité par le JavaScript et il faudra alors regarder leur associativité qui est également précisée. Lorsque l’associativité est « gauche » dans la tableau ci-dessous, cela signifie de gauche vers la droite et inversement pour « droite ».
+Précédence 	Opérateur (nom) 	Opérateur (symbole) 	Associativité
+0 	Groupement 	( … ) 	Non applicable
+1 	Post-incrémentation 	… ++ 	Non applicable
+1 	Post-décrémentation 	… — 	Non applicable
+2 	NON (logique) 	! … 	Droite
+2 	Pré-incrémentation 	++ … 	Droite
+2 	Pré-décrémentation 	— … 	Droite
+3 	Exponentiel 	… ** … 	Droite
+3 	Multiplication 	… * … 	Gauche
+3 	Division 	… / … 	Gauche
+3 	Modulo 	… % … 	Gauche
+4 	Addition 	… + … 	Gauche
+4 	Soustraction 	… – … 	Gauche
+5 	Inférieur strict 	… < … 	Gauche
+5 	Inférieur ou égal 	… <= … 	Gauche
+5 	Supérieur strict 	… > … 	Gauche
+5 	Supérieur ou égal 	… >= … 	Gauche
+6 	Égalité (en valeur) 	… == … 	Gauche
+6 	Inégalité (en valeur) 	… != … 	Gauche
+6 	Egalité (valeur et type) 	… === … 	Gauche
+6 	Inégalité (valeur ou type) 	… !== … 	Gauche
+7 	ET (logique) 	&& 	gauche
+8 	OU (logique) 	|| 	gauche
+9 	Ternaire 	… ? … : … 	Droite
+10 	Affectation (simple ou combiné) 	… = … , … += … , … -= … , etc. 	Droite
+
+Cela fait beaucoup d’informations d’un coup et personne ne vous demande d’apprendre toutes ces règles par cœur immédiatement. L’important ici est de de souvenir qu’il existe une précédente et des règles d’associativité lorsqu’on utilise des opérateurs et d’aller vérifier l’ordre et le sens de traitement des opérateurs en cas de doute. Dans tous les cas, vous finirez par connaitre ce tableau à force de pratique. 
