@@ -387,3 +387,29 @@ Précédence 	Opérateur (nom) 	Opérateur (symbole) 	Associativité
 10 	Affectation (simple ou combiné) 	… = … , … += … , … -= … , etc. 	Droite
 
 Cela fait beaucoup d’informations d’un coup et personne ne vous demande d’apprendre toutes ces règles par cœur immédiatement. L’important ici est de de souvenir qu’il existe une précédente et des règles d’associativité lorsqu’on utilise des opérateurs et d’aller vérifier l’ordre et le sens de traitement des opérateurs en cas de doute. Dans tous les cas, vous finirez par connaitre ce tableau à force de pratique. 
+
+///////
+
+Récapitulatif sur les fonctions
+
+Voici un petit résumé des choses importantes à retenir à votre niveau sur les fonctions :
+
+    Les fonctions sont des blocs de code nommés et réutilisables et dont le but est d’effectuer une tâche précise ;
+    Il existe deux grands types de fonctions en JavaScript : les fonction natives ou prédéfinies (qui sont en fait des méthodes) qu’on n’aura qu’à appeler et les fonctions personnalisées qu’on va pouvoir créer ;
+    Pour exécuter le code d’une fonction, il faut l’appeler. Pour cela, il suffit d’écrire son nom suivi d’un couple de parenthèses en passant éventuellement des arguments dans les parenthèses ;
+    On crée une fonction personnalisée grâce au mot clef function ;
+    Si une fonction a besoin qu’on lui passe des valeurs pour fonctionner, alors on définira des paramètres lors de sa définition. Lors de son appel, on lui passera des arguments qui prendront la place des arguments.
+
+//////
+
+La notion de portée des variables : définition
+
+Il est indispensable de bien comprendre la notion de « portée » des variables lorsqu’on travaille avec les fonctions en JavaScript.
+
+La « portée » d’une variable désigne l’espace du script dans laquelle elle va être accessible. En effet, toutes nos variables ne sont pas automatiquement disponibles à n’importe quel endroit dans un script et on ne va donc pas toujours pouvoir les utiliser.
+
+En JavaScript, il n’existe que deux espaces de portée différents : l’espace global et l’espace local. Pour rester très simple, l’espace global désigne l’entièreté d’un script à l’exception de l’intérieur de nos fonctions. L’espace local désigne, à l’inverse, l’espace dans une fonction. 
+
+Ici, vous devez bien retenir la chose suivante : une variable définie dans l’espace global d’un script va être accessible à travers tout le script, même depuis une fonction. En revanche, une variable définie dans une fonction n’est accessible que dans cette même fonction et ne peut pas être manipulée depuis l’espace global du script.
+
+Cette notion de portée est une notion qu’on retrouve dans de nombreux langages informatiques. La portée permet de « protéger » certains codes et certaines variables en les rendant inaccessibles depuis l’extérieur. Cela permet de renforcer la sécurité d’un script et sa stabilité dans le cas où on ne voudrait pas qu’un utilisateur puisse modifier la valeur d’une variable depuis l’extérieur pour des raisons de cohérence et de logique du script.
