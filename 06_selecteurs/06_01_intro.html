@@ -1,0 +1,193 @@
+<!-- dossier 06 selecteurs en js  -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - VI/01 - Selecteurs - Introduction</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- sans async ds le script le HTML ne se charge pas, mais window.onload ds JS externe fait fonctionner le HTML sans async ou defer ici -->
+    <script src="selecteurs.js"></script>
+</head>
+
+<body>
+
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-info p-5 text-center">
+        <!-- titreNiveau1 -->
+        <h1 id="titreN1" class="display-4">JavaScript -  VI-01 - Les sélecteurs</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Les sélecteurs en JS</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+
+    <div class="container p-4">
+
+        <!-- section 1 -->
+        <section class="row mt-4">
+            <div class="col-12">
+                <h2 id="titreN2" class="bg-light">Ce titre sera selectionné dans la console (avec querySelector)</h2>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-3">
+                <h2 id="aChanger">Ce titre va changer !</h2>
+                <p class="ma-classe">Paragraphe 1</p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-3">
+                <p class="ma-classe">Paragraphe 2</p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-3">
+                <p class="">Paragraphe 3</p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-3">
+                <p class="">Paragraphe 4</p>
+            </div>
+            <!-- fin col -->        
+        </section>
+        <!-- fin rangée -->
+
+        <section class="row mt-4">
+            <div class="col-sm-12 col-md-6">
+                <p class="ma-classe">Une phrase dans ce paragraphe</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus praesentium debitis, quia dolorum ea quaerat culpa officia fuga minima maiores voluptatem nobis cum cumque, enim voluptas asperiores quo distinctio consequatur.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus praesentium debitis, quia dolorum ea quaerat culpa officia fuga minima maiores voluptatem nobis cum cumque, enim voluptas asperiores quo distinctio consequatur.</p>
+            </div>
+
+        </section>
+        <!-- fin rangée -->
+
+
+    </div>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="../js/mon_js.js"></script>
+
+    <script>
+        //  barre bolique opposée \
+       
+        // coucou();
+
+        // 2- pour selectionner un élément
+        // méthode un peu désuette, on peut la retrouver mais elle ne se pratique plus
+        // une selection naturelle
+        // var select2 = titreN1;
+        // console.log(select2);
+
+        // 3- Avec getElementById directement avec un sélecteur
+        var select3 = document.getElementById('titreN1');
+        console.log(select3);
+
+        // 4- Avec getElementsByClassName
+        var selectClass = document.getElementsByClassName('ma-classe');
+        console.log(selectClass);
+
+            // Avec l'indice du tableau je sélectionne le second (indice 1) des éléments qui ont la classe ma-classe
+            console.log(selectClass[1]);
+
+            selectClass[1].innerHTML = 'Et là je change le contenu de ce paragraphe...';
+
+            //Mini EXO : modifier le contenu du h2 #aChanger
+            //et mettre le texte suivant "Youpi, j'ai changé le titre du h2"
+
+            var select4 = document.getElementById('aChanger');
+            console.log(select4);
+            select4.innerHTML = '1- Youpi ! J\'ai changé le contenu de ce paragraphe !';
+
+        // 5- Avec getElementsByTagName, on selectione TOUS les p car on a "Elements"
+        var selectP = document.getElementsByTagName('p');
+        console.log(selectP);
+        console.log(selectP.length); //On voit sur la console que j'ai 6 p (p 0, p1, p 2, p 3, p 4 et p 5)
+
+        // 6- Modification du style d'un élément : le p indice 0
+        // Avec style.backgroundColor, pour changer le style, [0] c'est l'indice 0 qui s'affiche sur la console : la liste de 6 paragraphes, le p1 a l'indice 0, qui est le h1
+        // Avec .style.fontVariant : poru changer la taille du font du h1
+
+        selectP[0].style.backgroundColor = "yellow";
+        selectP[0].style.fontVariant = "small-caps";
+        selectP[0].style.color = "white";
+        selectP[0].style.borderRadius = "80px";
+        selectP[0].style.fontWeight = "bold";
+        selectP[0].style.borderColor = "red";
+        select3.style.backgroundColor = "orange";
+
+        // Les mots-clefs à appliquer avec .style
+        // https://www.w3schools.com/jsref/dom_obj_style.asp : voir les variations des styles pour JS
+
+
+        //On va maintenant changer un paramètre de style de tous les p
+        console.info(selectP);
+        for (var i = 0; i < selectP.length; i++) {
+
+            // selectP[i].style.backgroundColor = "lightgrey";
+
+            selectP[i].style.color = "purple";
+            // i ici selectionne tous les p
+        }
+
+        //On va maintenant ajouter du style qui vient des feuilles de style de la page (nomenclature de boostrap) :
+        // selectP[0].classList.add('stabilo');
+        selectP[0].classList.add('bg-sucess');
+        selectP[0].classList.add('p-4');
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="../js/mon_js.js"></script>
+
+    <!-- Le script externe JS n'est pas utilisé là -->
+    <!-- <script src="selecteurs.js"></script> -->
+  </body>
+
+</html>

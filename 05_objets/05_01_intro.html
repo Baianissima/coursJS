@@ -1,0 +1,136 @@
+<!-- dossier 05 objet  -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - V/01 - Programmation Orientée Objet</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - V/01 - Programmation Orientée Objet</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Programmation Orientée Objet</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+
+    <div class="container p-4 mb-4">
+
+        <!-- section 1 -->
+        <section class="row mt-4 align-items-center">
+            <div class="col-10">
+
+            </div>
+
+            <h2>1- Les <span title="Manière de faire, exemple">paradigmes</span> de la programmation orientée objet</h2>
+            <p>Il existe 3 paradigmes de programmation, c'est une façon d'approcher la programmation informatique, une
+                façon de construire son code.</p>
+            <ul>
+                <li>La programmation procédurale</li>
+                <li>La programmation fonctionnelle</li>
+                <li>La programmation orientée objet</li>
+            </ul>
+
+            <!-- .col-sm-12.col-md-4*3>h3+p -->
+        </div>
+
+        <section class="row mt-4 align-items-center">
+            <div class="col-4">
+                <h3>La programmation procédurale</h3>
+                <p>1- La programmation procédurale est le type de programmation le plus commun et le plus populaire.
+                C’est une façon d’envisager son code sous la forme d’un enchainement d’étapes qui vont résoudre les
+                problèmes un par un. Cela correspond à une approche verticale du code où celui-ci va s’exécuter de
+                haut en bas, ligne par ligne. Jusqu’à présent, nous avons utilisé cette approche dans nos codes
+                JavaScript.</p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-md-4">
+                <h3>La programmation fonctionnelle</h3>
+                <p>2- La programmation fonctionnelle est une façon de programmer qui considère le calcul en tant qu’évaluation de fonctions mathématiques et interdit le changement d’état et la mutation des données. La programmation fonctionnelle est une façon de concevoir un code en utilisant un enchainement de fonctions « pures », c’est-à-dire des fonctions qui vont toujours retourner le même résultat si on leur passe les mêmes arguments et qui ne vont retourner qu’une valeur sans modification au-delà de leur contexte.</p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-md-4">
+                <h3>La programmation orientée objet</h3>
+                <p>3- La programmation orientée objet est une façon de concevoir un code autour du concept d’objets. Un objet est une entité qui peut être vue comme indépendante et qui va contenir un ensemble de
+                variables (qu’on va appeler propriétés) et de fonctions (qu’on appellera méthodes). Ces objets vont
+                pouvoir interagir entre eux.</p>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-md-8 bg-light">
+                <h3>Exemple : un objet nomé "utilisateur"</h3>
+                <code>let auteur = 'Victor Hugo'; <br>
+
+                    let utilisateur = { // Ici on a une variable objet <br>
+                    // nom, email, age et adresse sont des proprietés de l'objet utilisateur <br>
+                    // nom : ici nous avons des proprietés qui sont dans un tableau, un "array" qui commence à 0 <br>
+                     nom : ['Victor', 'Marie', 'Hugo'], // un array > indices : 0, 1, 2 <br>
+                     age : 2, <br>
+                     email : 'totor@hugo.fr',  <br>
+                     adresse : 'Besançon', <br>
+                    
+                    // Une méthode qui est un peu comme une fonction <br>
+                    
+                     bonjour : function() { <br>
+                         alert('Bonjour, j\'ai ' + this.age + ' ans et mon nom est ' + this.nom[0] + ' ' + this.nom[1] + ' ' + this.nom[2]);
+                     } <br>
+                    }<br>
+                        
+                    console.info(typeof utilisateur, utilisateur);<br>
+                    utilisateur.bonjour();</code> <br>
+            </div>
+            <p> Le développement orienté objet correspond à une autre façon d’envisager et d’organiser son code en groupant des éléments cohérents au sein d’objets.<br> Les intérêts supposés principaux de développer en orienté objet plutôt qu’en procédural sont de permettre une plus grande flexibilité du code ainsi qu’une meilleure lisibilité et une meilleure maintenabilité.</p>
+            <!-- fin col -->
+
+        </section>
+        <!-- fin rangée -->
+
+    </div>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="../js/mon_js.js"></script>
+    <script src="05_01_intro.js"></script>
+</body>
+
+</html>

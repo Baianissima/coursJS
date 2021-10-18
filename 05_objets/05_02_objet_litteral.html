@@ -1,0 +1,98 @@
+<!-- dossier 05 objet  -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - V/02 - Objet littéral</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript -  V/02 - Objet littéral</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Un objet est un ensemble cohérent de proprieté et de méthodes</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+
+    <div class="container p-4">
+
+        <!-- section 1 -->
+        <section class="row mt-4">
+            <h2>1- Création d'un objet littéral</h2>
+            <p>cf. page d'introduction et le <a href="introduction.js" target="_blank">programme</a></p>
+            <p>Dans l'exemple précédent on dira qu'on a créé un objet nommé "utilisateur".</p>
+            <p>Sur cette page nous créons un nouvel objet <code>victor</code></p>
+
+                <h3>2- Le caractère, le point "."</h3>
+                <p>Le point est un "accesseur", qui permet "d'accéder à".<br>Il va permettre d'accéder aux valeurs de nos différents "membres" mais également de les modifier.</p>
+
+                
+            <div class="col-12 col-md-4 exemples">
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+            </div>
+            <!-- fin col -->
+        
+            <!-- .col-sm-12.col-md-4*3>h3+p -->
+
+            <div class="col-12 col-md-4">
+                <h3>3- Utilisation de this</h3>
+                <p>Le mot-clef this est un prête-nom il permet de ne pas répéter le nom de l'objet dans la méthode</p>
+                <h3>4- Utilisation des crochets []</h3>
+                <p>Les crochets seront utiles pour les "tableaux" (array) pour appeler une valeur d'une propriété array (et pour construire un tableau).</p>    
+            </div>
+            <!-- fin col -->
+            
+        </section>
+        <!-- fin rangée -->
+
+    </div>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="../js/mon_js.js"></script>
+    <script src="05_02_objet_littéral.js"></script>
+</body>
+
+</html>

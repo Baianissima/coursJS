@@ -1,4 +1,4 @@
-// JS pour la page boucles
+// JS pour la page boucles : ici c'est la boucle for
 
 
 //  barre bolique opposée \

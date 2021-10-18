@@ -1,0 +1,307 @@
+<!-- dossier 03 structures_controle : 03_04.html -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - III/06 - La précédence</title>   
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - III/06 - La precedence</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Ordre de priorité des actions</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+
+    <div class="container p-4">
+
+        <section class="row mt-4">
+            <h2>1- Précédence et règle de priorité des actions</h2>
+           
+            <p>Noter que dans cette condition on utilise un deuxième couple de parenthèses pour être sûr que l’opérateur ! porte bien sur le résultat de la comparaison x <= 2 et non pas seulement sur x, ce qui produirait un résultat différent.</p>
+
+            <div class="col-sm-10">
+                <h3>1- Définition</h3> 
+                <code>if( ! (x <= 2) ) {<br>
+                document.getElementById('p3').innerHTML = 'x contient une valeur strictement supérieure à 2';<br>
+            }</code>
+            <p>En fait JS va d'abord traiter tel opérateur, puis tel autre. Dans cette exmple il traite d'abord ce qui est à droite dans la parenthèse ...</p>
+            <p>Cet ordre de priorité est appelé « précédence ». En plus de cela, vous devez également savoir que les opérateurs vont avoir différents sens d’associativité. <br>L’associativité détermine l’ordre dans lequel des opérateurs de même précédence sont évalués et va pouvoir se faire par la droite ou par la gauche. Une associativité par la gauche signifie qu’on va commencer réaliser les opérations en partant de la gauche et vers la droite tandis qu’une associativité par la droite signifie qu’on va commencer par la droite.</p>
+            <p>Avant cela, voici un tableau classant les différents opérateurs vus jusqu’à présent (et quelques autres que nous allons voir très  vite) de la plus haute (0) à la plus basse précédence (10), c’est-à-dire selon leur ordre de traitement par le JavaScript.</p>
+            </div>
+            <!-- fin col -->
+            
+            <div class="col-sm-12">
+                <h3>2- Tableau</h3>
+                <table class="table table-sm table-striped">
+                    <caption>Précédence</caption>
+                    <thead>
+                        <tr>
+                            <td>Précédence</td>
+                            <td>Opérateur (nom)</td>
+                            <td>Opérateur (symbole)</td>
+                            <td>Associativité</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>Groupement</td>
+                            <td>(...)</td>
+                            <td>Non applicable</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Post-incrémentation </td>
+                            <td>... ++</td>
+                            <td>Non applicable</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Post-décrémentation</td>
+                            <td>... —</td>
+                            <td>Non applicable</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>NON (logique)</td>
+                            <td>! ...</td>
+                            <td>Droite</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pré-incrémentation</td>
+                            <td>++ ...</td>
+                            <td>Droite</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pré-décrémentation</td>
+                            <td>- ...</td>
+                            <td>Droite</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Exponentiel</td>
+                            <td>... ** ...</td>
+                            <td>Droite</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Multiplication</td>
+                            <td>... * ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Division</td>
+                            <td>... / ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Modulo</td>
+                            <td>... % ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Addition</td>
+                            <td>... + ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Soustraction</td>
+                            <td>... - ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Inférieur strict</td>
+                            <td>... < ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Inférieur ou égal</td>
+                            <td>... <= ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Supérieur strict</td>
+                            <td>... > ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Supérieur ou égal</td>
+                            <td>... >= ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Egalité (en valeur)</td>
+                            <td>... == ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Inégalité (en valeur)</td>
+                            <td>... != ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Egalité (en valeur et en type)</td>
+                            <td>... === ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Inégalité (valeur ou type)</td>
+                            <td>... !== ...</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>ET (logique)</td>
+                            <td>&&</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>OU (logique)</td>
+                            <td>||</td>
+                            <td>Gauche</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Ternaire</td>
+                            <td>... ? ... : ...</td>
+                            <td>Droite</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Affectation (simple ou combiné)</td>
+                            <td>... = ..., ... += ..., ...-=..., etc,</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="stabilo">L’important ici est de se souvenir qu’il existe une précédente et des règles d’associativité lorsqu’on utilise des opérateurs et d’aller  vérifier l’ordre et le sens de traitement des opérateurs en cas de doute. Dans tous les cas, vous finirez par connaitre ce tableau à force de pratique.</p>
+                <h4>Exemples </h4>
+                <ul>
+                    <li id="v1"></li>
+                    <li id="v2"></li>
+                    <li id="v3"></li>
+                </ul> 
+            </div>
+            <!-- fin col -->
+            <div class="col-10">
+                <h3>Exemples </h3>
+                <p id="p1"></p>
+               
+                <code>
+                    if ( x>= 20 + y && x <= 10 || y < 0 ) {
+                        document.getElementById('p1').innerHTML = '1- Soit x = ' + x + ' compris entre 0 et 10, soit y strictement positif, soit les deux';
+                    }
+                </code> 
+                <p>Ce premier if utilise les opérateurs suivants </p>
+            <ul>
+                <li>supérieur ou égal ;</li>
+                <li>addition ;</li>
+                <li>ET logique ;</li>
+                <li>inférieur ou égal ;</li>
+                <li>OU logique ;</li>
+                <li>inférieur strict.</li>
+            </ul>
+            <p>En utilisant la précédence, on sait que l’opérateur d’addition va être traité en premier, puis ensuite ce sera le tour des opérateurs d’infériorité et de supériorité (strict ou égal), puis celui du ET logique et enfin du OU logique.</p>
+            <p>Ici, le JavaScript va donc commencer par traiter le bloc   qui est égal à 20 + (-20) = 20 – 20 = 0. Ensuite, le JavaScript traite les trois comparaisons x >= 0, x <= 10 et y < 0 et renvoie true ou false à chaque fois.</p>
+            <p>Dans le cas présent, le JavaScript va renvoyer true (let x contient bien une valeur supérieure ou égale à 0), false (la valeur de let x n’est pas inférieure ou égale à 10) et true (let y contient bien une valeur strictement négative).
+                <br>L’opérateur && va être traité à son tour. Cet opérateur renvoie true si les deux opérandes renvoient true et false dans le cas contraire. Dans le cas présent, on a true && false. Le bloc   va donc être évalué à false.
+                20 + y                 x >= 20 + y && x <= 10
+                <br>Finalement, l’opérateur || va être analysé. Pour que cet opérateur renvoie true, il suffit que l’un des deux opérandes renvoie true. Ici, on a false || true en se basant sur les résultats trouvés précédemment et c’est donc la valeur true qui est finalement renvoyée pour l’entièreté du test et le code dans notre condition est bien exécuté.</p>
+                <p id="p2"></p>
+                <code>if ( x>= 20 + y && (x <= 10 || y < 0)) {
+                    document.getElementById('p2').innerHTML = 'p2- x positif et soit x inférieur à 10, soit y strictement positif, soit les deux';
+                
+                }</code>
+            </div>
+            <!-- fin col -->
+            <div class="col-10">
+                <h3>Exemples </h3>
+                
+            </div>
+            <!-- fin col -->
+            
+            
+            JS ******************************
+            
+            
+            // page précédence 
+        document.getElementById('v1').innerHTML = (' la variable x contient ' + x );
+
+        document.getElementById('v2').innerHTML = (' la variable y contient ' + y );
+
+        document.getElementById('v3').innerHTML = (' la variable z contient ' + z );
+
+        et x = 15, y = -20, z = 0;
+        console.log(x, y, z);
+
+        if ( x>= 20 + y && x <= 10 || y < 0 ) {
+        document.getElementById('p1').innerHTML = 'p1- Soit x = ' + x + ' compris entre 0 et 10, soit y strictement positif, soit les deux';
+        }
+
+        if ( x>= 20 + y && (x <= 10 || y < 0)) {
+        document.getElementById('p2').innerHTML = 'p2- x positif et soit x inférieur à 10, soit y strictement positif, soit les deux';
+        }
+        </section>
+        <!-- fin rangée -->
+    </div>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="../js/mon_js.js"></script>
+    <script src="precedence.js"></script>
+</body>
+</html>
