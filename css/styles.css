@@ -63,5 +63,26 @@ em {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#rouge {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
 
+#orange {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
 
+#bleu {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}

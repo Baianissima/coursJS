@@ -1,0 +1,31 @@
+/* styles pour l'exo 04_conversion */
+/* https://codepen.io/yoksel/pen/ijxKy  */
+
+
+body {
+    background-color: rgb(196, 196, 245);
+    font-size: 2rem;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+h2 {
+    color:orange;
+    font-weight: bold;
+}
+
+div {
+    background-color: #fff;
+    margin: 30px;
+    /* border-radius: 30px; */
+}
+
+.orange {
+    background-color: orange;
+}

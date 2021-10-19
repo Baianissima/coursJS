@@ -56,23 +56,23 @@ dossier
             </div>
             <!-- fin col -->
 
-            <div class="col-3">
+            <div class="col-3 col-md-6">
                 <h2 id="aChanger">Ce titre va changer !</h2>
                 <p class="ma-classe">Paragraphe 1</p>
             </div>
             <!-- fin col -->
 
-            <div class="col-3">
+            <div class="col-3 col-md-6 ">
                 <p class="ma-classe">Paragraphe 2</p>
             </div>
             <!-- fin col -->
 
-            <div class="col-3">
+            <div class="col-3 col-md-6">
                 <p class="">Paragraphe 3</p>
             </div>
             <!-- fin col -->
 
-            <div class="col-3">
+            <div class="col-3 col-md-6">
                 <p class="">Paragraphe 4</p>
             </div>
             <!-- fin col -->        
@@ -85,10 +85,45 @@ dossier
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus praesentium debitis, quia dolorum ea quaerat culpa officia fuga minima maiores voluptatem nobis cum cumque, enim voluptas asperiores quo distinctio consequatur.</p>
             </div>
+            <!-- fin col -->  
 
             <div class="col-sm-12 col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus praesentium debitis, quia dolorum ea quaerat culpa officia fuga minima maiores voluptatem nobis cum cumque, enim voluptas asperiores quo distinctio consequatur.</p>
             </div>
+            <!-- fin col -->  
+
+            <!-- p.une-classe*5{paragraphe $} -->
+            <div class="col-sm-12 col-md-6 bg-light">
+                <p class="une-classe">paragraphe 1</p>
+                <p class="une-classe">paragraphe 2</p>
+                <p class="une-classe">paragraphe 3</p>
+                <p class="une-classe">paragraphe 4</p>
+                <p class="une-classe">paragraphe 5</p>
+            </div>
+            <!-- fin col -->  
+
+            <div class="col-sm-12 col-md-6">
+                <ul>
+                    <li>Liste 1</li>
+                    <li>Liste 2</li>
+                    <li>Liste 3</li>
+                    <li>Liste 4</li>
+                    <li class="bg-primary">Liste 5</li>
+                    <li>Liste 6</li>
+                </ul>
+            </div>
+            <!-- fin col --> 
+
+            <!-- EXO : avec query5 -->
+            <div class="col-sm-12 col-md-6 bg-light">
+                <p class="selectClasse">paragraphe 1 pour query5</p>
+                <p class="selectClasse">paragraphe 2 pour query5</p>
+                <p class="selectClasse">paragraphe 3 pour query5</p>
+                <p class="selectClasse">paragraphe 4 pour query5</p>
+                <p class="selectClasse">paragraphe 5 pour query5</p>
+            </div>
+            <!-- fin col -->
+            
 
         </section>
         <!-- fin rangée -->
@@ -166,6 +201,7 @@ dossier
             // selectP[i].style.backgroundColor = "lightgrey";
 
             selectP[i].style.color = "purple";
+            selectP[i].style.borderRadius = "50px";
             // i ici selectionne tous les p
         }
 
@@ -173,6 +209,43 @@ dossier
         // selectP[0].classList.add('stabilo');
         selectP[0].classList.add('bg-sucess');
         selectP[0].classList.add('p-4');
+
+        //select[1].classList.add('bg-warning');
+
+
+        //6- Avec querySelector
+        
+        // Ici je selectionne un élément par son id
+        let query1 = document.querySelector ('#titreN2');
+        console.log (query1);
+
+        // Ici je selectionne un ou des éléments par une classe
+        let query2 = document.querySelectorAll('.une-classe');
+        console.log (query2);
+
+        let query3 = document.querySelectorAll('li');
+        console.log (query3);
+        
+        query3[3].style.backgroundColor = "yellow";
+
+        let query4 = document.querySelectorAll('li.bg-primary');
+        console.log (query4);
+        
+      // EXO :
+      // Dans une nouvelle col rajoutez 4 ou 6 paragraphes avec la classe selectClasse dans une variable query5
+
+      // Changer le texte du p n° 2 pour "Je change le texte de ce paragraphe 2", passez-le en fond "lightblue" et texte blanc et en gras
+
+      let query5 = document.querySelectorAll('.selectClasse');
+      console.log (query5);
+      console.log (query5[1].innerHTML);
+      console.log (query5.length);
+      query5[1].innerHTML = 'Je change le texte de ce paragraphe 2 !';
+      query5[1].style.backgroundColor = "lightblue";
+      query5[1].style.color = "orange";
+      query5[1].style.fontWeight = "bold";
+      
+      
 
     </script>
     <!-- Optional JavaScript -->

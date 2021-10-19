@@ -1,0 +1,96 @@
+<!-- dossier 07 evenement -->
+<!-- creer ces dossiers a la racine :
+
+dossier
+03_sctrucutres_controle
+04_fonctions
+05_objets
+06_selecteurs
+07_evenements 
+08_manipulations
+09_dom-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - VII/01 - Introduction</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- sans async ds le script le HTML ne se charge pas, mais window.onload ds JS externe fait fonctionner le HTML sans async ou defer ici -->
+    <!-- <script src=".js"></script> -->
+</head>
+
+<body>
+
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-info p-5 text-center">
+        <!-- titreNiveau1 -->
+        <h1 id="titreN1" class="display-4">JavaScript -  VII-01 - Les évènements</h1>
+        <p class="lead"><i class="bi bi-patch check"></i>Les évènements en JS</p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+
+    <div class="container p-4">
+
+        <!-- section 1 -->
+        <section class="row mt-4">
+            <div class="col-12 col-md-3 bg-primary text-white">
+                <h4>addEventListener()</h4>
+                <p>Un simple clique sur la div #rouge</p>
+                <p id="p1" class="selectClasse">Un simple clique sur ce paragraphe</p>
+                
+            </div>
+            <!-- fin col -->
+
+            <div class="col-12 col-md-3 bg-warning text-white">
+                <div id="rouge">#rouge</div>
+            </div>
+            <!-- fin col -->
+            
+            <div class="col-12 col-md-3 bg-warning text-white">
+                <div id="orange">#orange</div>
+            </div>
+            <!-- fin col -->
+
+            <div class="col-12 col-md-3 bg-warning text-white">
+                <div id="bleu">#bleu</div>
+            </div>
+            <!-- fin col -->
+
+        </section>
+        <!-- fin rangée -->
+
+    </div>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <script src="../js/mon_js.js"></script>
+    <script src="07_01_intro.js"></script>
+
+  </body>
+
+</html>
