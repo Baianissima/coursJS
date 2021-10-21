@@ -1,4 +1,4 @@
-//OO entrainement : page 06 jour suivant
+//Dossier OO entrainement : page 06_jour_suivant
 
 // coucou();
 
