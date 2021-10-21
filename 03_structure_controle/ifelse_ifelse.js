@@ -31,7 +31,7 @@ let x = -10;
 console.log(x);
 
 
-if ( x > 1) {
+if (x > 1) {
     alert('1/ x contient une valeur strictement supérieure à 1');
 } else if ( x == 1 ) {
     alert('2/ x est égal à 1');
