@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteurs</title>
+
+    <!-- script vers mon JS pour faire tester les pages à cahque fois sans taper l alerte "Coucou !"" -->
+    <!-- <script src="../js/mon_js.js"></script> -->
+
+    <!-- mes styles -->
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+
+    <!-- script JS dans l'en-tête : -->
+
+    <style>
+        div {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2 id="titre">Mon titre de niveau 2</h2>
+    <div class="avion">Airbus 1 - A320</div>
+    <div class="avion">Airbus 2 - A320</div>
+    <p class="avion"></div>
+    <div class="avion">Airbus 1 - A320</div>
+    
+    <br>
+
+    <p class= "texteP" id="first-p">Paragraphe 1</p>
+    <p class= "texteP">Paragraphe 2</p>
+    <p class= "texteP" title="InfoBulle">Paragraphe 3</p>
+    <p class= "texteP">Paragraphe 4</p>
+    <p class= "texteP">Paragraphe 5</p>
+
+
+
+    <script>
+        // séléction naturelle
+        var monTitre1 = titre;
+        console.log(monTitre1);
+
+        // sélection par id
+        var monTitre2 = document.getElementById('titre');
+        console.log(monTitre2);
+
+        // sélection par classe
+        var lesAvions = document.getElementsByClassName('avion');
+        console.log(lesAvions);
+
+        console.log(lesAvions[1]);
+
+        // injecter le texte suivant 'Il est beau mon avion' dans l'élémént indice 1 la div n° 2
+        console.log(lesAvions[1].innerTHTML); // innerHTML permet d'examiner dans la console le contenu d'un élément
+        lesAvions[1].innerHTML = 'Il est beau mon camion !';
+
+        console.log(lesAvions[1]);
+        console.log(lesAvions[1].innerHTML);
+
+        //modifier le contenu du h2 pour écrire "il est beau mon bonnet !"
+        console.log(monTitre2.innerHTML);
+        monTitre2.innerHTML = 'Il est beau le bonnet de Rheda !';
+
+        // par nom d'éléments
+        let lesP = document.getElementsByTagName('p');
+        console.log(lesP);
+
+        console.log(lesP[2].innerHTML);
+
+        // faire une boucle for pour passer le texte des p en red et mettre une margin-top aux p de 30px
+
+        let texteP = document.querySelectorAll('.texteP');
+        // texteP.style.color = "red";
+
+
+    </script>
+
+</body>
+</html>
