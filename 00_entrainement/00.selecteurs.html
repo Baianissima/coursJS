@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sélecteurs</title>
+    <title>Entrainement_00 Sélecteurs</title>
 
     <!-- script vers mon JS pour faire tester les pages à cahque fois sans taper l alerte "Coucou !"" -->
     <!-- <script src="../js/mon_js.js"></script> -->
@@ -25,19 +25,23 @@
 </head>
 
 <body>
-    <h2 id="titre">Mon titre de niveau 2</h2>
+    <h2 id="titre">Titre 2</h2>
     <div class="avion">Airbus 1 - A320</div>
     <div class="avion">Airbus 2 - A320</div>
-    <p class="avion"></div>
-    <div class="avion">Airbus 1 - A320</div>
+    <p class="avion">Coucou le premier p</div>
+    <div class="avion">Airbus 3 - A320</div>
     
     <br>
 
-    <p class= "texteP" id="first-p">Paragraphe 1</p>
-    <p class= "texteP">Paragraphe 2</p>
-    <p class= "texteP" title="InfoBulle">Paragraphe 3</p>
-    <p class= "texteP">Paragraphe 4</p>
-    <p class= "texteP">Paragraphe 5</p>
+    <p id="para">Paragraphe 1</p>
+    <p>Paragraphe 2</p>
+    <p title="InfoBulle">Paragraphe 3</p>
+    <p>Paragraphe 4</p>
+    <p>Paragraphe 5</p>
+    <p>Coucou</p>
+    <p>Coucou</p>
+    <p>Coucou</p>
+    <p>Coucou</p>
 
 
 
@@ -75,8 +79,38 @@
 
         // faire une boucle for pour passer le texte des p en red et mettre une margin-top aux p de 30px
 
-        let texteP = document.querySelectorAll('.texteP');
-        // texteP.style.color = "red";
+        
+        //bloucle for : toujours creer la variable avant : ici c'est la "lesP"
+        for (let i = 0; i < lesP.length; i++) { /*  for (1- initialisation de la variable; 2- text ou condition de sortie; 3- incrémentation) */
+        console.log([i]);
+        lesP[i].style.color = "red";
+        lesP[i].style.marginTop = "10px";
+        lesP[i].iinerHTML += 'Les loulous'; // += ajoute et affecte
+        }
+
+        // on essaie maitenant avec query
+        let lesP2 = document.querySelectorAll('p');
+        console.log(lesP2);
+
+        let lesAvions2 = document.querySelectorAll('.avion');
+        console.log(lesAvions2);
+
+        let paraP = document.querySelector('p#para');
+        console.log(paraP);
+
+        // Iici on mise les div classe avion
+        let divAvion = document.querySelectorAll('div.avion');
+        console.log(divAvion);
+
+        //A la seconde div on applique maintenant un fond bleu, un texte blanc, en gras et taille de typo 2em
+
+        console.log(divAvion[1].inneHTML);
+        divAvion[1].style.backgroundColor = "lightblue";
+        divAvion[1].style.color = "white";
+        divAvion[1].style.fontSize = "2em";
+        divAvion[1].style.height = "400px";
+        divAvion[1].style.width = "400px";
+        
 
 
     </script>

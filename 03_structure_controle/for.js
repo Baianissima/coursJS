@@ -27,10 +27,9 @@
 /* i = itérator = curseur */
 
 
-
+// boucle for
 // EXEMPLE 2 :
-
-for (let i = 0; i < 10; i++) { /*  for (1- initialisation de la variable; 2- text ou condition de sortie; 3- incrémentation) */
+for (let i = 0; i < 10; i++) { /*  for (1- initialisation de la variable, appellée "i"; 2- text ou condition de sortie; 3- incrémentation) */
 
     document.getElementById('tb1').innerHTML += '<tr><td>La variable i contient : ' + i + ' à chaque passage de la boucle </td></tr>';
 
@@ -42,5 +41,5 @@ for (let arreteToi = 0; arreteToi < 100; arreteToi++) {
         break; // instruction
     } //fin du if
 
-    document.getElementById('p2').innerHTML += 'La variable arreteToi contient ' + arreteToi + ' à chaque tour de boucle.<br>';
+    document.getElementById('p2').innerHTML += 'La variable arreteToi contient ' + arreteToi + ' à chaque tour de boucle.<br> ';
 }/* fin de for */
