@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<!-- 02_01_intro.html -->
+<!-- https://getbootstrap.com -->
+<!--On l'utilise en CDN quand on est en production, sans connexion Internet, Boostrap ne marche pas : on doit telecharger Boostrap et mettre en local, ds notre ordi -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+ 
+    <title>JavaScript - II/02 affichage</title>
+
+    <!-- On dit choisir l'un des 2, et choisir si on met ici le script ou en bas avant body  -->
+    <!-- Mes sripts JS en externe avec async : asyncrone avec avertissement -->
+    <!-- <script src="affichage.js" defer="anonymous"></script> -->
+  
+    <!-- avec defer je n'ai pas d'avertissment -->
+    <!-- <script src="affichage.js" defer="anonymous"></script> -->
+
+    <!-- mes styles: c comptablie pour etre ustilsé au meme temps que le style Boostrap -->
+    <!-- <link rel="stylesheet" href="../boostrap/css/bootstrap.css"> -->
+
+</head>
+
+<body>
+  <!-- en-tête -->
+    <div class="container-fluid bg-info p-5 text-center">
+      <h1 class=>JavaScript - II/02 - affichage</h1>
+      <p class="lead">Comment afficher des variables</p>
+    </div>
+
+  <!-- debut div container -->
+    <div class="container">
+        <!-- debut rangée -->
+        <section class="row mt-4">
+            <div class="col-sm-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quibusdam eveniet corporis non iure et nobis numquam fuga distinctio, repellat neque tenetur adipisci nesciunt aperiam tempora reiciendis modi suscipit voluptatem!</p>
+            </div>
+        </section>
+        <!-- fin rangée -->
+
+    <!-- fin div container -->
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+    <!-- Mes sripts JS en externe : ici, pas besoin de asyn ni de defer, le script se charge en dernier et ne stoppe pas le chargement du html et du css -->
+    <!-- la solution la plus utilisée : script à la fin -->
+    <script src="affichage.js" async></script>
+
+</body>
+</html>

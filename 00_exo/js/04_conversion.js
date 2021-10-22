@@ -31,7 +31,6 @@ var tempC = prompt('Rentrez une température en Celsius, merci.')
 
 
 
-
     // CODE D'IMRAM : très clair !
 
     // let temperature = prompt('Quelle est la température de l\'extérieur ?');
@@ -48,7 +47,6 @@ var tempC = prompt('Rentrez une température en Celsius, merci.')
     //     select[4].innerHTML = '68 degrés Farhenheit = 20 Celsius';
     
         
-    
 
     // CODE DE RACHID pour les classes :
 
