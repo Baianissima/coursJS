@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,11 +16,11 @@
     <!-- styles CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     
-    <title>Exo sur W3school</title>
+    <title>Exos persos</title>
 </head>
 <body>
 
-    <!-- =================================== -->
+  <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color: #;">
@@ -153,24 +153,43 @@
     </div>
   </nav>
 
+  <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-warning p-5 text-center">
+      <!-- titreNiveau1 -->
+      <h1 id="titreN1" class="display-4">Exos JS persos</h1>
+      <p class="lead"><i class="bi bi-patch check"></i>W3School</p>
+  </div>
+
   <!-- =================================== -->
   <!-- Contenu principal -->
   <!-- =================================== -->
-    <h2>O que JavaScript peut faire ?</h2>
 
-    <p>JavaScript peut changer les attributs et valeurs HTML</p>
+<body>
+  <h2>What Can JavaScript Do?</h2>
 
-    <p>Neste caso, JavaScript muda o valor do src (source) atributo na imagem</p>
+  <p id="demo">JavaScript can change HTML content.</p>
 
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+  <hr>
 
-    <img id="myImage" src="img/pic_bulboff.gif" alt="ampoule" style="width:100px">
+  <p>JavaScript can change HTML attribute values.</p>
 
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the ligth</button> 
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+  <button onclick="document.getElementById('myImage').src='img/light_bulb_on.png'">Turn on the light</button>
+
+  <img id="myImage" src="img/light_bulb_off.png" style="width:100px">
+
+  <button onclick="document.getElementById('myImage').src='img/light_bulb_off.png'">Turn off the light</button>
+
+  <hr>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+  crossorigin="anonymous"></script>
+
 </body>
 </html>

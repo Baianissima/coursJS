@@ -47,8 +47,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Intro</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-              <li><a class="dropdown-item active" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
-              <li><a class="dropdown-item" href="../01_introduction/01-02-intro.html">Intro 2</a></li>
+              <li><a class="dropdown-item" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
+              <li><a class="dropdown-item active" href="../01_introduction/01-02-intro.html">Intro 2</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-03-intro.html">Intro 3</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-04-intro.html">Intro 4</a></li>
               <!-- <li><hr class="dropdown-divider"></li> -->
@@ -155,24 +155,34 @@
       </div>
     </div>
   </nav>
+  <!-- =================================== -->
+  <!--   en-tête --> -->
+  <!-- =================================== -->
+  <div class="container-fluid bg-warning p-5 text-center">
+    <h1 class="display-4">JavaScript - I/02 introduction<i class="bi bi-node-plus text-white"></i> <br></h1>
+    <p class="lead">Cliquer pour avour une alerte et ajouter un paragraphe...</p>
+  </div>
 
   <!-- =================================== -->
   <!-- Contenu principal -->
   <!-- =================================== -->
     <!-- debut div container -->
-    <h1 class="display-4">JavaScript - I/02 introduction</h1>
 
+    <main class="container">
+      
     <!-- le 1er script affiche une alerte avec son message -->
-    <button class="bouton" onclick="alert('Coucou papillon !')">Cliquer sur moi !</button>
+      <button class="bouton" onclick="alert('Coucou papillon !')">Cliquer sur moi !</button>
 
     <!-- le second script ajoute un element p dans la page -->
-    <button class="bouton" onclick="(function(){
+      <button class="bouton" onclick="(function(){
         let para = document.createElement('p');
         para.textContent = 'Hop ! un nouveau paragraphe : c\'est drôle non ?';
         document.body.appendChild(para); 
     })();">
         Ajoutez un paragraphe : allez !
-    </button>
+      </button>
+
+    </main>
     
     <!-- Optional JavaScript -->
     <!-- Bootstrap Bundle with Popper -->

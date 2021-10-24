@@ -2,14 +2,10 @@
 /* https://codepen.io/yoksel/pen/ijxKy  */
 
 body {
-    background-color: rgb(203, 226, 247);
+    background-color: rgb(3, 40, 77);
     /* background: repeating-linear-gradient(90deg, #50afee, #83c0f1 20px, #d2e0e9 0, #d2e6e9 40px); */
-}
-
-main {
-    width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
+    font-size: 1.5em;
+    color: rgb(3, 40, 77);
 }
 
 .stabilo {
@@ -17,7 +13,11 @@ main {
 }
 
 .container {
-    background-color: #fff;
+    /* background-color: #fff; */
+    color: white;
+    width: 1200px;
+    /* height: 600px; */
+    /* margin: 0 auto; */
 }
 
 code {
@@ -27,16 +27,17 @@ code {
 }
 
 .bouton {
-    background-color: teal;
-    border: none;
-    color: white;
+    /* color: gainsboro; */
+    color: rgb(2, 52, 102);
+    background-color: rgb(255, 166, 0);
     padding: 15px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    /* text-decoration: none; */
     font-size: 16px;
     margin: 4px 2px;
+    margin-left: 20px;
     cursor: pointer;
+    border-radius: 2px 2px;
 }
 
 code {
@@ -48,11 +49,13 @@ code {
 h1 {
     /* border-bottom: 1px solid rgb(110, 110, 110); */
     text-align: center;
+    color: rgb(3, 40, 77);
 }
 
 h2 {
     border-bottom: 1px solid rgb(110, 110, 110);
     text-align: center;
+    color: rgb(3, 40, 77);
 }
 
 em {
