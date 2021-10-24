@@ -1,0 +1,21 @@
+/* style pour 01 bonjour */
+
+body {
+    background-color: rgb(196, 196, 245);
+    font-size: 1rem;
+    padding: 20px;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+div {
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 30px;
+}

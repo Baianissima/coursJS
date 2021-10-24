@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<!-- 02_01_intro.html -->
+<!-- https://getbootstrap.com -->
+<!--On l'utilise en CDN quand on est en production, sans connexion Internet, Boostrap ne marche pas : on doit telecharger Boostrap et mettre en local, ds notre ordi -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>JavaScript - II/03 Types de donées</title>
+
+  <!-- On dit choisir l'un des 2, et choisir si on met ici le script ou en bas avant body  -->
+  <!-- Mes sripts JS en externe avec async : asyncrone avec avertissement -->
+  <!-- <script src="affichage.js" defer="anonymous"></script> -->
+
+  <!-- avec defer je n'ai pas d'avertissment -->
+  <!-- <script src="affichage.js" defer="anonymous"></script> -->
+
+  <!-- mes styles: c comptablie pour etre ustilsé au meme temps que le style Boostrap -->
+  <!-- <link rel="stylesheet" href="../boostrap/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <!-- en-tête -->
+  <div class="container-fluid bg-info p-5 text-center">
+    <h1 class="display-4">JavaScript - II/03 - Types de données</h1>
+    <p class="lead">Les différents types de données</p>
+  </div>
+
+  <!-- debut div container -->
+  <div class="container">
+    <section class="row mt-4">
+      <div class="col-sm-6">
+        <h2>1- Sept types de données en JS</h2>
+        <ol>
+          <li><a href="#string"><span class="stabilo">String</span></a> ou chaîne de caractères</li>
+          <li><a href="#number"><span class="stabilo">Number</span></a> ou nombre</li>
+          <li><a href="#boolean"><span class="stabilo">Boolean</span></a> ou booléen</li>
+          <li><a href="#null"><span class="stabilo">Null</span> ou "vide"</a></li>
+          <li><a href="#undefined"><span class="stabilo">Undefined</span> ou indéfini</a></li>
+          <li><a href="#symbol"><span class="stabilo">Symbol</span></a> ou symbole</li>
+          <li><a href="#object"><span class="stabilo">Object</span></a> ou objet</li>
+        </ol>
+        <p>Pour connaître les types de données on utilise la fonction <code>typeof()</code></p>
+      </div>
+      <!-- fin col  -->
+    </section>
+    <!-- fin rangée  -->
+
+    <section class="row mt-4">
+      <div class="col-sm-5">
+        <h3 id="string">1- String</h3>
+        <!-- p#p$*3 -->
+        <p id="p1">ce contenu sera remplacé</p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+      </div>
+      <!-- fin col  -->
+      <div class="col-sm-7 bg-info">
+        <h4>A propos des guillemets <code>"..."</code>, des quotes <code>'...'</code> et sur le caractère d'échappement
+          ou antislash<code>\</code></h4>
+        <p>En JavaScript, on va pouvoir utiliser indifféremment des guillemets doubles ou des quotes pour entourer une
+          chaîne de caractères et ces deux méthodes vont être strictement équivalentes à la différence d’autres langages
+          comme le PHP par exemple.<br> Faites attention cependant à un point : si votre chaîne contient un caractère
+          qui est le même que le délimiteur de chaîne choisi, il faudra neutraliser ce caractère en l’échappant au moyen
+          d’un antislash ou changer de délimiteur.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <h3 id="number">2- Number</h3>
+        <p>Les variables en JavaScript vont également pouvoir stocker des nombres. Des nombres entiers positifs ou
+          négatifs ou à virgule (décimaux)</p>
+
+        <p id="p4"></p>
+
+      </div>
+      <!-- fin col  -->
+      <div class="col-sm-6">
+        <h3 id="boolean">3- Boolean</h3>
+        <p>Ce type de données sera utile pour vérifier si un test est vrai ou faux</p>
+        <p>Un booléen, en algèbre, est une valeur binaire (soit 0, soit 1). En informatique, le type booléen est un type
+          qui ne contient que deux valeurs : les valeurs true (vrai) et false (faux).</p>
+      </div>
+      <!-- fin col  -->
+      <!-- div.col-sm-3*3>h3# -->
+      <div class="col-sm-4">
+        <h3 id="null">4- Null</h3>
+        <p>Null est un type un peu particulier : <code>null</code> absence de valeur connue ou "vide" ou "non saisie".
+        </p>
+        <p id="p5"></p>
+      </div>
+      <!-- fin col  -->
+      <div class="col-sm-4">
+        <h3 id="undefined">5- Undefined</h3>
+        <p><code>undefined</code> : variable non définie</p>
+        <p>Si on déclare une variable sans lui attribuer de valeur, alors son type sera <code>undefined</code>.</p>
+        <p id="p6"></p>
+
+      </div>
+      <!-- fin col  -->
+      <div class="col-sm-4">
+        <h3 id="object">6- Symbol et 7- Object</h3>
+        <p>Les objets sont des structures complexes qui vont pouvoir stocker plusieurs valeurs en même temps et que nous
+          étudierons plus tard car il s’agit là d’un sujet complexe à appréhender pour un débutant.</p>
+        <p>Si on déclare une variable et qu’on lui passe null, alors son type sera <code>Object</code>.</p>
+
+      </div>
+      <!-- fin col  -->
+      
+    </section>
+    <!-- fin rangée  -->
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Mes sripts JS en externe : ici, pas besoin de asyn ni de defer, le script se charge en dernier et ne stoppe pas le chargement du html et du css -->
+  <!-- la solution la plus utilisée : script à la fin -->
+  <script src="types.js" async></script>
+
+</body>
+
+</html>
