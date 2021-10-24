@@ -45,6 +45,11 @@ code {
     padding: 5px;
 }
 
+h1 {
+    /* border-bottom: 1px solid rgb(110, 110, 110); */
+    text-align: center;
+}
+
 h2 {
     border-bottom: 1px solid rgb(110, 110, 110);
     text-align: center;

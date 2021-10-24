@@ -1,18 +1,27 @@
-<!-- 01-01-introduction.html -->
+<!-- Introduction JS : 01-02-intro.html -->
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript - I/02 introduction</title>
-    <!-- mes styles -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Boostrap/boostrap-5.1.1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- mes styles : c comptablie pour etre ustilsé au meme temps que le style Boostrap -->
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.css">
+
+    <!-- styles CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <title>JavaScript - I/02 introduction</title>
 
     <!-- il y a plusieurs moyens de placer du JS, avec la balise script , par exemple ds l etete de la page -->
     
-    <!-- script JS dans l'en-tête de la page, parès les styles -->Ò
+    <!-- script JS dans l'en-tête de la page, parès les styles -->
 
     <!-- JS !!!, ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
 
@@ -22,8 +31,7 @@
     <!-- On peut mettre du JS directement dans l'élément HTML, dans la balise ouvrante -->
     <!-- Ces 2 scripts fontionnent avec l'attribut ONCLICK -->
     <!-- en-tête -->
-
-    <!-- =================================== -->
+ <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color: #;">
@@ -35,7 +43,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- menu intro - 01 -->
+          <!-- menu intro et variables -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Intro</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
@@ -43,27 +51,30 @@
               <li><a class="dropdown-item" href="../01_introduction/01-02-intro.html">Intro 2</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-03-intro.html">Intro 3</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-04-intro.html">Intro 4</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
           </li>
-          <!-- menu variable - 02 -->
+
+          <!-- menu intro et variables -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="02_variables_constantes" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Variables</a>
+            <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Variables</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_01_intro.html">Intro</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_02_affichage.html">Affichage</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_03_types.html">Types</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_04_operateurs.html">Opérateurs</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_05_concatenation.html">Concaténation</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_06_constantes.html">Constantes</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
           </li>
+
           <!-- menu structure_controle - 03 -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="03_structure_controle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Structures</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+            <a class="nav-link dropdown-toggle" href="02_variables_constantes" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Structures</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item active" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_02_if.html">If</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_03_if_else.html">If else</a></li>
@@ -74,78 +85,73 @@
               <li><a class="dropdown-item" href="../03_structure_controle/03_08_switch.html">Switch</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_09_boucles.html">Boucles</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_10_for.html.html">For</a></li>
-
-              <!-- menu fonctions - 04-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="04_fonctions" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fonctions</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                  <li><a class="dropdown-item" href="../04_fonctions/04_01_intro.html">Intro</a></li>
-                  <li><a class="dropdown-item" href="../04_fonctions/04_02_portee.html">Portée</a></li>
-                  <li><a class="dropdown-item" href="../04_fonctions/04_03_return.html">Return/a></li>
-                  <li><a class="dropdown-item" href="../04_fonctions/04_04_conclusion.html">Conclusion</a></li>
-                </ul>
-              </li>
-
-              <!-- menu objets - 05-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="05_objets" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fonctions</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                  <li><a class="dropdown-item" href="../05_objets/05_01_intro.html">Intro</a></li>
-                  <li><a class="dropdown-item" href="../05_objets/05_02_objet_litteral.html">Objet littéral</a></li>
-                  
-                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                </ul>
-              </li>
-
-              <!-- menu fonctions - 06 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                  <li><a class="dropdown-item" href="../06_selecteurs/06_01_intro.html">Intro</a></li>
-                </ul>
-              </li>
-
-              <!-- menu fonctions - 07 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                  <li><a class="dropdown-item" href="../07_evenements/07_01_intro.html">Intro</a></li>
-                </ul>
-              </li>
-
-              <!-- menu manipulations - 08 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                  <li><a class="dropdown-item" href="../08_manipulations/">Intro</a></li>
-                </ul>
-              </li>
-
-              <!-- menu manipulations - 09-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="09_dom" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                  <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
-                </ul>
-              </li>
-
-              
-
-            <!-- 
-              <li><hr class="dropdown-divider"></li>
+              <!-- <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
           </li>
-    
+              <!-- menu fonctions - 04-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="04_fonctions" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fonctions</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../04_fonctions/04_01_intro.html">Intro</a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_02_portee.html">Portée</a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_03_return.html">Return/a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_04_conclusion.html">Conclusion</a></li>
+              </ul>
+            </li>
+
+              <!-- menu objets - 05-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="05_objets" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Objet</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../05_objets/05_01_intro.html">Intro</a></li>
+                <li><a class="dropdown-item" href="../05_objets/05_02_objet_litteral.html">Objet littéral</a></li>
+              </ul>
+            </li>
+
+              <!-- menu fonctions - 06 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../06_selecteurs/06_01_intro.html">Intro</a></li>
+              </ul>
+            </li>
+
+              <!-- menu evenements - 07 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../07_evenements/07_01_intro.html">Intro</a></li>
+              </ul>
+            </li>
+
+              <!-- menu manipulations - 08-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../08_manipulations/">Intro</a></li>
+              </ul>
+            </li>
+
+            <!-- menu dom - 09  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
+              </ul>
+            </li>
 
           <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
           </li> -->
+
         </ul>
+
         <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form> -->
+
       </div>
     </div>
   </nav>
@@ -154,7 +160,7 @@
   <!-- Contenu principal -->
   <!-- =================================== -->
     <!-- debut div container -->
-    <h1>JavaScript - I/02 introduction</h1>
+    <h1 class="display-4">JavaScript - I/02 introduction</h1>
 
     <!-- le 1er script affiche une alerte avec son message -->
     <button class="bouton" onclick="alert('Coucou papillon !')">Cliquer sur moi !</button>
