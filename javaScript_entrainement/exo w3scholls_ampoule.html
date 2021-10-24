@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work : l'ampoule</title>
+</head>
+
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <hr>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <!-- Ici on vit des elements JS pour faire allumer et eteindre l'ampoule -->
+
+    <button onclick="document.getElementById('myImage').src='img/light_bulb_on.png'">Turn on the light</button>
+
+    <img id="myImage" src="img/light_bulb_off.png" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='img/light_bulb_off.png'">Turn off the light</button>
+
+    <hr>
+</body>
+</html>
