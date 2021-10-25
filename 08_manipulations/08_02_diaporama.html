@@ -1,14 +1,4 @@
-<!-- dossier 07 evenement -->
-<!-- creer ces dossiers a la racine :
-
-dossier
-03_sctrucutres_controle
-04_fonctions
-05_objets
-06_selecteurs
-07_evenements 
-08_manipulations
-09_dom-->
+<!-- 08-01-diaporama.html -->
 
 <!doctype html>
 <html lang="fr">
@@ -21,14 +11,13 @@ dossier
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
-    <!-- Bootstrap icons -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>JavaScript - VII/01 - Evenements</title>
+    <title>JavaScript - VIII/01 - Diaporama</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- sans async ds le script le HTML ne se charge pas, mais window.onload ds JS externe fait fonctionner le HTML sans async ou defer ici -->
-    <!-- <script src=".js"></script> -->
+
+    <!-- <script src="intro.js"></script> -->
 </head>
 
 <body>
@@ -113,7 +102,7 @@ dossier
 
               <!-- menu fonctions - 06 -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <a class="nav-link dropdown-toggle active" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
                 <li><a class="dropdown-item" href="../06_selecteurs/06_01_intro.html">Intro</a></li>
               </ul>
@@ -121,7 +110,7 @@ dossier
 
               <!-- menu evenements - 07 -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
+              <a class="nav-link dropdown-toggle active" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
                 <li><a class="dropdown-item" href="../07_evenements/07_01_intro.html">Intro</a></li>
               </ul>
@@ -129,15 +118,16 @@ dossier
 
               <!-- menu manipulations - 08-->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
+              <a class="nav-link dropdown-toggle active" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                <li><a class="dropdown-item" href="../08_manipulations/">Intro</a></li>
+                <li><a class="dropdown-item" href="..08_01_diaporama.html">Diaporama</a></li>
+                <li><a class="dropdown-item" href="..08_02.interval.html">Interval</a></li>
               </ul>
             </li>
 
             <!-- menu dom - 09  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
+              <a class="nav-link dropdown-toggle active" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
               </ul>
@@ -161,73 +151,35 @@ dossier
     <!-- =========================== -->
     <!-- En-tête de page -->
     <!-- =========================== -->
-
     <div class="container-fluid bg-warning p-5 text-center">
-        <!-- titreNiveau1 -->
-        <h1 id="titreN1" class="display-4">JavaScript -  VII-01 - Les évènements</h1>
-        <p class="lead"><i class="bi bi-patch check"></i>Les évènements en JS</p>
+        <h1 id="titreN1" class="display-4">JavaScript - VIII/02 <br> Diaporama avec setInterval</h1>
+        <p class="lead"><i class="""></i>Des diaporamas en JS <i class=""></i> </p>
     </div>
 
     <!-- =========================== -->
     <!-- Conteneur principal -->
     <!-- =========================== -->
-
     <div class="container p-4">
 
-        <!-- section 1 -->
         <section class="row mt-4">
-            <div class="col-12 col-md-3 bg-primary text-white">
-                <h4>addEventListener()</h4>
-                <p>Un simple clique sur la div #rouge</p>
-                <p id="p1" class="selectClasse">Un simple clique sur ce paragraphe</p>
-                
+            <div class="col-12 col-md-6 ">
+                <h2>1- Avec setInterval()</h2>
             </div>
             <!-- fin col -->
-
-            <div class="col-12 col-md-3 bg-success text-white">
-                <div id="rouge">#rouge</div>
+    
+            <div class="col-12 col-md-6 ">
+                <div id="diapo1">
+                    <img src="img/1.jpg" alt="de l'herbe" class="img-fluid" id="imgDiapo1">
+                </div>
             </div>
             <!-- fin col -->
-            
-            <div class="col-12 col-md-3 bg-primary text-white">
-                <div id="orange">#orange</div>
-            </div>
-            <!-- fin col -->
-
-            <div class="col-12 col-md-3 bg-danger text-white">
-                <div id="bleu">#bleu</div>
-            </div>
-            <!-- fin col -->
+          
         </section>
         <!-- fin rangée -->
-
-        <!-- Faire un form depuis boostratp -->
-        <section class="row mt-4">
-          <div>
-            <!-- action pour envoyer le code / methode c'est la maniere de l'envoyer -->
-            <form action="#" method="post" class="row g-3 border border-dark p-2" >
-              <div class="col-md-6 border border-dark">
-                <label for="staticEmail2" class="visually-hidden">Email</label>
-                <input type="email" class="form-control-plaintext" id="staticEmail2" value="email@example.com">
-              </div>
-
-              <div class="col-auto">
-                <label for="inputPassword2" class="visually-hidden">Password</label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-              </div>
-
-              // type submit pour 
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-              </div>
-            </form>
-          </div>
-          <!-- fin col -->
-        </section>
-        <!-- fin rangée -->
+       
 
     </div>
-    <!-- fin div containeur -->
+    <!-- fin div container -->
 
     <!-- Optional JavaScript -->
     <!-- Bootstrap Bundle with Popper -->
@@ -235,11 +187,9 @@ dossier
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
-    <!-- la solution la plus utilisée -->
     <script src="../js/mon_js.js"></script>
-    <script src="07_01_intro.js"></script>
+    <script src="08_02_interval.js"></script>
 
-  </body>
+</body>
 
 </html>
