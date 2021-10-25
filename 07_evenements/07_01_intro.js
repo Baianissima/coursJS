@@ -72,3 +72,49 @@ function fonctionDivBleu(e) {
     this.innerHTML = "Coucou2";
     this.style.fontSize = "1.5em";
 }
+
+//4- formulaire :
+
+document.querySelector('#email').addEventListener('focus', inputEmailFocus);
+
+function inputEmailFocus() {
+    // alert('focus sur le champs email');
+    this.style.background = ('lightgreen');
+    this.classList.add('texte-white');
+}
+
+// function inputEmailOut() {
+//     // alert('focus sur le champs email');
+//     this.classList.add('bg-success');
+//     this.classList.add('texte-dark');
+// }
+
+// blur change l'apparance quand l'input perd le focus :
+
+document.querySelector('#password').addEventListener('blur', inputPasswordBlur);
+
+function inputPasswordBlur() {
+    // alert('blur sur input pass');
+    this.style.background = 'lightgreen';
+    this.classList.add('text-white');
+}
+
+
+//Ecouter d'evenement sur le bouton avec click
+
+document.querySelector('#submit').addEventListener('click', inputBtnSubmit);
+
+//On ajoute "event" en argument à cette fonction :
+
+function inputBtnSubmit(event) { 
+
+    // neutralise le formulaire pour la démo ou si on récupere les données en développement, cela neutralise également les required :
+
+    event.preventDefault(); 
+    
+    // Les champs ne sont pas réinitialisés, le contenu et conservé :
+
+    alert('Nous avons bien reçu votre formulaire');
+    this.classList.add('bg-success');
+    this.innerHTML ="Vous êtes connecté";
+}

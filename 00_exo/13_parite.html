@@ -1,4 +1,4 @@
-<!-- dossier 00 EXO - Exo 12- Tournez manège -->
+<!-- dossier 00 EXO - Exo 13 - Parité -->
 
 
 <!doctype html>
@@ -16,60 +16,51 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>Exo 12- Tournez manège</title>   
-    <link rel="stylesheet" href="css/12_tournez_manege.css"
+    <title>Exo 13 - Parité</title>   
+    <link rel="stylesheet" href="css/13_parite.css"
 </head>
 
 <body>
     <div>
-        <h1>Exo 12- Tournez manège</h1>
+        <h1>Exo 13 - Parité</h1>
 
-        <h2>Boucles : while & for</h2>
+        <h2>Soit la boucle for dans le .js 13-parite.js; Ce programme affiche les nombres pairs jusqu'à 10 dans la console. Tapez le et examinez le résultat dans votre console.</h2>
 
-        <p>1/ Écrivez un programme "12-tournez_manege.js" qui fait faire 10 tours de manège en affichant un message à chaque tour comme cela...</p>
-        <br>
+        <p><code>for (var i = 1; i <= 20; i++) { <br>
+            if ( i % 2 === 0)  <br>
+            console.log(i + ' est pair'); <br>
+        } <br>
+        </code></p>
+        
+        <h2>Ce programme utilise le modulo (reste de la division est égal à 0) pour trouver les nombres pairs en dessous de 10.</h2>
+
+        <p>Des exemples pour l'utilisation du modulo</p>
         <div>
             <ul>
-                <li>C'est le tour de manège n° 1</li>
-                <li>C'est le tour de manège n° 2</li>
-                <li>C'est le tour de manège n° 3...</li>
+                <li>console.log(10 % 2); // Affiche 0 car 10 = 5 * 2 + 0</li>
+                <li>console.log(11 % 2); // Affiche 1 car 11 = 5 * 2 + 1</li>
+                <li>console.log(18 % 3); // Affiche 0 car 18 = 3 * 6 + 0</li>
+                <li>console.log(19 % 3); // Affiche 1 car 19 = 3 * 6 + 1</li>
+                <li>console.log(20 % 3); // Affiche 2 car 20 = 3 * 6 + 2</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div>
+            <ul>
+                <li>Exo 1 : Modifiez le programme, dans une boucle for, afin qu'il affiche dans la console les nombres impairs.</li>
+                <p id="p1"></p>
+                
+                <li>Exo 2 : Puis modifiez le programme, toujours dans une boucle for afin que le nombre initial soit saisi par l'utilsiateur.</li>
+
+                <li>ATTENTION : le nombre saisi par l'utilisateur peut être n'importe lequel, limitez dans une nouvelle variable ce nombre en lui ajoutant 10 afin que le test "inférieur à" puisse être "testé"....</li>
+
+                <li>Exo 3 : Faites la même boucle, en demandant un second nombre, avec while.</li> 
             </ul>
         </div>
         
-        <p>2/ Ensuite, améliorez votre programme pour que le nombre de tours soit saisi par l'utilisateur.</p>
-        <br>
-        <p>Testez avec des compteurs initialisés à d'autres valeurs que ZERO dans vos codes.</p>
-        <br>
-        <p>Résultat :</p>
-      
-        <!-- <p>Avec while: c'est le tour n° 1</p> -->
-        <!-- <p>Avec while: c'est le tour n° 2</p> -->
-        <!-- <p>Avec while: c'est le tour n° 3</p> -->
-        <!-- <p>Avec while: c'est le tour n° 4... jusqu a 10</p> -->
-    
-
         
-        <!-- <p>Avec for: c'est le tour n° 1</p> -->
-        <!-- <p>Avec for:: c'est le tour n° 2</p> -->
-        <!-- <p>Avec for:: c'est le tour n° 3</p> -->
-        <!-- <p>Avec for:: c'est le tour n° 4... jusqu a 10 par exemple</p> -->
-      
-
-       
-        <!-- <p>C'est le tour n° 1</p> -->
-        <!-- <p>C'est le tour n° 2</p> -->
-        <!-- <p>C'est le tour n° 3</p> -->
-        <!-- <p>C'est le tour n° 4</p> ... jusqu a 10 par exemple</p> -->
-    
-
-    
-        <!-- <p>C'est le tour n° ... </p> -->
-
-        <p id='p1'></p>
-        <p id='p2'></p>
-        <p id='p3'></p>
-        <p id='p4'></p>
- 
     </div>
 
     <!-- fin div containeur -->
@@ -83,6 +74,6 @@
     <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer, le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
     <!-- la solution la plus utilisée -->
     <script src="../js/mon_js.js"></script>
-    <script src="js/12_tournez_manege.js"></script>
+    <script src="js/13_parite.js"></script>
 </body>
 </html>
