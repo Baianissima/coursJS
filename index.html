@@ -1,57 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript - Cours Colombbus Sommaire</title>
-    <!-- mes styles -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>vanusaPIX</title>   
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div>
-        <!-- navigation principale
-        <header>
-            <nav>
-                zone des liens simples pour faire le menu du site COURS JS  -->
-                <!-- <a href="test_boostrap.html" title="" class="active">Test Boostrap</a>
-                <a href="test_boostrap2.html" title="" class="">Test Boostrap2</a>
-                <a href="test_boostrap3.html" title="" class="">Test Boostrap3</a>
-                <a href="00_entrainement.html" title="" class="">00_entrainement</a>
-                <a href="w3scholl.html" title="" class="">w3scholl</a>
-                <a href=01_01_intro.html" title="" class="">01_01_intro</a>
-                <a href=01_02_intro.html" title="" class=">01_02_intro</a>
-                <a href=01_03_intro.html" title="" class="">01_03_intro</a>
-                <a href=01_04_intro.html" title="" class="">01_04_intro</a>
-                <a href=03_01_intro.html" title="" class="">03_01_intro</a>
-                <a href=03_02_if.html" title="" class="">03_02_if.html</a>
-                <a href= 03_03_if_else.html" title="" class=""> 03_03_if_else</a>
-                <a href=03_04_if_else_if_else.html" title="" class="">03_04_intro</a>        
-            </nav>
-        </header> -->
+    <div class="container-fluid">
+        <h1 class="display-1">vanusaPIX</h1>
+        <p class="lead">Paris la Défense et l'Arc de Triomphe</p>
+    </div>
 
-        <main>
-            <h1>JavaScript - Cours JS Colombbus - Sommaire/</h1>
-            <h2>Introduction</h2>
-            <ul>
-                <li><a href="#dynamique">Le JavaScript est un langage dynamique</a></li>
-                <li><a href="#client">Le JavaScript est un langage principalement côté client</a></li>
-                <li><a href="#interprete">Le JavaScript est un langage interpreté</a></li>
-                <li><a href="#objet">JavaScript est orienté objet...</a></li>
-            </ul>
+    <div class="container bg-light">
+        <section class="row align-items-center">
+            <h2 class="display-6">L'Arc de Triomphe, Paris 2021</h2>
 
-            <h3 id="dynamique">Le JavaScript est un langage dynamique</h3>
-            <p>Ce langage va nous permettre de manipuler des contenus HTML ou des styles et de les modifier en fonction de divers évènements ou variables. Un évènement peut être par exemple un clic d'un utilisateur à un certain endroit de la page tandis qu'une variable peut être l'heure de la journée.</p>
+            <!-- div.col-lg-2*12>figure>img+figcaption -->
 
-            <h3 id="client">Le JavaScript est un langage principalement côté client</h3>
-            <p>JS s'éxecute côté client, nous allons quand même pouvoir l'utiliser côté serveur à condition que l'on mette en place un environnement favorable, en utilisant, par exemple, <a href="https/nodejs.org/en/"> node.js. </a></p>
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure class="d-inline-block">
+                    <img class="img-fluid rounded" src="img/arc_triomphe_01.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
 
-            <h3 id="interprete">JavaScript est un langage interprété</h3>
-            <p>Pour être interpreté, JS doit être éxécuté directement dans un logiciel interpréteur : tous les navigateurs connus possèdent leur interpreteur JS.</p>
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_02.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballéé</figcaption>
+                </figure>
+            </div>
 
-            <h3 id="java">JavaScript n'est pas JAVA !!!</h3>
-            <p>Encore aujourd’hui, certaines personnes ont tendance à confondre les deux langages « Java » et « JavaScript ». Retenez ici que ces deux langages, bien que syntaxiquement assez proches à la base, reposent sur des concepts fondamentaux complètement différents et servent à effectuer des tâches totalement différentes.</p>
-        </main>
-    </div>  
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_03.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_04.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_05.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_06.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_07.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_08.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_09.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_11.jpg"   alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_12.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-2 col-md-4 col-lg-2 col-xl-3">
+                <figure>
+                    <img class="img-fluid rounded" src="img/arc_triomphe_13.jpg"  alt="Arc du Triomphe">
+                    <figcaption class="figure-caption text-center bg-light">L'Arc du Triomphe emballé, déballé</figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+    <!-- la solution la plus utilisée -->
+    <!-- <script src="introduction.js"></script> -->
 </body>
 </html>
