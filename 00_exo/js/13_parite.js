@@ -99,15 +99,19 @@ console.log(nbrUtilisateurMax, nbrUtilisateurMax);
 
 for (var i = nbrUtilisateur1; i<=nbrUtilisateurMax; i++) {
     if (i % 2 === 0) {
-        document.write()
+        document.write('<p class="stabilo"> ' + nbrUtilisateur2 + ' est pair.</p>');
+    } else {
+        document.write('<p class="stabilo"> ' + nbrUtilisateur2 + ' est impair.</p>');
     }
 }
+
 
 
 // EXO 3 : boucle while
 // Faites la même boucle, en demandant un second nombre, avec while. //
 
 document.write('<p>************** EXO 3************ </p>');
+
 var nbrUtilisateur2 = parseInt(prompt('Exo 3 : rentrez un nombre entier !'));
 console.log(typeof nbrUtilisateur2, nbrUtilisateur2);
 

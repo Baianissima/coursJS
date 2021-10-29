@@ -95,3 +95,6 @@ em {
     text-align: center;
 }
 
+.cache {
+    display: none;
+}
