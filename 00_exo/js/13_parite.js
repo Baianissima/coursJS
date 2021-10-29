@@ -3,6 +3,15 @@
 
 // coucou();
 
+// Exo 1 : Modifiez le programme, dans une boucle for, afin qu'il affiche dans la console les nombres impairs.
+// <p id="p1"></p>
+                
+// Exo 2 : Puis modifiez le programme, toujours dans une boucle for afin que le nombre initial soit saisi par l'utilisateur.
+
+// ATTENTION : le nombre saisi par l'utilisateur peut être n'importe lequel, limitez dans une nouvelle variable ce nombre en lui ajoutant 10 afin que le test "inférieur à" puisse être "testé"....
+
+// Exo 3 : Faites la même boucle, en demandant un second nombre, avec while. //
+
 
 // Des exemples :
 console.log(10 % 2); // Affiche 0 car 10 = 5 * 2 + 0
@@ -61,8 +70,6 @@ document.write('<p> ******* EXO 3 ********* </p>');
 
 
 
-
-
 // EXO 1
 //Boucle for avec if else pour afficher pairs et impairs en alternance
 for (var i = 1; i <= 10; i++) {
@@ -82,7 +89,7 @@ console.log(20 % 3); // Affiche 2 car 20 = 3 * 6 + 2
 
 
 // EXO 2
-document.write('<p>***** EXO 2******');
+document.write('<p>***** EXO 2 ******</p>');
 
 var nbrUtilisateur1 = parseInt(prompt('Exo 2 : rentrez un nombre entier, merci '));
 console.log(typeof nbrUtilisateur1, nbrUtilisateur1);
@@ -95,6 +102,29 @@ for (var i = nbrUtilisateur1; i<=nbrUtilisateurMax; i++) {
         document.write()
     }
 }
+
+
+// EXO 3 : boucle while
+// Faites la même boucle, en demandant un second nombre, avec while. //
+
+document.write('<p>************** EXO 3************ </p>');
+var nbrUtilisateur2 = parseInt(prompt('Exo 3 : rentrez un nombre entier !'));
+console.log(typeof nbrUtilisateur2, nbrUtilisateur2);
+
+var nbrUtilisateurMax = (nbrUtilisateur2 + 10);
+console.log(typeof nbrUtilisateur2, nbrUtilisateur2);
+
+while (nbrUtilisateur2 <= nbrUtilisateur2) {
+    // document.write('code');
+    // nbrUtilisateur2++;
+
+    if (nbrUtilisateur2 % 2 === 0) {
+        document.write('<p class="stabilo"> ' + nbrUtilisateur2 + ' est pair.</p>');
+    } else {
+        document.write('<p class="stabilo"> ' + nbrUtilisateur2 + ' est impair.</p>');
+    }
+}
+nbrUtilisateur2++;
 
 
 
