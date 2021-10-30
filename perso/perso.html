@@ -23,9 +23,9 @@
   <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg- style="background-color: #;">
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">JS</a>
+      <a class="navbar-brand text-white" href="../index.html">JS</a>
        <!-- button c'est pour le menu burger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -157,10 +157,10 @@
     <!-- En-tête de page -->
     <!-- =========================== -->
 
-    <div class="container-fluid bg-warning p-5 text-center">
+    <div class="container-fluid en-tete p-5 text-center">
       <!-- titreNiveau1 -->
       <h1 id="titreN1" class="display-4">Exos JS persos</h1>
-      <p class="lead"><i class="bi bi-patch check"></i>W3School</p>
+      <p class="lead"><i class="bi bi-patch check"></i>W3School etc</p>
   </div>
 
   <!-- =================================== -->
@@ -168,23 +168,25 @@
   <!-- =================================== -->
 
 <body>
-  <h2>What Can JavaScript Do?</h2>
+  <!-- =========================== -->
+  <!-- Conteneur principal -->
+  <!-- =========================== -->
 
-  <p id="demo">JavaScript can change HTML content.</p>
+  <div class="container p-4">
+    <h2>What Can JavaScript Do?</h2>
 
-  <hr>
+    <p id="demo">JavaScript can change HTML content.</p>
 
-  <p>JavaScript can change HTML attribute values.</p>
+    <p>JavaScript can change HTML attribute values.</p>
 
-  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-  <button onclick="document.getElementById('myImage').src='img/light_bulb_on.png'">Turn on the light</button>
+    <button onclick="document.getElementById('myImage').src='img/light_bulb_on.png'">Turn on the light</button>
 
-  <img id="myImage" src="img/light_bulb_off.png" style="width:100px">
+    <img id="myImage" src="img/light_bulb_off.png" style="width:100px">
 
-  <button onclick="document.getElementById('myImage').src='img/light_bulb_off.png'">Turn off the light</button>
+    <button onclick="document.getElementById('myImage').src='img/light_bulb_off.png'">Turn off the light</button>
 
-  <hr>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -607,5 +609,8 @@ Ici, vous devez bien retenir la chose suivante : une variable définie dans l’
 
 Cette notion de portée est une notion qu’on retrouve dans de nombreux langages informatiques. La portée permet de « protéger » certains codes et certaines variables en les rendant inaccessibles depuis l’extérieur. Cela permet de renforcer la sécurité d’un script et sa stabilité dans le cas où on ne voudrait pas qu’un utilisateur puisse modifier la valeur d’une variable depuis l’extérieur pour des raisons de cohérence et de logique du script. -->
 
+
+  </div>
+<!-- fin conteneur -->
 </body>
 </html>
