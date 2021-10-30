@@ -1,4 +1,4 @@
-<!-- 08-03-keydown.html -->
+<!-- 08_05_toggles.html -->
 
 <!doctype html>
 <html lang="fr">
@@ -26,9 +26,9 @@
   <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color: #;">
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">JS</a>
+      <a class="navbar-brand text-white" href="../index.html">JS</a>
        <!-- button c'est pour le menu burger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="02_variables_constantes" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Structures</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item active" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_02_if.html">If</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_03_if_else.html">If else</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_04_if_else_if_else.html">If else if else</a></li>
@@ -103,7 +103,7 @@
 
               <!-- menu fonctions - 06 -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <a class="nav-link dropdown-toggle" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
                 <li><a class="dropdown-item" href="../06_selecteurs/06_01_intro.html">Intro</a></li>
               </ul>
@@ -111,7 +111,7 @@
 
               <!-- menu evenements - 07 -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
+              <a class="nav-link dropdown-toggle" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
                 <li><a class="dropdown-item" href="../07_evenements/07_01_intro.html">Intro</a></li>
               </ul>
@@ -119,12 +119,12 @@
 
               <!-- menu manipulations - 08-->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
+              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                <li><a class="dropdown-item" href="..08_01_diaporama.html">Diaporama</a></li>
-                <li><a class="dropdown-item" href="..08_02.interval.html">Interval</a></li>
-                <li><a class="dropdown-item" href="..08_03.keydown.html">Interval</a></li>
-                <li><a class="dropdown-item" href="..08_05.toggle.html">Interval</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_01_diaporama.html">Diaporama</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_02_diaporama.html">Diaporama avec setInterval</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_03_keydown.html">Keydown</a></li>
+                <li><a class="dropdown-item active" href="../08_manipulations/08_05_toggle.html">Toggle</a></li>
               </ul>
             </li>
 
@@ -135,6 +135,15 @@
                 <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
               </ul>
             </li>
+
+            <!-- menu dossier perso  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="perso" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../perso/perso.html">Perso</a></li>
+              </ul>
+            </li>
+
 
           <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -154,7 +163,7 @@
     <!-- =========================== -->
     <!-- En-tête de page -->
     <!-- =========================== -->
-    <div class="container-fluid bg-warning p-5 text-center">
+    <div class="container-fluid en-tete p-5 text-center">
         <h1 id="titreN1" class="display-4">JavaScript - VIII/05 - Toggle</h1>
         <p class="lead"><i class="""></i>Afficher, cacher un élément<i class=""></i></p>
     </div>
@@ -189,7 +198,6 @@
         crossorigin="anonymous"></script>
 
     <script src="../js/mon_js.js"></script>
-    <!-- <script src="08_05_toggle.js"></script> -->
 
     <script>
         let bouton = document.querySelector('#cacheImage');

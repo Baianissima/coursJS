@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Boostrap/boostrap-5.1.1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- mes styles : c'est compatible pour etre ustilsé au meme temps que le style Boostrap -->
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.css">
+
+    <!-- styles CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <title>Exos persos</title>
+</head>
+<body>
+
+  <!-- =================================== -->
+  <!-- navbar bootstrap -->
+  <!-- =================================== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg- style="background-color: #;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">JS</a>
+       <!-- button c'est pour le menu burger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- menu intro et variables -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Intro</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+              <li><a class="dropdown-item active" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
+              <li><a class="dropdown-item" href="../01_introduction/01-02-intro.html">Intro 2</a></li>
+              <li><a class="dropdown-item" href="../01_introduction/01-03-intro.html">Intro 3</a></li>
+              <li><a class="dropdown-item" href="../01_introduction/01-04-intro.html">Intro 4</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+
+          <!-- menu intro et variables -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Variables</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_01_intro.html">Intro</a></li>
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_02_affichage.html">Affichage</a></li>
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_03_types.html">Types</a></li>
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_04_operateurs.html">Opérateurs</a></li>
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_05_concatenation.html">Concaténation</a></li>
+              <li><a class="dropdown-item" href="../02_variables_constantes/02_06_constantes.html">Constantes</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+
+          <!-- menu structure_controle - 03 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="02_variables_constantes" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Structures</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item active" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_02_if.html">If</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_03_if_else.html">If else</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_04_if_else_if_else.html">If else if else</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_05_opérateurs_logiques.html">Opérateurs Logiques</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_06_precedences.html">Précedences</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_07_opérateur_ternaire.html">Opérateur ternaire</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_08_switch.html">Switch</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_09_boucles.html">Boucles</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_10_for.html.html">For</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+              <!-- menu fonctions - 04-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="04_fonctions" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fonctions</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../04_fonctions/04_01_intro.html">Intro</a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_02_portee.html">Portée</a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_03_return.html">Return/a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_04_conclusion.html">Conclusion</a></li>
+              </ul>
+            </li>
+
+              <!-- menu objets - 05-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="05_objets" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Objet</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../05_objets/05_01_intro.html">Intro</a></li>
+                <li><a class="dropdown-item" href="../05_objets/05_02_objet_litteral.html">Objet littéral</a></li>
+              </ul>
+            </li>
+
+              <!-- menu fonctions - 06 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="06_selecteurs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../06_selecteurs/06_01_intro.html">Intro</a></li>
+              </ul>
+            </li>
+
+              <!-- menu evenements - 07 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="07_evenements" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evénements</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../07_evenements/07_01_intro.html">Intro</a></li>
+              </ul>
+            </li>
+
+              <!-- menu manipulations - 08-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../08_manipulations/">Intro</a></li>
+              </ul>
+            </li>
+
+            <!-- menu dom - 09  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="09_dom" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../09_dom/09_01_dom.html">Intro</a></li>
+              </ul>
+            </li>
+
+            <!-- menu dossier perso  -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="perso" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../perso/perso.html">Perso</a></li>
+                </ul>
+              </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+
+        </ul>
+
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+
+    <div class="container-fluid bg-warning p-5 text-center">
+      <!-- titreNiveau1 -->
+      <h1 id="titreN1" class="display-4">Exos JS persos</h1>
+      <p class="lead"><i class="bi bi-patch check"></i>W3School</p>
+  </div>
+
+  <!-- =================================== -->
+  <!-- Contenu principal -->
+  <!-- =================================== -->
+
+<body>
+  <h2>What Can JavaScript Do?</h2>
+
+  <p id="demo">JavaScript can change HTML content.</p>
+
+  <hr>
+
+  <p>JavaScript can change HTML attribute values.</p>
+
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+  <button onclick="document.getElementById('myImage').src='img/light_bulb_on.png'">Turn on the light</button>
+
+  <img id="myImage" src="img/light_bulb_off.png" style="width:100px">
+
+  <button onclick="document.getElementById('myImage').src='img/light_bulb_off.png'">Turn off the light</button>
+
+  <hr>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+  crossorigin="anonymous"></script>
+
+  <!-- /*
+
+https://waytolearnx.com/2018/07/difference-entre-la-boucle-while-et-do-while-2.html
+
+
+
+        RESUME/SOMMAIRE DE LA PAGE ENTRAINEMENT :
+
+        1- AFFICHAGE :
+        - declarer une variables avec let ou var (ancienne et vouée à dispraître)
+        - retour à ligne avec  \n  comme le br en HTML
+
+
+        2- TYPE DE DONNEES
+        typeof : c'est NUMBER, des chiffres
+
+        += addition d'une valeur numérique
+        -= soustraction d'une valeur numérique
+
+        // addition d'une valeur numérique (number) avec += soustraction -=, division /=, multiplication *=
+        noteEval += 2;
+        // noteEval = 18;
+        console.info(noteEval);
+
+        3- CONSTANTES
+        C'est impossible à modifier une constante : pour déclarer utiliser const
+
+        4- CONCATENER
+        let firstName = 'James';
+        let lastName = 'Bond';
+        console.log(firstName, lastName);
+        document.write('<p> The name is ' + lastName  + ', ' + firstName + ' ' + lastName + '.</p>');
+
+        5- OPERATEURS NUMERIQUES
+        additon 
+        let addition = 10+5 ;
+        document.write('<p style="text-transform:uppercase;">Le résultat d\'une addition : ' + addition + '</p>');
+
+        multiplication
+        let multiplication = 10 * 5;
+
+        soustraction 
+        let soustraction = 10 - 5;
+
+        division 
+        let division = 10 / 3;
+
+        modulo 
+        let modulo = 10 % 3; 
+        exemple pour l'utilisation du modulo ; répondre à la question suivante : j'ai 10 billes je les partage entre 3 personnes il m'en reste combien
+
+        (Opérateurs JS par Pierre Giraud  https://www.pierre-giraud.com/javascript-apprendre-coder-cours/operateur-arithmetique-affectation/ ) :
+        Il existe différents types d’opérateurs qui vont nous servir à réaliser des opérations de types différents. Les plus fréquemment utilisés sont :
+
+        a) Les opérateurs arithmétiques ;
+        Opérateur 	Nom de l’opération associée
+        + 	Addition
+        – 	Soustraction
+        * 	Multiplication
+        / 	Division
+        % 	Modulo (reste d’une division euclidienne) : 5 / 3 = 1, et il reste 2 dans le cas d’une division euclidienne. Le reste, 2, est le MODULO.
+        ** 	Exponentielle (élévation à la puissance d’un nombre par un autre) : 2^3 = 2*2*2 = 8. 
+
+
+        b) Les opérateurs d’affectation / d’assignation :
+        = contient/stocke, affecte le résultat
+        += 	Additionne puis affecte le résultat
+        -= 	Soustrait puis affecte le résultat
+        *= 	Multiplie puis affecte le résultat
+        /= 	Divise puis affecte le résultat
+        %= 	Calcule le modulo puis affecte le résultat
+
+        c) Les opérateurs de comparaison :      
+        == 	Permet de tester l’égalité sur les valeurs
+        === 	Permet de tester l’égalité en termes de valeurs et de types
+        != 	Permet de tester la différence en valeurs
+        <> 	Permet également de tester la différence en valeurs
+        !== 	Permet de tester la différence en valeurs ou en types
+        < 	Permet de tester si une valeur est strictement inférieure à une autre
+        > 	Permet de tester si une valeur est strictement supérieure à une autre
+        <= 	Permet de tester si une valeur est inférieure ou égale à une autre
+        >= 	Permet de tester si une valeur est supérieure ou égale à une autre
+        
+        d) Les opérateurs d’incrémentation et décrémentation ;
+        e) Les opérateurs logiques ;
+        f) L’opérateur de concaténation ;
+        g) L’opérateur ternaire ;
+        h) l’opérateur virgule.
+
+    
+        6- CONDITIONS
+        let a = 2, b = 5, c = 2;
+        console.log(a, b, c);
+
+        if(a > b){
+            document.write('<p>a = '+ a + ' est supérieur à b = '+ b + ' </p>');
+        } else {
+            document.write('<p>a  = '+ a + ' n\'est pas supérieur à b = '+ b + ' </p>');
+        }
+
+        7- BOUCLES
+        var w1 = 0;
+        console.log(typeof w1, w1);
+        while (w1 <= 15 ) {// tant que le contenu de la variable est inférieur ou égal à 15
+        document.write('<p>La variable w1 = ' + w1 + ',</p>');// exécute ce bloc de code
+        w1++;// contenu de la variable + 1: incrémenter
+        } // la boucle stoppe dès que w1 atteint 15
+
+        8- FONCTIONS
+
+        9- SUPPLEMENTS 
+
+
+        CARACTERES A UTILISER :
+
+        \ barre bolique opposée à placer avant uote de contraction : C\'est facile !
+        \n pour retour à la ligne, équivakent au <br> en HTML
+        (''); pour déclarer une string, une chaîne de caractères, entre des quotes simples
+        = contient
+        ==  equivaut à, égal à
+        === égal en valeur et en type
+        !=  différent de
+        > supérieur à
+        >= supérieur ou égal
+        < inférieur à
+        >= inférieur ou égal
+        += addition d'une valeur numérique
+        -= soustraction d'une valeur numérique
+        && ET
+        || OU
+        
+        ALERTE modele pour tester le fichier JS :
+        alert('Bom dia!');
+
+    */
+
+
+Structures de contrôle, conditions et opérateurs de comparaison JavaScript :
+https://www.pierre-giraud.com/javascript-apprendre-coder-cours/structure-controles-operateur-comparaison/
+
+    Cours complet JavaScript
+    INTRODUCTION AU COURS JAVASCRIPT
+        Introduction au JavaScript
+        L’environnement de travail pour ce cours JavaScript
+        Où écrire le code JavaScript ?
+        Commentaires, indentation et syntaxe de base en JavaScript
+    LES VARIABLES ET TYPES DE VALEURS JAVASCRIPT
+        Présentation des variables JavaScript
+        Les types de données en JavaScript
+        Présentation des opérateurs arithmétiques et d’affectation JavaScript
+        La concaténation et les littéraux de gabarits en JavaScript
+        Les constantes en JavaScript
+    LES STRUCTURES DE CONTRÔLE JAVASCRIPT
+        Structures de contrôle, conditions et opérateurs de comparaison JavaScript
+        Les conditions if, if…else et if…else if…else en JavaScript
+        Opérateurs logiques, précédence et règles d’associativité des opérateurs en JavaScript
+        Utiliser l’opérateur ternaire pour écrire des conditions JavaScript condensées
+        L’instruction switch en JavaScript
+        Présentation des boucles et des opérateurs d’incrémentation et de décrémentation en JavaScript
+        Les boucles while, do… while, for et for… in et les instructions break et continue en JavaScript
+    LES FONCTIONS EN JAVASCRIPT
+        Présentation des fonctions JavaScript
+        Portée des variables et valeurs de retour des fonctions en JavaScript
+        Fonctions anonymes, auto-invoquées et récursives en JavaScript
+    L’ORIENTÉ OBJET EN JAVASCRIPT
+        Introduction à l’orienté objet en JavaScript
+        Création d’un objet JavaScript littéral et manipulation de ses membres
+        Définition et création d’un constructeur d’objets en JavaScript
+        Constructeur Object, prototype et héritage en JavaScript
+        Les classes en JavaScript
+    VALEURS PRIMITIVES ET OBJETS GLOBAUX JAVASCRIPT
+        Valeurs primitives et objets prédéfinis en JavaScript
+        L’objet global JavaScript String, propriétés et méthodes
+        L’objet global JavaScript Number, propriétés et méthodes
+        L’objet global JavaScript Math, propriétés et méthodes
+        Les tableaux en JavaScript et l’objet global Array
+        Les dates en JavaScript et l’objet global Date
+    MANIPULATION DU BOM EN JAVASCRIPT
+        JavaScript API, Browser Object Model et interface Window
+        L’interface et l’objet Navigator et la géolocalisation en JavaScript
+        L’interface et l’objet History en JavaScript
+        L’interface et l’objet Location en JavaScript
+        L’interface et l’objet Screen en JavaScript
+    MANIPULATION DU DOM EN JAVASCRIPT
+        Présentation du DOM HTML et de ses APIs accessibles en JavaScript
+        Accéder aux éléments dans un document avec JavaScript et modifier leur contenu
+        Naviguer ou se déplacer dans le DOM en JavaScript grâce aux noeuds
+        Ajouter, modifier ou supprimer des éléments du DOM avec JavaScript
+        Manipuler les attributs et les styles des éléments via le DOM en JavaScript
+        La gestion d’évènements en JavaScript et la méthode addEventListener
+        La propagation des évènements en JavaScript
+        Empêcher un évènement de se propager et annuler son comportement par défaut en JavaScript
+    UTILISATION DES EXPRESSIONS RÉGULIÈRES EN JAVASCRIPT
+        Introduction aux expressions régulières ou expressions rationnelles en JavaScript
+        Utiliser les expressions régulières pour effectuer des recherches et remplacements en JavaScript
+        Les classes de caractères et classes abrégées des expressions régulières JavaScript
+        Les métacaractères point, alternatives, ancres et quantificateurs des expressions régulières JavaScript
+        Créer des sous masques et des assertions dans les expressions régulières JavaScript
+        Les drapeaux, options ou marqueurs des expressions régulières JavaScript
+    NOTIONS AVANCÉES SUR LES FONCTIONS JAVASCRIPT
+        Paramètres du reste et opérateur de décomposition des fonctions JavaScript
+        Les fonctions fléchées JavaScript
+        Les closures en JavaScript
+        Gestion du délai d’exécution en JavaScript avec setTimeout() et setInterval()
+    GESTION DES ERREURS ET MODE STRICT EN JAVASCRIPT
+        Gestion des erreurs en JavaScript
+        Le mode strict en JavaScript
+    L’ASYNCHRONE EN JAVASCRIPT
+        Introduction à l’asynchrone en JavaScript
+        Les promesses en JavaScript
+        Utiliser async et await pour créer des promesses plus lisibles en JavaScript
+        Le chemin critique du rendu et les attributs HTML async et defer
+    SYMBOLES, ITÉRATEURS ET GÉNÉRATEURS EN JAVASCRIPT
+        Les symboles et l’objet Symbol en JavaScript
+        Les protocoles et objets Iterable et Iterateur en JavaScript
+        Les générateurs en Javascript
+    STOCKAGE DE DONNÉES DANS LE NAVIGATEUR EN JAVASCRIPT
+        Les cookies en JavaScript
+        L’API Web Storage : localstorage et sessionstorage en JavaScript
+        Utiliser l’API de stockage IndexedDB en JavaScript
+    L’ÉLÉMENT HTML CANVAS ET L’API CANVAS
+        Présentation de l’élément HTML canvas et de l’API Canvas
+        Dessiner des rectangles dans un élément HTML canvas en Javascript
+        Définir des tracés pour dessiner des formes dans un canevas en JavaScript
+        Création de dégradés ou de motifs dans un canevas en JavaScript
+        Ajout d’ombres et utilisation de la transparence dans un canevas en JavaScript
+        Ajouter du texte ou une image dans un canevas en JavaScript
+        Appliquer des transformations sur un canevas en JavaScript
+    LES MODULES JAVASCRIPT
+        Les modules JavaScript : import et export
+    JSON, AJAX ET FETCH EN JAVASCRIPT
+        Présentation de JSON et utilisation en JavaScript
+        Introduction à l’Ajax en JavaScript
+        Créer des requêtes Ajax en utilisant l’objet XMLHttpRequest en JavaScript
+        Présentation et utilisation de l’API Fetch en Javascript
+    CONCLUSION DU COURS COMPLET JAVASCRIPT
+        Conclusion du cours complet
+
+Dans cette nouvelle partie, nous allons étudier et comprendre l’intérêt des structures de contrôle en JavaScript.
+
+On appelle « structure de contrôle » un ensemble d’instructions qui permet de contrôler l’exécution du code.
+
+Il existe deux grands types de structure de contrôle de base qu’on retrouve dans la plupart des langages informatiques et notamment en JavaScript : les structures de contrôle conditionnelles (ou plus simplement les « conditions ») et les structures de contrôle de boucles (ou plus simplement les « boucles »).
+
+Les conditions vont nous permettre d’exécuter un certain nombre d’instructions si et seulement si une certaine condition est vérifiée.
+
+Les boucles vont nous permettre d’exécuter un bloc de code en boucle tant qu’une condition donnée est vérifiée.
+
+ 
+Présentation des conditions en JavaScript
+
+Les structures de contrôle conditionnelles (ou plus simplement conditions) vont nous permettre d’exécuter une série d’instructions si une condition donnée est vérifiée ou (éventuellement) une autre série d’instructions si elle ne l’est pas.
+
+On va donc pouvoir utiliser les conditions pour exécuter différentes actions en fonction de certains paramètres externes. Par exemple, on va pouvoir utiliser les conditions pour cacher un élément sur notre site si celui-ci est affiché ou pour l’afficher si celui-ci est caché.
+
+Les conditions vont ainsi être un passage incontournable pour rendre un site dynamique puisqu’elles vont nous permettre d’exécuter différents codes et ainsi afficher différents résultats selon le contexte.
+
+Notez que nous allons souvent créer nos conditions en nous appuyant sur le contenu de variables. On va ainsi pouvoir exécuter un code si une variable contient telle valeur ou tel autre code si notre variable contient une autre valeur.
+
+Nous avons accès aux structures conditionnelles suivantes en JavaScript :
+
+    La condition if (si) ;
+    La condition if… else (si… sinon) ;
+    La condition if… elseif… else (si… sinon si… sinon).
+
+Nous allons étudier chacune de ces conditions dans la suite de cette partie.
+
+ 
+Présentation des opérateurs de comparaison
+
+Comme je l’ai précisé plus haut, nous allons souvent construire nos conditions autour de variables : selon la valeur d’une variable, nous allons exécuter tel bloc de code ou pas.
+
+En pratique, nous allons donc comparer la valeur d’une variable à une certaine autre valeur donnée et selon le résultat de la comparaison exécuter un bloc de code ou pas. Pour comparer des valeurs, nous allons devoir utiliser des opérateurs de comparaison.
+
+On va pouvoir utiliser les opérateurs de comparaison suivants en JavaScript :
+Opérateur 	Définition
+== 	Permet de tester l’égalité sur les valeurs
+=== 	Permet de tester l’égalité en termes de valeurs et de types
+!= 	Permet de tester la différence en valeurs
+<> 	Permet également de tester la différence en valeurs
+!== 	Permet de tester la différence en valeurs ou en types
+< 	Permet de tester si une valeur est strictement inférieure à une autre
+> 	Permet de tester si une valeur est strictement supérieure à une autre
+<= 	Permet de tester si une valeur est inférieure ou égale à une autre
+>= 	Permet de tester si une valeur est supérieure ou égale à une autre
+
+
+
+https://www.pierre-giraud.com/javascript-apprendre-coder-cours/structure-controles-operateur-comparaison/ :
+
+
+Certain de ces opérateurs nécessitent certainement une précision de ma part. La première chose à bien comprendre ici est que les opérateurs de comparaison ne nous servent pas à indiquer au JavaScript que tel opérande est supérieur, égal, ou inférieure à tel autre opérande.
+
+Note : les opérandes sont les valeurs de chaque côté d’un opérateur.
+
+Au contraire, lorsqu’on utilise un opérateur de comparaison on demande au JavaScript de comparer les deux opérandes selon l’opérateur choisi (on parle également « d’évaluer » la comparaison) et de nous dire si cette comparaison est vérifiée (c’est-à-dire si elle est vraie d’un point de vue mathématique) ou pas.
+
+Dans le cas où la comparaison est vérifiée, le JavaScript renvoie le booléen true. Dans le cas contraire, le booléen false est renvoyé.
+
+Revenons à nos opérateurs. Tout d’abord, notez que notre « égal » mathématique (l’égalité en termes de valeurs) se traduit en JavaScript par le double signe égal ==.
+
+Ensuite, certains d’entre vous doivent certainement se demander ce que signifie le triple égal. Lorsqu’on utilise un triple égal ===, on cherche à effectuer une comparaison non seulement sur la valeur mais également sur le type des deux opérandes.
+
+Prenons un exemple simple pour illustrer cela. Imaginons que l’on possède une variable let x dans laquelle on stocke le chiffre 4. On veut ensuite comparer la valeur stockée dans notre variable à la chaîne de caractères « 4 ».
+
+Si on utilise le double signe égal pour effectuer la comparaison, l’égalité va être validée par le JavaScript car celui-ci ne va tester que les valeurs, et 4 est bien égal à « 4 » en termes de valeur.
+
+En revanche, si on utilise le triple signe égal, alors l’égalité ne va pas être validée car nous comparons un nombre à une chaine de caractères (donc des types différents de valeurs).
+
+On va suivre exactement le même raisonnement pour les deux opérateurs != et !== qui vont nous permettre de tester respectivement la différence en termes de valeurs simplement et la différence en termes de valeurs ou de type.
+
+ 
+Utiliser les opérateurs de comparaison
+
+Pour bien utiliser les opérateurs de comparaison et comprendre tout leur intérêt, vous devez bien vous rappeler que lorsqu’on utilise un opérateur de comparaison, le JavaScript va automatiquement comparer la valeur à gauche de l’opérateur à celle à droite selon l’opérateur de comparaison fourni et renvoyer le booléen true si la comparaison est validée ou false si elle ne l’est pas.
+
+Il est essentiel de bien comprendre cela car nos conditions vont s’appuyer sur cette valeur booléenne pour décider si un code doit être exécuté ou pas.
+
+Prenons immédiatement quelques exemples pour nous familiariser avec ces opérateurs de comparaison et leur traitement en JavaScript :
+
+Présentation des opérateurs de comparaison JavaScript
+
+Exemple d'utilisation des opérateurs de comparaison et booléens renvoyés par le JavaScript
+
+Ici, on demande au JavaScript d’évaluer plusieurs comparaisons. On stocke le résultat renvoyé par JavaScript dans nos différentes variables let test1, let test2, etc.
+
+Pour bien comprendre ce code, vous devez avant tout savoir que les opérations vont ici se faire de la droite vers la gauche : en effet, l’opération de comparaison est prioritaire sur l’affectation en JavaScript. Nos variables « test » vont donc à chaque fois stocker soit le booléen true si la comparaison est validée, soit false dans le cas contraire.
+
+On commence donc par comparer la valeur contenue dans let x au chiffre 4. Dans ce premier test, on compare seulement les valeurs. Comme 4 est bien égal en valeur à 4, le JavaScript valide la comparaison et renvoie true.
+
+On compare ensuite la valeur dans let x au chiffre 4 en testant cette fois-ci l’égalité en termes de valeur et de type. Comme let x contient le chiffre 4, cette comparaison est à nouveau validée.
+
+Ensuite, on compare la valeur dans let x à la chaine de caractères « 4 », d’abord en testant l’égalité en valeur simple puis en testant l’égalité en valeur et en type. L’égalité en valeur simple est validée puisque 4 est bien égal à « 4 ». En revanche, l’égalité en valeur et en type n’est pas validée puisqu’un nombre n’est pas de même type qu’une chaine de caractères.
+
+On teste ensuite la différence entre le contenu de let x et la chaine de caractères « 4 », d’abord en valeur simple puis en valeur et en type. Comme on l’a vu plus haut, le chiffre 4 est égal en valeur à la chaine de caractères « 4 » et n’est donc pas différent. Pour la première comparaison, le JavaScript renvoie false (différence non validée). En revanche, le chiffre 4 est bien différent de la chaine de caractères « 4 » en type et donc la comparaison x !== '4' est évaluée à true par le JavaScript (différence validée dans ce cas).
+
+Finalement, on compare la valeur de let x à 4 en termes de supériorité stricte. Ici, let x contient 4 donc la comparaison n’est pas validée puisque 4 n’est pas strictement supérieur à 4. De même, 4 n’est pas strictement inférieur à 4. En revanche, 4 est bien supérieur ou égal à 4.
+Précédent
+Suivant
+
+///////
+
+Présentation et utilisation des opérateurs logiques
+
+Les opérateurs logiques sont des opérateurs qui vont principalement être utilisés avec des valeurs booléennes et au sein de conditions.
+
+Le JavaScript supporte trois opérateurs logiques : l’opérateur logique « ET », l’opérateur logique « OU » et l’opérateur logique « NON ».
+
+Les opérateurs logiques « ET » et « OU » vont nous permettre d’effectuer plusieurs comparaisons dans une condition. Si on utilise l’opérateur « ET », toutes les comparaisons devront être évaluées à true pour que le test global de la condition retourne true. Dans le cas où n utilise l’opérateur logique « OU », il suffira qu’une seule des comparaisons soit évaluée à true pour exécuter le code dans la condition.
+
+Finalement, l’opérateur logique « NON » va nous permettre d’inverser le résultat logique d’un test dans une condition, ce qui signifie que ce qui a été évalué à true renverra false avec l’opérateur logique « NON » et inversement pour ce qui a été évalué à false.
+
+Les opérateurs logiques vont être représentés par les symboles suivants en JavaScript qu’il faudra obligatoirement utiliser : 
+
+Opérateur (nom) 	Opérateur (symbole) 	Description
+AND (ET) 	&& 	Lorsqu’il est utilisé avec des valeurs booléennes, renvoie true si toutes les comparaisons sont évaluées à true ou false sinon
+OR (OU) 	|| 	Lorsqu’il est utilisé avec des valeurs booléennes, renvoie true si au moins l’une des comparaisons est évaluée à true ou false sinon
+NO (NON) 	! 	Renvoie false si une comparaison est évaluée à true ou renvoie true dans le cas contraire
+
+/////
+
+Les opérateurs ayant le même chiffre de précédence vont être traités selon la même priorité par le JavaScript et il faudra alors regarder leur associativité qui est également précisée. Lorsque l’associativité est « gauche » dans la tableau ci-dessous, cela signifie de gauche vers la droite et inversement pour « droite ».
+Précédence 	Opérateur (nom) 	Opérateur (symbole) 	Associativité
+0 	Groupement 	( … ) 	Non applicable
+1 	Post-incrémentation 	… ++ 	Non applicable
+1 	Post-décrémentation 	… — 	Non applicable
+2 	NON (logique) 	! … 	Droite
+2 	Pré-incrémentation 	++ … 	Droite
+2 	Pré-décrémentation 	— … 	Droite
+3 	Exponentiel 	… ** … 	Droite
+3 	Multiplication 	… * … 	Gauche
+3 	Division 	… / … 	Gauche
+3 	Modulo 	… % … 	Gauche
+4 	Addition 	… + … 	Gauche
+4 	Soustraction 	… – … 	Gauche
+5 	Inférieur strict 	… < … 	Gauche
+5 	Inférieur ou égal 	… <= … 	Gauche
+5 	Supérieur strict 	… > … 	Gauche
+5 	Supérieur ou égal 	… >= … 	Gauche
+6 	Égalité (en valeur) 	… == … 	Gauche
+6 	Inégalité (en valeur) 	… != … 	Gauche
+6 	Egalité (valeur et type) 	… === … 	Gauche
+6 	Inégalité (valeur ou type) 	… !== … 	Gauche
+7 	ET (logique) 	&& 	gauche
+8 	OU (logique) 	|| 	gauche
+9 	Ternaire 	… ? … : … 	Droite
+10 	Affectation (simple ou combiné) 	… = … , … += … , … -= … , etc. 	Droite
+
+Cela fait beaucoup d’informations d’un coup et personne ne vous demande d’apprendre toutes ces règles par cœur immédiatement. L’important ici est de de souvenir qu’il existe une précédente et des règles d’associativité lorsqu’on utilise des opérateurs et d’aller vérifier l’ordre et le sens de traitement des opérateurs en cas de doute. Dans tous les cas, vous finirez par connaitre ce tableau à force de pratique. 
+
+///////
+
+Récapitulatif sur les fonctions
+
+Voici un petit résumé des choses importantes à retenir à votre niveau sur les fonctions :
+
+    Les fonctions sont des blocs de code nommés et réutilisables et dont le but est d’effectuer une tâche précise ;
+    Il existe deux grands types de fonctions en JavaScript : les fonction natives ou prédéfinies (qui sont en fait des méthodes) qu’on n’aura qu’à appeler et les fonctions personnalisées qu’on va pouvoir créer ;
+    Pour exécuter le code d’une fonction, il faut l’appeler. Pour cela, il suffit d’écrire son nom suivi d’un couple de parenthèses en passant éventuellement des arguments dans les parenthèses ;
+    On crée une fonction personnalisée grâce au mot clef function ;
+    Si une fonction a besoin qu’on lui passe des valeurs pour fonctionner, alors on définira des paramètres lors de sa définition. Lors de son appel, on lui passera des arguments qui prendront la place des arguments.
+
+//////
+
+La notion de portée des variables : définition
+
+Il est indispensable de bien comprendre la notion de « portée » des variables lorsqu’on travaille avec les fonctions en JavaScript.
+
+La « portée » d’une variable désigne l’espace du script dans laquelle elle va être accessible. En effet, toutes nos variables ne sont pas automatiquement disponibles à n’importe quel endroit dans un script et on ne va donc pas toujours pouvoir les utiliser.
+
+En JavaScript, il n’existe que deux espaces de portée différents : l’espace global et l’espace local. Pour rester très simple, l’espace global désigne l’entièreté d’un script à l’exception de l’intérieur de nos fonctions. L’espace local désigne, à l’inverse, l’espace dans une fonction. 
+
+Ici, vous devez bien retenir la chose suivante : une variable définie dans l’espace global d’un script va être accessible à travers tout le script, même depuis une fonction. En revanche, une variable définie dans une fonction n’est accessible que dans cette même fonction et ne peut pas être manipulée depuis l’espace global du script.
+
+Cette notion de portée est une notion qu’on retrouve dans de nombreux langages informatiques. La portée permet de « protéger » certains codes et certaines variables en les rendant inaccessibles depuis l’extérieur. Cela permet de renforcer la sécurité d’un script et sa stabilité dans le cas où on ne voudrait pas qu’un utilisateur puisse modifier la valeur d’une variable depuis l’extérieur pour des raisons de cohérence et de logique du script. -->
+
+</body>
+</html>

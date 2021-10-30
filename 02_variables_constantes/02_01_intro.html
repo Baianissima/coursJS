@@ -30,9 +30,9 @@
   <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color: #;">
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">JS</a>
+      <a class="navbar-brand text-white" href="../index.html">JS</a>
        <!-- button c'est pour le menu burger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Intro</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-              <li><a class="dropdown-item active" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
+              <li><a class="dropdown-item" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-02-intro.html">Intro 2</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-03-intro.html">Intro 3</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-04-intro.html">Intro 4</a></li>
@@ -56,7 +56,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Variables</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-              <li><a class="dropdown-item" href="../02_variables_constantes/02_01_intro.html">Intro</a></li>
+              <li><a class="dropdown-item active" href="../02_variables_constantes/02_01_intro.html">Intro</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_02_affichage.html">Affichage</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_03_types.html">Types</a></li>
               <li><a class="dropdown-item" href="../02_variables_constantes/02_04_operateurs.html">Opérateurs</a></li>
@@ -131,11 +131,19 @@
 
             <!-- menu dom - 09  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
+              <a class="nav-link dropdown-toggle" href="09_dom" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
+                <li><a class="dropdown-item" href="../09_dom/09_01_dom.html">Intro</a></li>
               </ul>
             </li>
+
+            <!-- menu dossier perso  -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="perso" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../perso/perso.html">Perso</a></li>
+                </ul>
+              </li>
 
           <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -153,7 +161,7 @@
   </nav>
 
   <!-- en-tête -->
-  <div class="container bg-warning p-5 text-center">
+  <div class="container-fluid en-tete p-5 text-center">
     <h1 class="disply-4">JavaScript - II/01 - introduction </h1>
     <p class="lead">Constantes et variables</p>
   </div>
@@ -163,7 +171,7 @@
   <!-- =================================== -->
 
 <!-- debut div container -->
-  <div class="">
+  <div class="container">
       <!-- mt - margin-top, voir sur la doc Bootstrap -->
     <section class="row bg-light mt-4">
         <div class="col-sm-4">

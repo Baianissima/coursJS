@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <title>JavaScript - VIII/03 - Keydown</title>
-    <link rel="stylesheet" href="08_05_toggle.css">
+    <link rel="stylesheet" href="css/08_03_keydown.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!-- <script src="intro.js"></script> -->
 </head>
@@ -25,9 +26,9 @@
   <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color: #;">
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">JS</a>
+      <a class="navbar-brand text-white" href="../index.html">JS</a>
        <!-- button c'est pour le menu burger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -116,13 +117,14 @@
               </ul>
             </li>
 
-              <!-- menu manipulations - 08-->
+             <!-- menu manipulations - 08-->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
+              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                <li><a class="dropdown-item" href="..08_01_diaporama.html">Diaporama</a></li>
-                <li><a class="dropdown-item" href="..08_02.interval.html">Interval</a></li>
-                <li><a class="dropdown-item" href="..08_03.keydown.html">Interval</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_01_diaporama.html">Diaporama</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_02_diaporama.html">Diaporama avec setInterval</a></li>
+                <li><a class="dropdown-item active" href="../08_manipulations/08_03_keydown.html">Keydown</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_05_toggle.html">Toggle</a></li>
               </ul>
             </li>
 
@@ -133,6 +135,15 @@
                 <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
               </ul>
             </li>
+
+            <!-- menu dossier perso  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="perso" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../perso/perso.html">Perso</a></li>
+              </ul>
+            </li>
+
 
           <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -152,7 +163,7 @@
     <!-- =========================== -->
     <!-- En-tête de page -->
     <!-- =========================== -->
-    <div class="container-fluid bg-warning p-5 text-center">
+    <div class="container-fluid en-tete p-5 text-center">
         <h1 id="titreN1" class="display-4">JavaScript - VIII/03 - Keydown</h1>
         <p class="lead"><i class="""></i>Keydown : Manipulations au clavier<i class=""></i></p>
     </div>
@@ -187,7 +198,7 @@
         crossorigin="anonymous"></script>
 
     <script src="../js/mon_js.js"></script>
-    <script src="08_03_keydown.js"></script>
+    <script src="js/08_03_keydown.js"></script>
 
 </body>
 

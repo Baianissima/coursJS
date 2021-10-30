@@ -17,6 +17,7 @@
 
     <!-- styles CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    
     <title>JavaScript - I/01 introduction</title>
 
     <!-- il y a plusieurs moyens de placer du JS, avec la balise script , par exemple ds l en-tete de la page -->
@@ -56,16 +57,16 @@
   <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color: #;">
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">JS</a>
-       <!-- button c'est pour le menu burger -->
+      <a class="navbar-brand text-white" href="../index.html">JS</a>
+       <!-- button pour le menu burger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- menu intro et variables -->
+          <!-- menu intro 01 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Intro</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
@@ -78,7 +79,7 @@
             </ul>
           </li>
 
-          <!-- menu intro et variables -->
+          <!-- menu variables 02 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Variables</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
@@ -97,7 +98,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="02_variables_constantes" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Structures</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item active" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_02_if.html">If</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_03_if_else.html">If else</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_04_if_else_if_else.html">If else if else</a></li>
@@ -157,18 +158,20 @@
 
             <!-- menu dom - 09  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
+              <a class="nav-link dropdown-toggle" href="09_dom" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
+                <li><a class="dropdown-item" href="../09_dom/09_01_dom.html">Intro</a></li>
               </ul>
             </li>
 
             <!-- menu dossier perso  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../dossier_perso/w3school.html">W3school</a></li>
-              </ul>
+                <a class="nav-link dropdown-toggle" href="perso" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../perso/perso.html">Perso</a></li>
+                </ul>
+              </li>
+
 
           <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -183,12 +186,12 @@
 
       </div>
     </div>
-  </nav> -->
+  </nav>
   
   <!-- =================================== -->
-  <!--   en-tête --> -->
+  <!--   en-tête -->
   <!-- =================================== -->
-  <div class="container-fluid bg-warning p-5 text-center">
+  <div class="container-fluid en-tete p-5 text-center">
     <h1 class="display-4">JavaScript - I/01 - introduction <i class="bi bi-node-plus text-white"></i> <br></h1>
     <p class="lead">Intro avec un button qui affiche/cache l'heure...</p>
   </div>

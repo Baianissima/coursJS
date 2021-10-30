@@ -1,35 +1,64 @@
 /* styles pour l'intro au js */
 /* https://codepen.io/yoksel/pen/ijxKy  */
 
+
+/* couleurs tendances en variables : https://graphiste.com/blog/couleurs-tendances-2021 */
+:root {
+    --jaunetrend:#f1da5c;
+    --gristrend: #8e9091;
+    --begetrend: #e8d5cc;
+    --mauvetrend: #80586d;
+    --cimentrend: #858480;
+    --bleufoncetrend: #709ca7;
+    --bleuclairtrend: #b8cbd0;
+    --bordeauxtrend: #9f5540;
+    --bleupigeontrend: #7a90a4;
+}
+
+nav {
+    background-color: var(--jaunetrend);
+}
+
+.en-tete {
+    background-color: var(--gristrend);
+    color: white;
+}
+
+.lead {
+    color: var(--jaunetrend) ;
+}
+
+
 body {
     /* background-color: rgb(3, 40, 77); */
     /* background: repeating-linear-gradient(90deg, #50afee, #83c0f1 20px, #d2e0e9 0, #d2e6e9 40px); */
     font-size: 1em;
-    color: rgb(3, 40, 77);
+    /* color: var(--cimentrend); */
 }
 
 .stabilo {
-    background-color: yellow;
+    background-color: rgba(8, 235, 26, 0.932);
 }
 
 .container {
-    /* background-color: #fff; */
-    color: white;
+    border-left: 2px solid var(--jaunetrend);
+    border-right: 2px solid var(--jaunetrend);
+    color: var(--cimentrend);
     width: 1200px;
-    /* height: 600px; */
-    /* margin: 0 auto; */
+    /* height: 700px; */
+    margin: 0 auto;
 }
 
 code {
     background-color: #fff;
-    color: red;
+    color: var(--mauvetrend);
     padding: 5px;
 }
 
 .bouton {
     /* color: gainsboro; */
-    color: rgb(2, 52, 102);
-    background-color: rgb(255, 166, 0);
+    color: var(--bleuclairtrend);
+    background-color: var(--bleufoncetrend);
     padding: 15px 20px;
     text-align: center;
     /* text-decoration: none; */
@@ -40,22 +69,17 @@ code {
     border-radius: 2px 2px;
 }
 
-code {
-    background-color: #fff;
-    color: red;
-    padding: 5px;
-}
 
 h1 {
     /* border-bottom: 1px solid rgb(110, 110, 110); */
     text-align: center;
-    color: rgb(3, 40, 77);
+    /* color: rgb(3, 40, 77); */
 }
 
 h2 {
-    border-bottom: 1px solid rgb(110, 110, 110);
+    border-bottom: 1px solid var(--bleufoncetrend);
     text-align: center;
-    color: rgb(3, 40, 77);
+    color: var(--cimentrend);
 }
 
 em {

@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- 09_01_dom.html -->
+
+<!doctype html>
+<html lang="fr">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Boostrap/boostrap-5.1.1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <!-- mes styles : c'est compatible pour etre ustilsé au meme temps que le style Boostrap -->
-    <link rel="stylesheet" href="../boostrap/css/bootstrap.css">
-
-    <!-- styles CSS -->
+    <title>JavaScript - XIX/01 - Dom</title>
     <link rel="stylesheet" href="../css/styles.css">
-    
-    <title>Exos persos</title>
+
+    <!-- <script src="intro.js"></script> -->
 </head>
+
 <body>
 
   <!-- =================================== -->
   <!-- navbar bootstrap -->
   <!-- =================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-info style="background-color: #;">
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">JS</a>
+      <a class="navbar-brand text-white" href="../index.html">JS</a>
        <!-- button c'est pour le menu burger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,7 +38,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="01_introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Intro</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-              <li><a class="dropdown-item active" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
+              <li><a class="dropdown-item" href="../01_introduction/01-01-intro.html">Intro 1</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-02-intro.html">Intro 2</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-03-intro.html">Intro 3</a></li>
               <li><a class="dropdown-item" href="../01_introduction/01-04-intro.html">Intro 4</a></li>
@@ -64,7 +66,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="02_variables_constantes" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Structures</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item active" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
+              <li><a class="dropdown-item" href="../03_structure_controle/03_01_intro.html">Intro</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_02_if.html">If</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_03_if_else.html">If else</a></li>
               <li><a class="dropdown-item" href="../03_structure_controle/03_04_if_else_if_else.html">If else if else</a></li>
@@ -84,7 +86,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
                 <li><a class="dropdown-item" href="../04_fonctions/04_01_intro.html">Intro</a></li>
                 <li><a class="dropdown-item" href="../04_fonctions/04_02_portee.html">Portée</a></li>
-                <li><a class="dropdown-item" href="../04_fonctions/04_03_return.html">Return/a></li>
+                <li><a class="dropdown-item" href="../04_fonctions/04_03_return.html">Return</a></li>
                 <li><a class="dropdown-item" href="../04_fonctions/04_04_conclusion.html">Conclusion</a></li>
               </ul>
             </li>
@@ -118,25 +120,20 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manipulations</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                <li><a class="dropdown-item" href="../08_manipulations/">Intro</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_01_diaporama.html">Diaporama</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_02_diaporama.html">Diaporama</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_03_keydown.html">Keydown</a></li>
+                <li><a class="dropdown-item" href="../08_manipulations/08_05_toggle.html">Toggle</a></li>
               </ul>
             </li>
 
             <!-- menu dom - 09  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
+              <a class="nav-link dropdown-toggle active" href="09_dom" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dom</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../09_dom/">Intro</a></li>
+                <li><a class="dropdown-item active" href="../09_dom/09_01_dom.html">Intro</a></li>
               </ul>
             </li>
-
-            <!-- menu dossier perso  -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="08_manipulations" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perso</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="../dossier_perso/w3school.html">W3school</a></li>
-                </ul>
-              </li>
 
           <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -153,43 +150,78 @@
     </div>
   </nav>
 
-  <!-- =========================== -->
+    <!-- =========================== -->
     <!-- En-tête de page -->
     <!-- =========================== -->
+    <div class="container-fluid en-tete p-5 text-center">
+        <h1 id="titreN1" class="display-4">JavaScript - VIII/01 - Diaporama</h1>
+        <p class="lead"><i class="""></i> Les diaporamas en JS <i class=""></i> </p>
+    </div>
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4">
 
-    <div class="container-fluid bg-warning p-5 text-center">
-      <!-- titreNiveau1 -->
-      <h1 id="titreN1" class="display-4">Exos JS persos</h1>
-      <p class="lead"><i class="bi bi-patch check"></i>W3School</p>
-  </div>
+        <section class="row mt-4">
+            <div class="col-12 col-md-6 ">
+                <h2>Un 1er diaporama, la plage</h2>
+                <p>1ère manière de faire un diaporama, un slider ou un carousel</p>
+                <p>Dans la balise <code>img</code>, je mets l'attribut : <code>onclick="this.src='img/plage2.jpg';this.alt='plage des bahamas';"</code> afin de changer l'image au clique et son texte alternatif</p>
+            </div>
+            <!-- fin col -->
+    
+            <div class="col-12 col-md-6 ">
+                <div id="diapo1">
+                    <img src="img/plage1.jpg" alt="la plage" class="img-fluid" onclick="this.src='img/plage2.jpg';this.alt='plage des bahamas';">
+                    
+                </div>
+            </div>
+            <!-- fin col -->
+          
+        </section>
+        <!-- fin rangée -->
+       <section class="row mt-4">
+            <div class="col-12 col-md-6 ">
+           <h2>Un 2ème diaporama</h2>
+            </div>
+            <!-- fin col -->
+            <div class="col-12 col-md-6 ">
+           <div id="diapo2">
+               <img src="img/piscine1.jpg" alt=" une piscine à Cannes" class="img-fluid" id="imgDiapo2">
+              <div class="text-center p-2">
+                   <button type="button" class="btn btn-light w-100 " id="btnDiapo2">Cliquez ici pour changer l'image</button>
+              </div>
+           </div>
+            </div>
+            <!-- fin col -->
 
-  <!-- =================================== -->
-  <!-- Contenu principal -->
-  <!-- =================================== -->
+       </section>
+       <section class="row mt-4">
+           <div class="col-12 col-md-6 p-2">
+               <h2>Un 3ème diaporama</h2>
+            <div id="diapo3">
+                <img src="img/plage1.jpg" alt="plage en corse" class="img-fluid" id="imgDiapo3" onclick="tourneImages()">
+            </div>
+            <!-- fin diapo 3  -->
+           </div>
+           <div class="col-12 col md-6 p-2">
 
-<body>
-  <h2>What Can JavaScript Do?</h2>
+           </div> 
 
-  <p id="demo">JavaScript can change HTML content.</p>
+       </section>
 
-  <hr>
+    </div>
+    <!-- fin div container -->
 
-  <p>JavaScript can change HTML attribute values.</p>
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 
-  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-  <button onclick="document.getElementById('myImage').src='img/light_bulb_on.png'">Turn on the light</button>
-
-  <img id="myImage" src="img/light_bulb_off.png" style="width:100px">
-
-  <button onclick="document.getElementById('myImage').src='img/light_bulb_off.png'">Turn off the light</button>
-
-  <hr>
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-  crossorigin="anonymous"></script>
+    <script src="../js/mon_js.js"></script>
+    <!-- <script src=""></script> -->
 
 </body>
+
 </html>
