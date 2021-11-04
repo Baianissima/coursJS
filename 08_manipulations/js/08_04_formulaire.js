@@ -24,7 +24,7 @@
         }
     }
 
-    // controle du formulaire d inscription avec une fonction inscriptionForm()
+    // controle du formulaire d'inscription avec une fonction inscriptionForm()
 
     // récuperer le form par son id dans une variable
         let formInscription = document.getElementById('formulaireInscription');
