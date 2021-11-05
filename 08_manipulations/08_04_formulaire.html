@@ -1,4 +1,3 @@
-<!-- 08_05_toggles.html -->
 
 <!doctype html>
 <html lang="fr">
@@ -15,6 +14,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <title>JavaScript - VIII/04 - Formulaires</title>
+
+    <style>
+
+      /* ici on mets de classes qui sont apellées sur le JS  en paranteheses sur event, par ex : event.target.mdp2.classList.add("error"); Ainsi le cadre ou on tape les donnees deviennent rouge ou vert si error ou valide */
+
+      .error {
+        border : 5px solid red;
+      }
+
+      .valide {
+        border : 5px solid greenyellow;
+      }
+
+      .rouge {
+        color : red;
+      }
+    </style>
+    
     <link rel="stylesheet" href="../css/styles.css">
     
 
@@ -235,6 +252,7 @@
             </div>
             <!-- fin col -->
 
+            <!-- On a enlevé le REQUIRED des form ici pour faire nos exos, sinon les inputs envoyés vides ne marcheraient pas pendant les tests sur fichier JS -->
             <div class="col-8">
                 <form action="#" method="POST" name="inscription" id="formulaireInscription">
 
@@ -255,17 +273,17 @@
     
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" name="mdp2" id="mdp2" placeholder="Choississez un mot de passe">
-                        <label for="mdp2">Choississez un mot de passe</label>           
+                        <label for="mdp2" id="placeholder1">Choississez un mot de passe</label>           
                     </div>
 
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" name="confmdp2" id="confmdp2"" placeholder="Confirmez votre passe">
-                        <label for="password">Confirmez votre mot de passe</label>           
+                        <label for="password" id="placeholder2">Confirmez votre mot de passe</label>           
                     </div>
 
                     <button type="submit" id="submit2" value="inscription" class="btn btn-primary">Je m'inscris</button>
-                    <!-- button type ="reset" class="btn btn-warning" -->
-                    <button type="reset" class="btn btn-danger">Effacer</button>
+                    <!-- button type ="reset" class="btn btn-warning" : ici pour effacer button, pas besoin du type= "reset"-->
+                    <button id="resetForm" class="btn btn-danger">Effacer</button>
                 </form>
             </div>
         </section>
