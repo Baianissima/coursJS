@@ -15,11 +15,13 @@ while ((disMoi !== 'oui') && (disMoi !== 'non')) {
     disMoi = prompt('Maintenant, nous allons jouer au jeu "Oui ni Non !" Ecris ce que tu veux ici !');
     i++; // une boucle a besoin de nombre de tours : il faut mettre i++
 
-    document.getElementById('p1').classList.add('stabilo');
-    document.getElementById('p1').innerHTML = 'Vous avez perdu !';
 }
+document.getElementById('p1').classList.add('stabilo');
+document.getElementById('p1').innerHTML = 'Vous avez perdu !';
+
 console.info(disMoi);
 console.log ('---- boucle terminée ----');
+
 
 
 
