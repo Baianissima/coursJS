@@ -50,26 +50,49 @@
         <h1 class="text-center">Une boucle for</h1>
         
         <script>
+
+        console.log('-------- boucle 1 -------')    
+
+
             let monSoldeBanque = 1500;
-
             let montant = prompt('Combien voulez-vous retirer ? 20'); //( l'utilisateur répond 20 )
-
             let nbRetraits = prompt('Combien de retrais ? '); //( l'utilisateur répond 6)
 
+            console.log(monSoldeBanque, montant, nbRetraits)
+
             for (let i = 0; i < nbRetraits; i++ ) {
-            monSoldeBanque = soldeBanque - retrait;
+            monSoldeBanque =  monSoldeBanque - montant;
+            // 1500 = 1500 - 20;
+
+            console.log('le solde à chaque passage de boucle est ' + monSoldeBanque + '!');
             }
 
             console.log(monSoldeBanque);
+    
+            
+        // Calcul fait en JS avec les variables :
+        // 1500 - 20 = 1480;
+        // 1480 - 20 = 1460;
+        // 1460 - 20 = 1440;
+        // 1440 - 20 = 1420;
+        // 1420 - 20 = 1400;
+        // 1400 - 20 = 1380; 
+
+
+
+        console.log('-------- boucle 2 -------')
+
+        let montant2 = perseInt(prompt('Combien voulez-vous retirer ? 20');
+
+        console.log(typeof nbr, nbr);
+        console.log(typeof lettres, lettres);
+
+
         </script>
-        
-        1500 - 20 = 1480;
-        1480 - 20 = 1460;
-        1460 - 20
 
     </main>
     
-    <!-- fin div containeur -->
+    <!-- fin containeur -->
 
     <!-- Optional JavaScript -->
     <!-- Bootstrap Bundle with Popper -->
@@ -79,6 +102,6 @@
 
     <!-- Mes scripts JS en externe -->
 
-    <script src="santos_exo16.js"></script>
+    <script src=""></script>
 </body>
 </html>
