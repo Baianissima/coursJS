@@ -1,4 +1,4 @@
-// EXO 19 (17) - Triangle : faire un triangle avec le JS
+// EXO 19 (17) - Triangle : faire un triangle dans la console avec le JS
 
 
 // Boucle for

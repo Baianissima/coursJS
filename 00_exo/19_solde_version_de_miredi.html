@@ -1,0 +1,92 @@
+<!-- dossier 00 EXO - Exo 19 : solde - exo de Miredi -->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Exo 20 - Sapin</title>   
+    <!-- <link rel="stylesheet" href="" -->
+
+    <style>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    body {
+        background-color: lightcyan;
+    }
+
+    .container {
+        background-color: white;
+    }
+
+    h1 {
+        background-color: pink;
+    }
+
+    .stabilo {
+        background-color: yellow;
+    }
+
+    </style>
+</head>
+
+<body>
+   
+    <!-- =================================== -->
+    <!-- en-tête -->
+    <!-- =================================== -->
+    <h1>Une boucle for</h1>
+    <script>
+        let monSoldeBanque = 1500;
+
+        let montant = prompt('combien voulez retirer ? 20');
+        let nbRetraits = prompt('combien de retraits ? 6');
+
+        console.log(monSoldeBanque, montant, nbRetraits);
+
+        for (let i=0; i<nbRetraits; i++){
+            // nbRetraits = monSoldeBanque-nbRetraits;
+            // console.log(monSoldeBanque);
+
+            monSoldeBanque = monSoldeBanque - montant;
+            // 1500 = 1500-20;
+            console.log('le solde à chaque passage de la boucle', monSoldeBanque);
+        }
+
+        console.info(monSoldeBanque);
+
+        let montant2 = parseInt(prompt('combien voulez retirer ? 20'));
+        console.log(typeof montant2);
+        let nbRetraits2 = parseInt(prompt('combien de retraits ? 6'));
+        console.log(typeof nbRetraits2);
+
+        for (let i = 0; i < nbRetraits2; i++){
+            monSoldeBanque = monSoldeBanque - montant2;
+        }
+    </script>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe -->
+
+    <script src=></script>
+</body>
+</html>

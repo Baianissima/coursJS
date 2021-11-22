@@ -1,0 +1,82 @@
+<!-- dossier 00 EXO - Exo 18 : devinette -->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Exo 20 - Sapin</title>   
+    <!-- <link rel="stylesheet" href="" -->
+
+    <style>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    body {
+        background-color: lightcyan;
+    }
+
+    .container {
+        background-color: white;
+    }
+
+    h1 {
+        background-color: pink;
+    }
+
+    .stabilo {
+        background-color: yellow;
+    }
+
+    </style>
+</head>
+
+<body  onload="afficheSapin()">
+   
+    <main class="container">
+        <div class="m-4 p-4">
+            <h1 class="text-center">EXO 20 - Sapin</h1>
+            <p>Écrivez un programme sapin.js qui construit progressivement dans la console un sapin. Faites-le d'abord avec une boucle for puis avec une boucle while.</p>
+        </div>
+  
+        <hr>
+
+        <pre id='res'></pre>
+
+        <p>Hauteur du feuillage :
+        <input type="number" id="p1" value="30" onchange="afficheSapin()" min="0"/>
+
+        <br> Hauteur du tronc :
+
+        <input type="number" id="p2" value="5" onchange="afficheSapin()" min="0" />
+
+        <br> Largeur du tronc :
+
+        <input type="number" id="p3" value="7" onchange="afficheSapin()" min="0"/>
+        </p>
+    </main>
+    <!-- fin div containeur -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <!-- Mes scripts JS en externe -->
+
+    <script src="js/20_sapin.js"></script>
+</body>
+</html>
